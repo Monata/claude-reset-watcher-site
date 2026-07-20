@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Usage Updates — Claude and ChatGPT usage limit changes</title>
+<meta name="description" content="Tracks when Anthropic and OpenAI reset or boost usage limits. Each entry links to its source." />
+<link rel="canonical" href="https://usageupdates.com/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Usage Updates" />
+<meta property="og:title" content="Usage Updates" />
+<meta property="og:description" content="Tracks when Anthropic and OpenAI reset or boost usage limits. Each entry links to its source." />
+<meta property="og:url" content="https://usageupdates.com/" />
+<meta property="og:image" content="https://usageupdates.com/og.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Usage Updates — an independent log of Claude and ChatGPT usage limit resets, boosts and credits, each with a source" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#f8f6ef" />
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#174f3d" />
+<link rel="alternate" type="application/rss+xml" title="Usage Updates — reset &amp; boost events" href="https://usageupdates.com/feed.xml" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23174f3d%22%2F%3E%3Ccircle%20cx%3D%2222%22%20cy%3D%2242%22%20r%3D%224%22%20fill%3D%22%23d9f3e6%22%2F%3E%3Cpath%20d%3D%22M36%2042A14%2014%200%200%200%2022%2028%22%20fill%3D%22none%22%20stroke%3D%22%23d9f3e6%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M46%2042A24%2024%200%200%200%2022%2018%22%20fill%3D%22none%22%20stroke%3D%22%23d9f3e6%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%20opacity%3D%22.7%22%2F%3E%3C%2Fsvg%3E" />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Usage Updates","url":"https://usageupdates.com/","description":"Independent tracker of Anthropic and OpenAI usage-limit resets, boosts, and credits, with a source link for every event."}</script>
+<style>
+  :root {
+    color-scheme: light;
+    --ink: #16211d; --ink-soft: #40504a; --muted: #68766f;
+    --paper: #f8f6ef; --paper-deep: #efede5; --white: #fffefa;
+    --line: #d9ddd6; --line-dark: #bbc4bc;
+    --forest: #174f3d; --forest-bright: #197a56; --forest-deep: #0c3c2e;
+    --mint: #d9f3e6; --mint-soft: #eff9f4;
+    --amber: #966614; --amber-soft: #fff1ce;
+    --serif: Georgia, "Times New Roman", serif;
+    --sans: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    --radius: 14px; --radius-sm: 8px;
+    --shadow-sm: 0 1px 1px rgb(22 33 29 / 4%), 0 3px 10px rgb(22 33 29 / 4%);
+    --container: min(1120px, calc(100% - 40px));
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; font-family: var(--sans); font-size: 16px; line-height: 1.55;
+    color: var(--ink); background: radial-gradient(circle at 78% -20%, rgb(217 243 230 / 55%), transparent 30rem), var(--paper); }
+  h1, h2 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.035em; line-height: 1.08; margin: 0; text-wrap: balance; }
+  p { margin: 0; color: var(--ink-soft); }
+  a { color: inherit; text-underline-offset: 0.16em; }
+  button { font: inherit; }
+  :focus-visible { outline: 3px solid #78acff; outline-offset: 3px; }
+  ::selection { background: #b9e4ce; color: #0e3327; }
+  .eyebrow { color: var(--forest-bright); font-size: 0.69rem; font-weight: 820; letter-spacing: 0.13em; text-transform: uppercase; margin: 0; }
+  .rt-inner { width: var(--container); margin-inline: auto; }
+
+  .rt-top { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--line); background: rgb(248 246 239 / 88%); backdrop-filter: blur(18px); }
+  .rt-top-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; width: var(--container); margin-inline: auto; min-height: 62px; }
+  .rt-brand { display: inline-flex; align-items: center; gap: 11px; font-weight: 820; letter-spacing: -0.01em; color: var(--ink); text-decoration: none; }
+  .rt-brand svg { width: 26px; height: 26px; border-radius: 7px; }
+  .rt-fresh { display: inline-flex; align-items: center; gap: 12px; color: var(--muted); font-size: 0.76rem; text-align: right; }
+  .rt-live { display: inline-flex; align-items: center; gap: 6px; color: var(--forest-bright); font-weight: 800; font-size: 0.63rem; letter-spacing: 0.09em; text-transform: uppercase; }
+  .rt-live::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: #35b483; box-shadow: 0 0 0 4px rgb(53 180 131 / 18%); }
+  .rt-live.delayed { color: var(--amber); } .rt-live.delayed::before { background: var(--amber); box-shadow: 0 0 0 4px rgb(150 102 20 / 16%); }
+  .rt-live.pending { color: var(--muted); } .rt-live.pending::before { background: var(--muted); box-shadow: none; }
+
+  .rt-chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 20px 0 0; }
+  .rt-chip { display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--line); border-radius: 999px; background: var(--white); color: var(--ink-soft); font-size: 0.78rem; font-weight: 700; padding: 7px 14px; cursor: pointer; transition: border-color 140ms ease, background 140ms ease, color 140ms ease; }
+  .rt-chip:hover { border-color: var(--line-dark); }
+  .rt-chip.on { border-color: var(--forest); background: var(--forest); color: #fff; }
+  .rt-chip .dot { width: 9px; height: 9px; border-radius: 50%; }
+
+  .rt-latest { padding: 46px 0 44px; }
+  .rt-latest .eyebrow { display: inline-block; margin-bottom: 16px; }
+  .rt-latest .when { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-bottom: 16px; color: var(--muted); font-size: 0.92rem; }
+  .rt-latest .when b { color: var(--forest-bright); font-weight: 800; }
+  .rt-latest .when svg { display: inline; vertical-align: -2px; margin-right: 4px; }
+  .pmark { display: inline-flex; align-items: center; gap: 6px; font-weight: 750; color: var(--ink); font-size: 0.8rem; }
+  .pmark::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--pc); }
+  .rt-until { color: var(--forest-bright); font-weight: 700; }
+  .rt-latest h1 { font-size: clamp(2.1rem, 4.2vw, 3.4rem); max-width: 24ch; }
+  .rt-latest .sum { max-width: 62ch; margin-top: 20px; font-size: clamp(1.02rem, 1.6vw, 1.2rem); line-height: 1.62; }
+  .rt-src { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin-top: 20px; font-size: 0.95rem; }
+  .rt-src a { color: var(--forest); font-weight: 750; text-decoration: none; }
+  .rt-src a:hover { color: var(--forest-deep); text-decoration: underline; }
+  .rt-src svg { vertical-align: -2px; }
+  .badge { display: inline-flex; align-items: center; gap: 6px; border-radius: 999px; padding: 5px 11px; font-size: 0.7rem; font-weight: 780; }
+  .badge-green { background: var(--mint-soft); color: var(--forest-bright); }
+  .badge-amber { background: var(--amber-soft); color: var(--amber); }
+
+  .rt-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 26px 0; border-top: 1px solid var(--line); }
+  .rt-stats:empty { display: none; }
+  .rt-stat dd { margin: 0; font-family: var(--serif); font-size: 1.9rem; color: var(--forest); line-height: 1.1; }
+  .rt-stat dt { margin-top: 6px; color: var(--muted); font-size: 0.66rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+
+  .rt-timeline { padding: 34px 0 30px; border-top: 1px solid var(--line); overflow-x: clip; background: linear-gradient(180deg, rgb(239 249 244 / 45%), transparent 70%); }
+  .rt-tl-head { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; }
+  .rt-tl-head h2 { font-family: var(--sans); font-size: 1rem; font-weight: 800; letter-spacing: -0.01em; color: var(--ink); }
+  .rt-tl-head span { color: var(--muted); font-size: 0.76rem; }
+  .rt-rail { position: relative; height: 128px; margin-top: 8px; }
+  .rt-rail .line { position: absolute; left: 0; right: 0; top: 64px; height: 2px; background: linear-gradient(90deg, transparent, var(--line-dark) 6%, var(--line-dark) 94%, transparent); }
+  .rt-rail .now { position: absolute; top: 40px; right: 0; display: grid; justify-items: center; gap: 5px; color: var(--forest-bright); font-size: 0.6rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+  .rt-rail .now::after { content: ""; width: 2px; height: 22px; background: var(--forest-bright); opacity: 0.4; }
+  .rt-node { position: absolute; top: 64px; transform: translate(-50%, -50%); padding: 0; border: 0; background: none; cursor: pointer; }
+  .rt-node .pt { display: block; width: 13px; height: 13px; border-radius: 50%; border: 2px solid var(--paper); box-shadow: 0 0 0 1px var(--line-dark); transition: width 140ms ease, height 140ms ease, box-shadow 140ms ease; }
+  .rt-node:hover .pt { box-shadow: 0 0 0 4px rgb(23 79 61 / 12%); }
+  .rt-node.sel .pt { width: 22px; height: 22px; box-shadow: 0 0 0 6px rgb(25 122 86 / 16%); }
+  .rt-node .cap { position: absolute; left: 50%; transform: translateX(-50%); width: 64px; text-align: center; }
+  .rt-node .cap .t { color: var(--ink); font-size: 0.72rem; font-weight: 750; white-space: nowrap; }
+  .rt-node.up .cap { bottom: 20px; } .rt-node.down .cap { top: 20px; }
+  .rt-node.sel .cap .t { color: var(--forest); }
+  .rt-node:focus-visible { outline: none; } .rt-node:focus-visible .pt { outline: 3px solid #78acff; outline-offset: 3px; }
+
+  .rt-recent { padding: 44px 0 20px; }
+  .rt-recent .rt-tl-head { margin-bottom: 20px; }
+  .rt-list { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--white); box-shadow: var(--shadow-sm); }
+  .rt-row { display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto 20px; align-items: center; gap: 20px; width: 100%; text-align: left; border: 0; border-bottom: 1px solid var(--line); background: none; padding: 17px 20px; cursor: pointer; transition: background 120ms ease; }
+  .rt-row { text-decoration: none; color: inherit; }
+  .rt-row:last-child { border-bottom: 0; }
+  .rt-row:hover { background: #f7faf7; }
+  .rt-row.sel { background: var(--mint-soft); box-shadow: inset 3px 0 0 var(--forest-bright); }
+  .rmark { width: 14px; height: 14px; border-radius: 50%; background: var(--pc); box-shadow: 0 0 0 3px color-mix(in srgb, var(--pc) 16%, transparent); }
+  .rt-row .what { min-width: 0; }
+  .rt-row .what strong { display: block; font-size: 0.94rem; color: var(--ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .rt-row .rb { font-family: var(--serif); font-size: 1rem; color: var(--forest); white-space: nowrap; }
+  .rt-row .rw { color: var(--muted); font-size: 0.78rem; white-space: nowrap; text-align: right; }
+  .rt-row .rw b { color: var(--ink); font-weight: 720; }
+  .rt-row > svg { color: var(--muted); }
+  .rt-empty { padding: 28px 20px; color: var(--muted); }
+
+  /* Fact grid: used by event permalinks (the index hero dropped it). */
+  .rt-facts { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 30px; margin-top: 26px; }
+  .rt-fact { display: grid; gap: 4px; }
+  .rt-fact dt { color: var(--muted); font-size: 0.62rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+  .rt-fact dd { margin: 0; color: var(--ink); font-size: 0.98rem; font-weight: 720; }
+  .rt-back { color: var(--forest-bright); text-decoration: none; }
+  .rt-back:hover { text-decoration: underline; }
+  .rt-lede { margin-top: 18px; font-size: 1.05rem; color: var(--ink-soft); }
+  .rt-quote { margin: 22px 0 0; padding: 16px 20px; border-left: 3px solid var(--forest-bright); background: var(--mint-soft); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; font-size: 1rem; line-height: 1.6; color: var(--ink); }
+  .rt-eventnav { display: flex; flex-wrap: wrap; gap: 14px 30px; justify-content: space-between; padding: 26px 0 10px; border-top: 1px solid var(--line); font-size: 0.85rem; }
+  .rt-eventnav a { color: var(--forest); font-weight: 700; text-decoration: none; max-width: 46ch; }
+  .rt-eventnav a:hover { text-decoration: underline; }
+  .rt-foot { padding: 22px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.72rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  .rt-foot a { color: var(--forest); font-weight: 700; }
+
+  @media (max-width: 720px) {
+    .rt-row { grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; }
+    .rt-row .rb, .rt-row > svg { display: none; }
+    .rt-stats { grid-template-columns: 1fr 1fr; gap: 16px; }
+    .rt-stat dd { font-size: 1.5rem; }
+    /* The newest node's caption sits at the rail end; the tick alone marks now. */
+    .rt-rail .now span { display: none; }
+    .rt-row .what strong { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; white-space: normal; }
+    .rt-node .cap { width: 84px; }
+    /* Scroll the rail instead of squeezing it; rtl/ltr keeps the initial
+       position at the newest ("Now") end even without JS. */
+    .rt-rail-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; direction: rtl; }
+    .rt-rail { min-width: 640px; direction: ltr; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="rt-wrap">
+  <header class="rt-top">
+    <div class="rt-top-inner">
+      <a class="rt-brand" href="./">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#174f3d"/><circle cx="22" cy="42" r="4" fill="#d9f3e6"/><path d="M36 42A14 14 0 0 0 22 28" fill="none" stroke="#d9f3e6" stroke-width="3" stroke-linecap="round"/><path d="M46 42A24 24 0 0 0 22 18" fill="none" stroke="#d9f3e6" stroke-width="3" stroke-linecap="round" opacity=".7"/></svg>
+        Usage Updates
+      </a>
+      <span class="rt-fresh"><span class="rt-live">Live</span><span>Updated just now</span></span>
+    </div>
+  </header>
+
+  <div class="rt-inner">
+    <div class="rt-chips" id="rt-chips"><button class="rt-chip on" data-p="all">All providers</button><button class="rt-chip" data-p="anthropic"><span class="dot" style="background:#a8603a"></span>Anthropic</button><button class="rt-chip" data-p="openai"><span class="dot" style="background:#197a56"></span>OpenAI</button></div>
+
+    <section class="rt-latest" id="rt-latest"><p class="eyebrow">Most recent</p>
+    <div class="when"><span class="pmark" style="--pc:#a8603a">Anthropic</span>
+    <span><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Usage limits increased · 19 Jul 2026 <span class="rt-until">· active until 19 Aug</span></span></div>
+    <h1>Claude usage limits were boosted 2 days ago.</h1>
+    <p class="rt-src"><a href="https://support.claude.com/en/articles/15400594-claude-cowork-june-august-2026-usage-promotion" target="_blank" rel="noopener nofollow">Claude Cowork and Claude Code usage limits boosted (Jun–Aug 2026 promotion) <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h5v5"/><path d="M19 5l-9 9"/><path d="M18 14v4a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h4"/></svg></a></p></section>
+
+    <section class="rt-stats" id="rt-stats"><div class="rt-stat"><dd>2 days ago</dd><dt>Last reset</dt></div><div class="rt-stat"><dd>36</dd><dt>Resets tracked</dt></div><div class="rt-stat"><dd>3.9 days</dd><dt>Avg between resets</dt></div><div class="rt-stat"><dd>18 days</dd><dt>Longest gap</dt></div></section>
+
+    <section class="rt-timeline">
+      <div class="rt-tl-head"><h2>Reset timeline</h2></div>
+      <div class="rt-rail-scroll"><div class="rt-rail" id="rt-rail"><div class="line"></div><button class="rt-node up sel" style="left:94%" data-id="backfill-2026-06-cowork-promo" title="Claude: Claude Cowork and Claude Code usage limits boosted (Jun–Aug 2026 promotion) — 2 days ago" aria-label="Anthropic: Claude Cowork and Claude Code usage limits boosted (Jun–Aug 2026 promotion)"><span class="pt" style="background:#a8603a"></span><span class="cap"><span class="t">2d</span></span></button><button class="rt-node down" style="left:91%" data-id="604ccbd792df5154" title="Claude: Claude Code weekly limits kept 50% higher through August 19 — 2 days ago" aria-label="Anthropic: Claude Code weekly limits kept 50% higher through August 19"><span class="pt" style="background:#a8603a"></span><span class="cap"><span class="t">2d</span></span></button><button class="rt-node down" style="left:88%" data-id="curator-20260719-openai-reset-jul18" title="ChatGPT: ChatGPT Work and Codex usage limits reset again, “Oops... I did it again” — 2 days ago" aria-label="OpenAI: ChatGPT Work and Codex usage limits reset again, “Oops... I did it again”"><span class="pt" style="background:#197a56"></span></button><button class="rt-node up" style="left:85%" data-id="curator-20260719-fable5-100-credit" title="Claude: One-time $100 usage credit for Pro/Team Standard users as Fable 5 moves to credits-only — 3 days ago" aria-label="Anthropic: One-time $100 usage credit for Pro/Team Standard users as Fable 5 moves to credits-only"><span class="pt" style="background:#a8603a"></span><span class="cap"><span class="t">3d</span></span></button><button class="rt-node up" style="left:82%" data-id="backfill-2026-07-16-reset" title="Claude: 5-hour and weekly rate limits reset for all users — third week running — 4 days ago" aria-label="Anthropic: 5-hour and weekly rate limits reset for all users — third week running"><span class="pt" style="background:#a8603a"></span></button><button class="rt-node down" style="left:79%" data-id="backfill-2026-07-16-codex-reset" title="ChatGPT: Codex and ChatGPT Work usage limits reset for 9M active-user milestone — 4 days ago" aria-label="OpenAI: Codex and ChatGPT Work usage limits reset for 9M active-user milestone"><span class="pt" style="background:#197a56"></span><span class="cap"><span class="t">4d</span></span></button><button class="rt-node down" style="left:76%" data-id="curator-20260719-openai-reset-8m-jul14" title="ChatGPT: ChatGPT Work and Codex usage limits reset for 8M active-user milestone — 6 days ago" aria-label="OpenAI: ChatGPT Work and Codex usage limits reset for 8M active-user milestone"><span class="pt" style="background:#197a56"></span></button><button class="rt-node up" style="left:73%" data-id="79cfe425718fbd69" title="ChatGPT: Banked usage reset granted to all Codex and ChatGPT Work users for 7M-user milestone — 7 days ago" aria-label="OpenAI: Banked usage reset granted to all Codex and ChatGPT Work users for 7M-user milestone"><span class="pt" style="background:#197a56"></span><span class="cap"><span class="t">7d</span></span></button><button class="rt-node up" style="left:70%" data-id="curator-20260719-openai-500k-banked-reset" title="ChatGPT: Banked reset granted to 500,000 ChatGPT Work and Codex users after a reset-button bug — 8 days ago" aria-label="OpenAI: Banked reset granted to 500,000 ChatGPT Work and Codex users after a reset-button bug"><span class="pt" style="background:#197a56"></span></button><button class="rt-node down" style="left:67%" data-id="backfill-2026-07-15-openai-cap-removed" title="ChatGPT: 5-hour usage cap temporarily removed on ChatGPT Plus, Pro, and Business — 8 days ago" aria-label="OpenAI: 5-hour usage cap temporarily removed on ChatGPT Plus, Pro, and Business"><span class="pt" style="background:#197a56"></span><span class="cap"><span class="t">8d</span></span></button><button class="rt-node down" style="left:64%" data-id="076c09f006c66928" title="Claude: Claude Fable 5 access and 50% higher Claude Code weekly limits extended through July 19 — 8 days ago" aria-label="Anthropic: Claude Fable 5 access and 50% higher Claude Code weekly limits extended through July 19"><span class="pt" style="background:#a8603a"></span></button><button class="rt-node up" style="left:61%" data-id="curator-20260719-openai-reset-jul11" title="ChatGPT: Another ChatGPT Work and Codex usage limit reset over the weekend — 9 days ago" aria-label="OpenAI: Another ChatGPT Work and Codex usage limit reset over the weekend"><span class="pt" style="background:#197a56"></span><span class="cap"><span class="t">9d</span></span></button><button class="rt-node up" style="left:58%" data-id="curator-20260719-openai-reset-jul10" title="ChatGPT: ChatGPT Work and Codex usage limits reset again, second reset promised same day — 10 days ago" aria-label="OpenAI: ChatGPT Work and Codex usage limits reset again, second reset promised same day"><span class="pt" style="background:#197a56"></span></button><button class="rt-node down" style="left:55%" data-id="curator-20260719-openai-reset-jul9" title="ChatGPT: ChatGPT Work and Codex usage limits reset ahead of GPT-5.6 Sol demand surge — 11 days ago" aria-label="OpenAI: ChatGPT Work and Codex usage limits reset ahead of GPT-5.6 Sol demand surge"><span class="pt" style="background:#197a56"></span><span class="cap"><span class="t">11d</span></span></button><button class="rt-node down" style="left:52%" data-id="backfill-2026-07-09-reset" title="Claude: “We've reset 5-hour and weekly rate limits for all users.” — 11 days ago" aria-label="Anthropic: “We've reset 5-hour and weekly rate limits for all users.”"><span class="pt" style="background:#a8603a"></span></button><button class="rt-node up" style="left:49%" data-id="549a6df8a1467f7b" title="Claude: Claude Fable 5 access on all paid plans extended through July 12 — 13 days ago" aria-label="Anthropic: Claude Fable 5 access on all paid plans extended through July 12"><span class="pt" style="background:#a8603a"></span><span class="cap"><span class="t">13d</span></span></button><button class="rt-node up" style="left:46%" data-id="41bc7cbf2381624b" title="Claude: Doubled Claude Cowork usage limits extended through August 5 — 13 days ago" aria-label="Anthropic: Doubled Claude Cowork usage limits extended through August 5"><span class="pt" style="background:#a8603a"></span></button><button class="rt-node down" style="left:43%" data-id="backfill-2026-07-06-claude-code-boost" title="Claude: Claude Code weekly limits increased by 50% through July 13 — 14 days ago" aria-label="Anthropic: Claude Code weekly limits increased by 50% through July 13"><span class="pt" style="background:#a8603a"></span><span class="cap"><span class="t">14d</span></span></button><button class="rt-node down" style="left:40%" data-id="backfill-2026-07-02-reset" title="Claude: 5-hour and weekly rate limits reset for all users — 19 days ago" aria-label="Anthropic: 5-hour and weekly rate limits reset for all users"><span class="pt" style="background:#a8603a"></span></button><button class="rt-node up" style="left:37%" data-id="curator-20260719-fable5-included-access" title="Claude: Claude Fable 5 included in paid plans at up to 50% of weekly usage limit — 19 days ago" aria-label="Anthropic: Claude Fable 5 included in paid plans at up to 50% of weekly usage limit"><span class="pt" style="background:#a8603a"></span><span class="cap"><span class="t">19d</span></span></button><button class="rt-node up" style="left:34%" data-id="2eabf5dd16dc04b8" title="ChatGPT: Codex usage limits fully reset with one additional banked reset — 21 days ago" aria-label="OpenAI: Codex usage limits fully reset with one additional banked reset"><span class="pt" style="background:#197a56"></span></button><button class="rt-node down" style="left:31%" data-id="8905c5ebf2fd9f40" title="ChatGPT: Codex usage limits hard-reset for everyone during incident investigation — 22 days ago" aria-label="OpenAI: Codex usage limits hard-reset for everyone during incident investigation"><span class="pt" style="background:#197a56"></span><span class="cap"><span class="t">22d</span></span></button><button class="rt-node down" style="left:28%" data-id="95d421300d04516e" title="ChatGPT: Codex usage reset granted to all users during a usage-drain investigation — 24 days ago" aria-label="OpenAI: Codex usage reset granted to all users during a usage-drain investigation"><span class="pt" style="background:#197a56"></span></button><button class="rt-node up" style="left:25%" data-id="3840cf79b0dac59f" title="Claude: 5-hour and weekly usage limits reset for everyone, across all plans — 31 days ago" aria-label="Anthropic: 5-hour and weekly usage limits reset for everyone, across all plans"><span class="pt" style="background:#a8603a"></span><span class="cap"><span class="t">31d</span></span></button><button class="rt-node up" style="left:22%" data-id="a453c48f150b079c" title="ChatGPT: Double reset: a full Codex reset plus one banked reset — 33 days ago" aria-label="OpenAI: Double reset: a full Codex reset plus one banked reset"><span class="pt" style="background:#197a56"></span></button><button class="rt-node down" style="left:19%" data-id="4e385ea1b7d54878" title="Claude: 5-hour and weekly rate limits reset for all users at Fable 5 launch — 41 days ago" aria-label="Anthropic: 5-hour and weekly rate limits reset for all users at Fable 5 launch"><span class="pt" style="background:#a8603a"></span><span class="cap"><span class="t">41d</span></span></button><button class="rt-node down" style="left:16%" data-id="b78d97139f7daa62" title="Claude: Claude Cowork usage limits doubled for one month — 45 days ago" aria-label="Anthropic: Claude Cowork usage limits doubled for one month"><span class="pt" style="background:#a8603a"></span></button><button class="rt-node up" style="left:13%" data-id="46d0a0ba15e54aae" title="ChatGPT: Codex usage limits reset across all paid plans after three reliability incidents — 47 days ago" aria-label="OpenAI: Codex usage limits reset across all paid plans after three reliability incidents"><span class="pt" style="background:#197a56"></span><span class="cap"><span class="t">47d</span></span></button><button class="rt-node up" style="left:10%" data-id="dbfcc46d79956b36" title="Claude: $1,000 usage credits per user for first-time Claude Code/Cowork activation (Enterprise) — 48 days ago" aria-label="Anthropic: $1,000 usage credits per user for first-time Claude Code/Cowork activation (Enterprise)"><span class="pt" style="background:#a8603a"></span></button><button class="rt-node down" style="left:7%" data-id="3b32b0f381a9df3e" title="Claude: 5-hour and weekly rate limits reset for Pro and Max users after subagent bug — 49 days ago" aria-label="Anthropic: 5-hour and weekly rate limits reset for Pro and Max users after subagent bug"><span class="pt" style="background:#a8603a"></span><span class="cap"><span class="t">49d</span></span></button><button class="rt-node down" style="left:4%" data-id="de11bc9d19154b97" title="ChatGPT: Codex usage limits reset to 100% weekly and hourly for all paid subscriptions — 50 days ago" aria-label="OpenAI: Codex usage limits reset to 100% weekly and hourly for all paid subscriptions"><span class="pt" style="background:#197a56"></span></button><button class="rt-node up" style="left:1%" data-id="975935a98dfbab0c" title="ChatGPT: Codex usage limits reset after a cache-hit regression drained limits faster — 58 days ago" aria-label="OpenAI: Codex usage limits reset after a cache-hit regression drained limits faster"><span class="pt" style="background:#197a56"></span><span class="cap"><span class="t">58d</span></span></button><button class="rt-node up" style="left:-2%" data-id="2fb5413628855a10" title="ChatGPT: Codex usage limits reset across all paid plans — 65 days ago" aria-label="OpenAI: Codex usage limits reset across all paid plans"><span class="pt" style="background:#197a56"></span></button><button class="rt-node down" style="left:-5%" data-id="af77facb425af4f5" title="Claude: 5-hour and weekly rate limits reset for everyone — 66 days ago" aria-label="Anthropic: 5-hour and weekly rate limits reset for everyone"><span class="pt" style="background:#a8603a"></span><span class="cap"><span class="t">66d</span></span></button><button class="rt-node down" style="left:-8%" data-id="8b30dbeafee9b203" title="Claude: Claude Code weekly limits increased 50% through July 13 — 68 days ago" aria-label="Anthropic: Claude Code weekly limits increased 50% through July 13"><span class="pt" style="background:#a8603a"></span></button><button class="rt-node up" style="left:-11%" data-id="ce43194feee7a7bb" title="ChatGPT: Two months of free Codex usage for companies switching over — 68 days ago" aria-label="OpenAI: Two months of free Codex usage for companies switching over"><span class="pt" style="background:#197a56"></span><span class="cap"><span class="t">68d</span></span></button><button class="rt-node up" style="left:-14%" data-id="9fe633cfe76cafb0" title="ChatGPT: Codex rate limits reset for all paid plans to build more with GPT-5.5 — 83 days ago" aria-label="OpenAI: Codex rate limits reset for all paid plans to build more with GPT-5.5"><span class="pt" style="background:#197a56"></span></button><button class="rt-node down" style="left:-17%" data-id="733568b83171a0ae" title="ChatGPT: Codex rate limits reset after a 10-minute incident was mitigated — 91 days ago" aria-label="OpenAI: Codex rate limits reset after a 10-minute incident was mitigated"><span class="pt" style="background:#197a56"></span><span class="cap"><span class="t">91d</span></span></button><button class="rt-node down" style="left:-20%" data-id="0860200b4af9910d" title="ChatGPT: Codex rate limits reset across all plans for its 1-year anniversary — 95 days ago" aria-label="OpenAI: Codex rate limits reset across all plans for its 1-year anniversary"><span class="pt" style="background:#197a56"></span></button><button class="rt-node up" style="left:-23%" data-id="89c355229f1677f5" title="Claude: 5-hour and weekly rate limits reset after an Opus 4.7 long-context bug — 95 days ago" aria-label="Anthropic: 5-hour and weekly rate limits reset after an Opus 4.7 long-context bug"><span class="pt" style="background:#a8603a"></span><span class="cap"><span class="t">95d</span></span></button><button class="rt-node up" style="left:-26%" data-id="a865661d0a78bfc9" title="ChatGPT: Codex limits reset alongside the $100 ChatGPT plan launch — 102 days ago" aria-label="OpenAI: Codex limits reset alongside the $100 ChatGPT plan launch"><span class="pt" style="background:#197a56"></span></button><button class="rt-node down" style="left:-29%" data-id="406773adbaa3d2d5" title="ChatGPT: 2x Codex usage promo extended to May 31 for $200 Pro users, with a rate-limit reset — 102 days ago" aria-label="OpenAI: 2x Codex usage promo extended to May 31 for $200 Pro users, with a rate-limit reset"><span class="pt" style="background:#197a56"></span><span class="cap"><span class="t">102d</span></span></button><button class="rt-node down" style="left:-32%" data-id="1bf5d11c27fd72a0" title="ChatGPT: Codex rate limits reset for 3 million weekly users, with a reset promised per additional 1M — 104 days ago" aria-label="OpenAI: Codex rate limits reset for 3 million weekly users, with a reset promised per additional 1M"><span class="pt" style="background:#197a56"></span></button><button class="rt-node up" style="left:-35%" data-id="39839f1e9720c343" title="ChatGPT: Codex usage limits reset for all plans after elevated rate-limit hits — 110 days ago" aria-label="OpenAI: Codex usage limits reset for all plans after elevated rate-limit hits"><span class="pt" style="background:#197a56"></span><span class="cap"><span class="t">110d</span></span></button><button class="rt-node up" style="left:-38%" data-id="dd07616b111657cb" title="ChatGPT: Codex usage limits reset across all plans for the plugins launch — 116 days ago" aria-label="OpenAI: Codex usage limits reset across all plans for the plugins launch"><span class="pt" style="background:#197a56"></span></button><button class="rt-node down" style="left:-41%" data-id="b0f0287b43568b9e" title="ChatGPT: Codex rate limits reset once the service was back and stable — 131 days ago" aria-label="OpenAI: Codex rate limits reset once the service was back and stable"><span class="pt" style="background:#197a56"></span><span class="cap"><span class="t">131d</span></span></button><button class="rt-node down" style="left:-44%" data-id="d5c260ab3b6322c8" title="ChatGPT: Codex rate limits reset after the outage was fully resolved — 132 days ago" aria-label="OpenAI: Codex rate limits reset after the outage was fully resolved"><span class="pt" style="background:#197a56"></span></button><button class="rt-node up" style="left:-47%" data-id="be41d9a5a86ceea4" title="ChatGPT: Codex rate limits reset for Plus and Pro during a usage-drain investigation — 135 days ago" aria-label="OpenAI: Codex rate limits reset for Plus and Pro during a usage-drain investigation"><span class="pt" style="background:#197a56"></span><span class="cap"><span class="t">135d</span></span></button><button class="rt-node up" style="left:-50%" data-id="605d68cddb464646" title="ChatGPT: Codex rate limits reset for Plus and Pro after a 2X promo bug missed ~9% of users — 138 days ago" aria-label="OpenAI: Codex rate limits reset for Plus and Pro after a 2X promo bug missed ~9% of users"><span class="pt" style="background:#197a56"></span></button><button class="rt-node down" style="left:-53%" data-id="5ed11e154e0ab92b" title="ChatGPT: Codex rate limits reset after requests were wrongly blocked as high cyber risk — 140 days ago" aria-label="OpenAI: Codex rate limits reset after requests were wrongly blocked as high cyber risk"><span class="pt" style="background:#197a56"></span><span class="cap"><span class="t">140d</span></span></button><div class="now"><span>Now</span></div></div></div>
+    </section>
+
+    <section class="rt-recent">
+      <div class="rt-tl-head"><h2>Recent resets</h2><span id="rt-count">50 tracked</span></div>
+      <div class="rt-list" id="rt-list"><a class="rt-row sel" href="/e/2026-07-19-claude-cowork-and-claude-code-usage-limits-boosted-jun-aug/" title="19 Jul 2026">
+      <span class="rmark" style="--pc:#a8603a" title="Anthropic"></span>
+      <span class="what"><strong>Claude Cowork and Claude Code usage limits boosted (Jun–Aug 2026 promotion)</strong></span>
+      <span class="rb">Usage boost</span>
+      <span class="rw"><b>2 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-18-claude-code-weekly-limits-kept-50-higher-through-august-19/" title="18 Jul 2026, 16:04 UTC">
+      <span class="rmark" style="--pc:#a8603a" title="Anthropic"></span>
+      <span class="what"><strong>Claude Code weekly limits kept 50% higher through August 19</strong></span>
+      <span class="rb">Usage boost</span>
+      <span class="rw"><b>2 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-18-chatgpt-work-and-codex-usage-limits-reset-again-oops-i-did/" title="18 Jul 2026, 03:28 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>ChatGPT Work and Codex usage limits reset again, “Oops... I did it again”</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>2 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-18-one-time-100-usage-credit-for-pro-team-standard-users-as/" title="18 Jul 2026, 02:14 UTC">
+      <span class="rmark" style="--pc:#a8603a" title="Anthropic"></span>
+      <span class="what"><strong>One-time $100 usage credit for Pro/Team Standard users as Fable 5 moves to credits-only</strong></span>
+      <span class="rb">Credits</span>
+      <span class="rw"><b>3 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-16-5-hour-and-weekly-rate-limits-reset-for-all-users-third-week/" title="16 Jul 2026">
+      <span class="rmark" style="--pc:#a8603a" title="Anthropic"></span>
+      <span class="what"><strong>5-hour and weekly rate limits reset for all users — third week running</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>4 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-16-codex-and-chatgpt-work-usage-limits-reset-for-9m-active-user/" title="16 Jul 2026, 04:14 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Codex and ChatGPT Work usage limits reset for 9M active-user milestone</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>4 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-14-chatgpt-work-and-codex-usage-limits-reset-for-8m-active-user/" title="14 Jul 2026, 19:34 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>ChatGPT Work and Codex usage limits reset for 8M active-user milestone</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>6 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-13-banked-usage-reset-granted-to-all-codex-and-chatgpt-work/" title="13 Jul 2026, 18:29 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Banked usage reset granted to all Codex and ChatGPT Work users for 7M-user milestone</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>7 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-12-banked-reset-granted-to-500-000-chatgpt-work-and-codex-users/" title="12 Jul 2026, 21:28 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Banked reset granted to 500,000 ChatGPT Work and Codex users after a reset-button bug</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>8 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-12-5-hour-usage-cap-temporarily-removed-on-chatgpt-plus-pro-and/" title="12 Jul 2026, 17:59 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>5-hour usage cap temporarily removed on ChatGPT Plus, Pro, and Business</strong></span>
+      <span class="rb">Usage boost</span>
+      <span class="rw"><b>8 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-12-claude-fable-5-access-and-50-higher-claude-code-weekly/" title="12 Jul 2026, 17:02 UTC">
+      <span class="rmark" style="--pc:#a8603a" title="Anthropic"></span>
+      <span class="what"><strong>Claude Fable 5 access and 50% higher Claude Code weekly limits extended through July 19</strong></span>
+      <span class="rb">Free access</span>
+      <span class="rw"><b>8 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-11-another-chatgpt-work-and-codex-usage-limit-reset-over-the/" title="11 Jul 2026, 05:54 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Another ChatGPT Work and Codex usage limit reset over the weekend</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>9 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-10-chatgpt-work-and-codex-usage-limits-reset-again-second-reset/" title="10 Jul 2026, 17:59 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>ChatGPT Work and Codex usage limits reset again, second reset promised same day</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>10 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-09-chatgpt-work-and-codex-usage-limits-reset-ahead-of-gpt-5-6/" title="9 Jul 2026, 21:24 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>ChatGPT Work and Codex usage limits reset ahead of GPT-5.6 Sol demand surge</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>11 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-09-we-ve-reset-5-hour-and-weekly-rate-limits-for-all-users/" title="9 Jul 2026, 18:01 UTC">
+      <span class="rmark" style="--pc:#a8603a" title="Anthropic"></span>
+      <span class="what"><strong>“We've reset 5-hour and weekly rate limits for all users.”</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>11 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-07-claude-fable-5-access-on-all-paid-plans-extended-through/" title="7 Jul 2026, 17:36 UTC">
+      <span class="rmark" style="--pc:#a8603a" title="Anthropic"></span>
+      <span class="what"><strong>Claude Fable 5 access on all paid plans extended through July 12</strong></span>
+      <span class="rb">Free access</span>
+      <span class="rw"><b>13 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-07-doubled-claude-cowork-usage-limits-extended-through-august-5/" title="7 Jul 2026, 16:07 UTC">
+      <span class="rmark" style="--pc:#a8603a" title="Anthropic"></span>
+      <span class="what"><strong>Doubled Claude Cowork usage limits extended through August 5</strong></span>
+      <span class="rb">Usage boost</span>
+      <span class="rw"><b>13 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-06-claude-code-weekly-limits-increased-by-50-through-july-13/" title="6 Jul 2026">
+      <span class="rmark" style="--pc:#a8603a" title="Anthropic"></span>
+      <span class="what"><strong>Claude Code weekly limits increased by 50% through July 13</strong></span>
+      <span class="rb">Usage boost</span>
+      <span class="rw"><b>14 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-01-5-hour-and-weekly-rate-limits-reset-for-all-users/" title="1 Jul 2026, 21:16 UTC">
+      <span class="rmark" style="--pc:#a8603a" title="Anthropic"></span>
+      <span class="what"><strong>5-hour and weekly rate limits reset for all users</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>19 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-01-claude-fable-5-included-in-paid-plans-at-up-to-50-of-weekly/" title="1 Jul 2026, 19:31 UTC">
+      <span class="rmark" style="--pc:#a8603a" title="Anthropic"></span>
+      <span class="what"><strong>Claude Fable 5 included in paid plans at up to 50% of weekly usage limit</strong></span>
+      <span class="rb">Free access</span>
+      <span class="rw"><b>19 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-06-29-codex-usage-limits-fully-reset-with-one-additional-banked/" title="29 Jun 2026, 23:39 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Codex usage limits fully reset with one additional banked reset</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>21 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-06-28-codex-usage-limits-hard-reset-for-everyone-during-incident/" title="28 Jun 2026, 23:54 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Codex usage limits hard-reset for everyone during incident investigation</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>22 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-06-26-codex-usage-reset-granted-to-all-users-during-a-usage-drain/" title="26 Jun 2026, 23:39 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Codex usage reset granted to all users during a usage-drain investigation</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>24 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-06-20-5-hour-and-weekly-usage-limits-reset-for-everyone-across-all/" title="20 Jun 2026, 00:05 UTC">
+      <span class="rmark" style="--pc:#a8603a" title="Anthropic"></span>
+      <span class="what"><strong>5-hour and weekly usage limits reset for everyone, across all plans</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>31 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-06-18-double-reset-a-full-codex-reset-plus-one-banked-reset/" title="18 Jun 2026, 00:10 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Double reset: a full Codex reset plus one banked reset</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>33 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-06-09-5-hour-and-weekly-rate-limits-reset-for-all-users-at-fable-5/" title="9 Jun 2026, 21:48 UTC">
+      <span class="rmark" style="--pc:#a8603a" title="Anthropic"></span>
+      <span class="what"><strong>5-hour and weekly rate limits reset for all users at Fable 5 launch</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>41 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-06-05-claude-cowork-usage-limits-doubled-for-one-month/" title="5 Jun 2026, 22:01 UTC">
+      <span class="rmark" style="--pc:#a8603a" title="Anthropic"></span>
+      <span class="what"><strong>Claude Cowork usage limits doubled for one month</strong></span>
+      <span class="rb">Usage boost</span>
+      <span class="rw"><b>45 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-06-04-codex-usage-limits-reset-across-all-paid-plans-after-three/" title="4 Jun 2026, 00:25 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Codex usage limits reset across all paid plans after three reliability incidents</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>47 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-06-02-1-000-usage-credits-per-user-for-first-time-claude-code/" title="2 Jun 2026">
+      <span class="rmark" style="--pc:#a8603a" title="Anthropic"></span>
+      <span class="what"><strong>$1,000 usage credits per user for first-time Claude Code/Cowork activation (Enterprise)</strong></span>
+      <span class="rb">Credits</span>
+      <span class="rw"><b>48 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-06-01-5-hour-and-weekly-rate-limits-reset-for-pro-and-max-users/" title="1 Jun 2026, 17:35 UTC">
+      <span class="rmark" style="--pc:#a8603a" title="Anthropic"></span>
+      <span class="what"><strong>5-hour and weekly rate limits reset for Pro and Max users after subagent bug</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>49 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-05-31-codex-usage-limits-reset-to-100-weekly-and-hourly-for-all/" title="31 May 2026, 15:25 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Codex usage limits reset to 100% weekly and hourly for all paid subscriptions</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>50 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-05-23-codex-usage-limits-reset-after-a-cache-hit-regression/" title="23 May 2026, 20:14 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Codex usage limits reset after a cache-hit regression drained limits faster</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>58 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-05-16-codex-usage-limits-reset-across-all-paid-plans/" title="16 May 2026, 17:51 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Codex usage limits reset across all paid plans</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>65 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-05-15-5-hour-and-weekly-rate-limits-reset-for-everyone/" title="15 May 2026, 18:00 UTC">
+      <span class="rmark" style="--pc:#a8603a" title="Anthropic"></span>
+      <span class="what"><strong>5-hour and weekly rate limits reset for everyone</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>66 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-05-13-claude-code-weekly-limits-increased-50-through-july-13/" title="13 May 2026, 19:07 UTC">
+      <span class="rmark" style="--pc:#a8603a" title="Anthropic"></span>
+      <span class="what"><strong>Claude Code weekly limits increased 50% through July 13</strong></span>
+      <span class="rb">Usage boost</span>
+      <span class="rw"><b>68 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-05-13-two-months-of-free-codex-usage-for-companies-switching-over/" title="13 May 2026, 18:13 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Two months of free Codex usage for companies switching over</strong></span>
+      <span class="rb">Free access</span>
+      <span class="rw"><b>68 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-04-28-codex-rate-limits-reset-for-all-paid-plans-to-build-more/" title="28 Apr 2026, 05:28 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Codex rate limits reset for all paid plans to build more with GPT-5.5</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>83 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-04-20-codex-rate-limits-reset-after-a-10-minute-incident-was/" title="20 Apr 2026, 23:15 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Codex rate limits reset after a 10-minute incident was mitigated</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>91 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-04-17-codex-rate-limits-reset-across-all-plans-for-its-1-year/" title="17 Apr 2026, 00:58 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Codex rate limits reset across all plans for its 1-year anniversary</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>95 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-04-16-5-hour-and-weekly-rate-limits-reset-after-an-opus-4-7-long/" title="16 Apr 2026, 20:02 UTC">
+      <span class="rmark" style="--pc:#a8603a" title="Anthropic"></span>
+      <span class="what"><strong>5-hour and weekly rate limits reset after an Opus 4.7 long-context bug</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>95 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-04-09-codex-limits-reset-alongside-the-100-chatgpt-plan-launch/" title="9 Apr 2026, 17:51 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Codex limits reset alongside the $100 ChatGPT plan launch</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>102 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-04-09-2x-codex-usage-promo-extended-to-may-31-for-200-pro-users/" title="9 Apr 2026, 17:38 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>2x Codex usage promo extended to May 31 for $200 Pro users, with a rate-limit reset</strong></span>
+      <span class="rb">Usage boost</span>
+      <span class="rw"><b>102 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-04-07-codex-rate-limits-reset-for-3-million-weekly-users-with-a/" title="7 Apr 2026, 23:13 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Codex rate limits reset for 3 million weekly users, with a reset promised per additional 1M</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>104 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-04-01-codex-usage-limits-reset-for-all-plans-after-elevated-rate/" title="1 Apr 2026, 07:48 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Codex usage limits reset for all plans after elevated rate-limit hits</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>110 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-03-27-codex-usage-limits-reset-across-all-plans-for-the-plugins/" title="27 Mar 2026, 01:52 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Codex usage limits reset across all plans for the plugins launch</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>116 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-03-11-codex-rate-limits-reset-once-the-service-was-back-and-stable/" title="11 Mar 2026, 05:38 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Codex rate limits reset once the service was back and stable</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>131 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-03-10-codex-rate-limits-reset-after-the-outage-was-fully-resolved/" title="10 Mar 2026, 03:51 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Codex rate limits reset after the outage was fully resolved</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>132 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-03-08-codex-rate-limits-reset-for-plus-and-pro-during-a-usage/" title="8 Mar 2026, 02:42 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Codex rate limits reset for Plus and Pro during a usage-drain investigation</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>135 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-03-04-codex-rate-limits-reset-for-plus-and-pro-after-a-2x-promo/" title="4 Mar 2026, 21:30 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Codex rate limits reset for Plus and Pro after a 2X promo bug missed ~9% of users</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>138 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-03-03-codex-rate-limits-reset-after-requests-were-wrongly-blocked/" title="3 Mar 2026, 01:50 UTC">
+      <span class="rmark" style="--pc:#197a56" title="OpenAI"></span>
+      <span class="what"><strong>Codex rate limits reset after requests were wrongly blocked as high cyber risk</strong></span>
+      <span class="rb">Usage reset</span>
+      <span class="rw"><b>140 days ago</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a></div>
+    </section>
+
+    <footer class="rt-foot">
+      <span>Not affiliated with Anthropic or OpenAI.</span>
+      <span><a href="feed.xml">RSS</a> · <a href="api/events.json">JSON</a></span>
+    </footer>
+  </div>
+</div>
+<script>window.__RESETS__ = {"now":"2026-07-20T15:20:10.683Z","events":[{"id":"backfill-2026-06-cowork-promo","href":"/e/2026-07-19-claude-cowork-and-claude-code-usage-limits-boosted-jun-aug/","provider":"anthropic","provName":"Anthropic","provColor":"#a8603a","productShort":"Claude","kind":"usage_boost","kindLabel":"Usage limits increased","benefit":"Usage boost","title":"Claude Cowork and Claude Code usage limits boosted (Jun–Aug 2026 promotion)","summary":"Weekly Claude Code limit raised 50% through Aug 19 and Cowork limit raised 100% through Aug 5; limits return to standard amounts when each promotion ends.","when":"2026-07-19T00:00:00.000Z","whenLabel":"19 Jul 2026","url":"https://support.claude.com/en/articles/15400594-claude-cowork-june-august-2026-usage-promotion","source":"support.claude.com","activeUntil":"2026-08-19T23:59:59.000Z","backfilled":true},{"id":"604ccbd792df5154","href":"/e/2026-07-18-claude-code-weekly-limits-kept-50-higher-through-august-19/","provider":"anthropic","provName":"Anthropic","provColor":"#a8603a","productShort":"Claude","kind":"usage_boost","kindLabel":"Usage limits increased","benefit":"Usage boost","title":"Claude Code weekly limits kept 50% higher through August 19","summary":"We're also keeping Claude Code weekly limits 50% higher, now through August 19, for all Pro, Max, Team, and seat-based Enterprise users.","when":"2026-07-18T16:04:15.000Z","whenLabel":"18 Jul 2026, 16:04 UTC","url":"https://x.com/ClaudeDevs/status/2078511173759324328","source":"x.com","activeUntil":"2026-08-19T23:59:59.000Z","backfilled":false},{"id":"curator-20260719-openai-reset-jul18","href":"/e/2026-07-18-chatgpt-work-and-codex-usage-limits-reset-again-oops-i-did/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"ChatGPT Work and Codex usage limits reset again, “Oops... I did it again”","summary":"Tibo Sottiaux (OpenAI): “Oops... I did it again. Enjoy reset usage limits for all paid users for Codex and ChatGPT Work.” Latest in a string of resets during the GPT-5.6 Sol demand surge.","when":"2026-07-18T03:28:22.000Z","whenLabel":"18 Jul 2026, 03:28 UTC","url":"https://x.com/thsottiaux/status/2078320950488297917","source":"x.com","activeUntil":null,"backfilled":false},{"id":"curator-20260719-fable5-100-credit","href":"/e/2026-07-18-one-time-100-usage-credit-for-pro-team-standard-users-as/","provider":"anthropic","provName":"Anthropic","provColor":"#a8603a","productShort":"Claude","kind":"credit","kindLabel":"Credits granted","benefit":"Credits","title":"One-time $100 usage credit for Pro/Team Standard users as Fable 5 moves to credits-only","summary":"As included Fable 5 access ends for Pro and Team Standard plans on July 20, Anthropic is issuing those subscribers a one-time $100 usage credit to keep using Fable 5 at API rates ($10/$50 per million input/output tokens); Max and Team Premium keep Fable 5 included at 50% of weekly limits.","when":"2026-07-18T02:14:43.000Z","whenLabel":"18 Jul 2026, 02:14 UTC","url":"https://x.com/claudeai/status/2078302415804379218","source":"x.com","activeUntil":null,"backfilled":false},{"id":"backfill-2026-07-16-reset","href":"/e/2026-07-16-5-hour-and-weekly-rate-limits-reset-for-all-users-third-week/","provider":"anthropic","provName":"Anthropic","provColor":"#a8603a","productShort":"Claude","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"5-hour and weekly rate limits reset for all users — third week running","summary":"Third blanket reset in three weeks; reporting says the notice used the same wording as July 9.","when":"2026-07-16T12:00:00.000Z","whenLabel":"16 Jul 2026","url":"https://www.implicator.ai/anthropic-resets-claude-limits-for-third-week-without-explaining-why/","source":"implicator.ai","activeUntil":null,"backfilled":true},{"id":"backfill-2026-07-16-codex-reset","href":"/e/2026-07-16-codex-and-chatgpt-work-usage-limits-reset-for-9m-active-user/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Codex and ChatGPT Work usage limits reset for 9M active-user milestone","summary":"Tibo Sottiaux (OpenAI): “Another reset for our Codex and ChatGPT Work users. Actually hit 9M active users way earlier today... Should have that sweet 100% weekly usage limit back in a few [minutes].”","when":"2026-07-16T04:14:09.000Z","whenLabel":"16 Jul 2026, 04:14 UTC","url":"https://x.com/thsottiaux/status/2077607697487188198","source":"x.com","activeUntil":null,"backfilled":true},{"id":"curator-20260719-openai-reset-8m-jul14","href":"/e/2026-07-14-chatgpt-work-and-codex-usage-limits-reset-for-8m-active-user/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"ChatGPT Work and Codex usage limits reset for 8M active-user milestone","summary":"Tibo Sottiaux (OpenAI): “We have reached 8M active users across Codex and ChatGPT Work. We are once again resetting the usage limits for all. And we continue to not have the 5h rate limit as well.”","when":"2026-07-14T19:34:54.000Z","whenLabel":"14 Jul 2026, 19:34 UTC","url":"https://x.com/thsottiaux/status/2077114635308986427","source":"x.com","activeUntil":null,"backfilled":false},{"id":"79cfe425718fbd69","href":"/e/2026-07-13-banked-usage-reset-granted-to-all-codex-and-chatgpt-work/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Banked usage reset granted to all Codex and ChatGPT Work users for 7M-user milestone","summary":"To celebrate 7M active users, OpenAI added a banked reset to every Codex and ChatGPT Work account; applying it (desktop app or web) replenishes the weekly usage allowance on the user's own schedule.","when":"2026-07-13T18:29:31.000Z","whenLabel":"13 Jul 2026, 18:29 UTC","url":"https://x.com/thsottiaux/status/2076735790567338203","source":"x.com","activeUntil":null,"backfilled":false},{"id":"curator-20260719-openai-500k-banked-reset","href":"/e/2026-07-12-banked-reset-granted-to-500-000-chatgpt-work-and-codex-users/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Banked reset granted to 500,000 ChatGPT Work and Codex users after a reset-button bug","summary":"Tibo Sottiaux (OpenAI): after launching banked-reset access on web and mobile (previously desktop-only), a bug meant fewer than 10% of users who pressed reset during a roughly 2-hour window didn't actually get one; rather than track down exactly who was affected, OpenAI added a banked reset to every account that pressed the button in that window — about 500,000 users.","when":"2026-07-12T21:28:59.000Z","whenLabel":"12 Jul 2026, 21:28 UTC","url":"https://x.com/thsottiaux/status/2076418567143408112","source":"x.com","activeUntil":null,"backfilled":false},{"id":"backfill-2026-07-15-openai-cap-removed","href":"/e/2026-07-12-5-hour-usage-cap-temporarily-removed-on-chatgpt-plus-pro-and/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_boost","kindLabel":"Usage limits increased","benefit":"Usage boost","title":"5-hour usage cap temporarily removed on ChatGPT Plus, Pro, and Business","summary":"Tibo Sottiaux (OpenAI): “Temporarily removing the 5 hour usage limit restriction for all Plus, Business and Pro plans” for Codex and ChatGPT Work, alongside GPT-5.6 Sol efficiency changes and a usage reset for the 6M active-user milestone landing within the hour. Weekly limits remained in place.","when":"2026-07-12T17:59:57.000Z","whenLabel":"12 Jul 2026, 17:59 UTC","url":"https://x.com/thsottiaux/status/2076365965915467978","source":"x.com","activeUntil":null,"backfilled":true},{"id":"076c09f006c66928","href":"/e/2026-07-12-claude-fable-5-access-and-50-higher-claude-code-weekly/","provider":"anthropic","provName":"Anthropic","provColor":"#a8603a","productShort":"Claude","kind":"free_access","kindLabel":"Free model access","benefit":"Free access","title":"Claude Fable 5 access and 50% higher Claude Code weekly limits extended through July 19","summary":"We're extending Claude Fable 5 access on all paid plans, as well as keeping Claude Code’s weekly rate limits 50% higher, through July 19.","when":"2026-07-12T17:02:05.000Z","whenLabel":"12 Jul 2026, 17:02 UTC","url":"https://x.com/claudeai/status/2076351399999557669","source":"x.com","activeUntil":"2026-07-19T23:59:59.000Z","backfilled":false},{"id":"curator-20260719-openai-reset-jul11","href":"/e/2026-07-11-another-chatgpt-work-and-codex-usage-limit-reset-over-the/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Another ChatGPT Work and Codex usage limit reset over the weekend","summary":"Tibo Sottiaux (OpenAI): “Introducing... another usage limit reset for all our ChatGPT Work and Codex users. Should land over next 30 minutes... we have never seen traffic increase so quickly.”","when":"2026-07-11T05:54:25.000Z","whenLabel":"11 Jul 2026, 05:54 UTC","url":"https://x.com/thsottiaux/status/2075820987833274448","source":"x.com","activeUntil":null,"backfilled":false},{"id":"curator-20260719-openai-reset-jul10","href":"/e/2026-07-10-chatgpt-work-and-codex-usage-limits-reset-again-second-reset/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"ChatGPT Work and Codex usage limits reset again, second reset promised same day","summary":"Tibo Sottiaux (OpenAI): “Hello beautiful people! We have reset usage limits across Codex and ChatGPT Work. And another one will come later in the day.”","when":"2026-07-10T17:59:43.000Z","whenLabel":"10 Jul 2026, 17:59 UTC","url":"https://x.com/thsottiaux/status/2075641131002700120","source":"x.com","activeUntil":null,"backfilled":false},{"id":"curator-20260719-openai-reset-jul9","href":"/e/2026-07-09-chatgpt-work-and-codex-usage-limits-reset-ahead-of-gpt-5-6/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"ChatGPT Work and Codex usage limits reset ahead of GPT-5.6 Sol demand surge","summary":"Tibo Sottiaux (OpenAI): “Enjoy a full reset of your usage limits for ChatGPT Work and Codex. Propagating in the next hour.” Applies to all paid ChatGPT Work and Codex users during a run of resets after the GPT-5.6 Sol launch.","when":"2026-07-09T21:24:11.000Z","whenLabel":"9 Jul 2026, 21:24 UTC","url":"https://x.com/thsottiaux/status/2075330198887940337","source":"x.com","activeUntil":null,"backfilled":false},{"id":"backfill-2026-07-09-reset","href":"/e/2026-07-09-we-ve-reset-5-hour-and-weekly-rate-limits-for-all-users/","provider":"anthropic","provName":"Anthropic","provColor":"#a8603a","productShort":"Claude","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"“We've reset 5-hour and weekly rate limits for all users.”","summary":"Blanket reset announced on the official ClaudeDevs X account after a rough week of outages; time recovered from the post id.","when":"2026-07-09T18:01:19.000Z","whenLabel":"9 Jul 2026, 18:01 UTC","url":"https://x.com/ClaudeDevs/status/2075279141352706215","source":"x.com","activeUntil":null,"backfilled":true},{"id":"549a6df8a1467f7b","href":"/e/2026-07-07-claude-fable-5-access-on-all-paid-plans-extended-through/","provider":"anthropic","provName":"Anthropic","provColor":"#a8603a","productShort":"Claude","kind":"free_access","kindLabel":"Free model access","benefit":"Free access","title":"Claude Fable 5 access on all paid plans extended through July 12","summary":"We're extending access to Claude Fable 5 on all paid plans through July 12.","when":"2026-07-07T17:36:58.000Z","whenLabel":"7 Jul 2026, 17:36 UTC","url":"https://x.com/claudeai/status/2074548242386178258","source":"x.com","activeUntil":"2026-07-12T23:59:59.000Z","backfilled":false},{"id":"41bc7cbf2381624b","href":"/e/2026-07-07-doubled-claude-cowork-usage-limits-extended-through-august-5/","provider":"anthropic","provName":"Anthropic","provColor":"#a8603a","productShort":"Claude","kind":"usage_boost","kindLabel":"Usage limits increased","benefit":"Usage boost","title":"Doubled Claude Cowork usage limits extended through August 5","summary":"We're extending doubled Cowork usage limits through August 5, so you can delegate bigger work to Claude. Read more: https://claude.com/blog/cowork-web-mobile/","when":"2026-07-07T16:07:53.000Z","whenLabel":"7 Jul 2026, 16:07 UTC","url":"https://x.com/claudeai/status/2074525821755101458","source":"x.com","activeUntil":"2026-08-05T23:59:59.000Z","backfilled":false},{"id":"backfill-2026-07-06-claude-code-boost","href":"/e/2026-07-06-claude-code-weekly-limits-increased-by-50-through-july-13/","provider":"anthropic","provName":"Anthropic","provColor":"#a8603a","productShort":"Claude","kind":"usage_boost","kindLabel":"Usage limits increased","benefit":"Usage boost","title":"Claude Code weekly limits increased by 50% through July 13","summary":"Anthropic raised Claude Code weekly limits by 50% for a limited period.","when":"2026-07-06T12:00:00.000Z","whenLabel":"6 Jul 2026","url":"https://pasqualepillitteri.it/en/news/2494/claude-code-weekly-limits-50-percent-anti-codex-anthropic-2026","source":"pasqualepillitteri.it","activeUntil":"2026-07-13T23:59:59.000Z","backfilled":true},{"id":"backfill-2026-07-02-reset","href":"/e/2026-07-01-5-hour-and-weekly-rate-limits-reset-for-all-users/","provider":"anthropic","provName":"Anthropic","provColor":"#a8603a","productShort":"Claude","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"5-hour and weekly rate limits reset for all users","summary":"First of three weekly blanket resets in July; announced on the official ClaudeDevs X account, time recovered from the post id.","when":"2026-07-01T21:16:35.000Z","whenLabel":"1 Jul 2026, 21:16 UTC","url":"https://x.com/ClaudeDevs/status/2072429181565288665","source":"x.com","activeUntil":null,"backfilled":true},{"id":"curator-20260719-fable5-included-access","href":"/e/2026-07-01-claude-fable-5-included-in-paid-plans-at-up-to-50-of-weekly/","provider":"anthropic","provName":"Anthropic","provColor":"#a8603a","productShort":"Claude","kind":"free_access","kindLabel":"Free model access","benefit":"Free access","title":"Claude Fable 5 included in paid plans at up to 50% of weekly usage limit","summary":"Fable 5 usage drew from existing Pro/Max/Team/Enterprise weekly limits at no extra charge, up to 50% of the weekly cap before requiring usage credits. Originally through July 7, the window was extended to July 12 and then to July 19, 2026 at 11:59:59 PM PT.","when":"2026-07-01T19:31:07.000Z","whenLabel":"1 Jul 2026, 19:31 UTC","url":"https://x.com/claudeai/status/2072402639644766602","source":"x.com","activeUntil":"2026-07-20T06:59:59.000Z","backfilled":false},{"id":"2eabf5dd16dc04b8","href":"/e/2026-06-29-codex-usage-limits-fully-reset-with-one-additional-banked/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Codex usage limits fully reset with one additional banked reset","summary":"Codex usage limits will be fully reset again in the next hour and we will credit one additional reset into your bank for your own usage over the next 24 hours. We investigated reports that Codex usage was being consumed faster than expected. There wasn't one central issue, but a few smaller problems compounded for some users. Here's what we found and changed: - Actual usage: Auto-review had become more proactive, another change was triggering more subagent work, and background suggestions could ","when":"2026-06-29T23:39:41.000Z","whenLabel":"29 Jun 2026, 23:39 UTC","url":"https://x.com/thsottiaux/status/2071740419030053227","source":"x.com","activeUntil":null,"backfilled":false},{"id":"8905c5ebf2fd9f40","href":"/e/2026-06-28-codex-usage-limits-hard-reset-for-everyone-during-incident/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Codex usage limits hard-reset for everyone during incident investigation","summary":"OpenAI's Codex lead reset everyone's Codex usage limits while an issue was investigated — a hard reset, since some users had stacked up to three banked resets they can apply on their own schedule.","when":"2026-06-28T23:54:07.000Z","whenLabel":"28 Jun 2026, 23:54 UTC","url":"https://x.com/thsottiaux/status/2071381664853319742","source":"x.com","activeUntil":null,"backfilled":false},{"id":"95d421300d04516e","href":"/e/2026-06-26-codex-usage-reset-granted-to-all-users-during-a-usage-drain/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Codex usage reset granted to all users during a usage-drain investigation","summary":"We are giving all Codex users a usage reset on the house. Should be showing in your accounts in the next few hours. We have applied some mitigations, but our investigation hasn't shown users being impacted at large. We are continuing to monitor the situation.","when":"2026-06-26T23:39:48.000Z","whenLabel":"26 Jun 2026, 23:39 UTC","url":"https://x.com/thsottiaux/status/2070653282440405046","source":"x.com","activeUntil":null,"backfilled":false},{"id":"3840cf79b0dac59f","href":"/e/2026-06-20-5-hour-and-weekly-usage-limits-reset-for-everyone-across-all/","provider":"anthropic","provName":"Anthropic","provColor":"#a8603a","productShort":"Claude","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"5-hour and weekly usage limits reset for everyone, across all plans","summary":"ClaudeDevs: \"Update: we've gone ahead and reset 5-hour and weekly usage limits for everyone, across all plans. Enjoy your weekend!\"","when":"2026-06-20T00:05:06.000Z","whenLabel":"20 Jun 2026, 00:05 UTC","url":"https://x.com/ClaudeDevs/status/2068122937308426676","source":"x.com","activeUntil":null,"backfilled":false},{"id":"a453c48f150b079c","href":"/e/2026-06-18-double-reset-a-full-codex-reset-plus-one-banked-reset/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Double reset: a full Codex reset plus one banked reset","summary":"Dearest gentle codexer. We did a sneaky double reset. Not only do you get a full reset on us. But you are also getting one into the reset bank to use at your own leisure. Enjoy","when":"2026-06-18T00:10:10.000Z","whenLabel":"18 Jun 2026, 00:10 UTC","url":"https://x.com/thsottiaux/status/2067399435009622521","source":"x.com","activeUntil":null,"backfilled":false},{"id":"4e385ea1b7d54878","href":"/e/2026-06-09-5-hour-and-weekly-rate-limits-reset-for-all-users-at-fable-5/","provider":"anthropic","provName":"Anthropic","provColor":"#a8603a","productShort":"Claude","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"5-hour and weekly rate limits reset for all users at Fable 5 launch","summary":"We've reset 5-hour and weekly rate limits for all users. Enjoy Fable 5!","when":"2026-06-09T21:48:01.000Z","whenLabel":"9 Jun 2026, 21:48 UTC","url":"https://x.com/ClaudeDevs/status/2064464557951852643","source":"x.com","activeUntil":null,"backfilled":false},{"id":"b78d97139f7daa62","href":"/e/2026-06-05-claude-cowork-usage-limits-doubled-for-one-month/","provider":"anthropic","provName":"Anthropic","provColor":"#a8603a","productShort":"Claude","kind":"usage_boost","kindLabel":"Usage limits increased","benefit":"Usage boost","title":"Claude Cowork usage limits doubled for one month","summary":"We've doubled usage limits in Claude Cowork for the next month. Delegate bigger, more complex tasks to Claude.","when":"2026-06-05T22:01:15.000Z","whenLabel":"5 Jun 2026, 22:01 UTC","url":"https://x.com/claudeai/status/2063018337567670285","source":"x.com","activeUntil":"2026-07-05T23:59:59.000Z","backfilled":false},{"id":"46d0a0ba15e54aae","href":"/e/2026-06-04-codex-usage-limits-reset-across-all-paid-plans-after-three/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Codex usage limits reset across all paid plans after three reliability incidents","summary":"Hi. Over the last 24 hours we had three separate small incidents that affected Codex reliability. Those are three too many and we are taking active steps for them to not reproduce. I have reset usage limits for Codex across all paid plans. May the tokens flow again.","when":"2026-06-04T00:25:58.000Z","whenLabel":"4 Jun 2026, 00:25 UTC","url":"https://x.com/thsottiaux/status/2062329981548802523","source":"x.com","activeUntil":null,"backfilled":false},{"id":"dbfcc46d79956b36","href":"/e/2026-06-02-1-000-usage-credits-per-user-for-first-time-claude-code/","provider":"anthropic","provName":"Anthropic","provColor":"#a8603a","productShort":"Claude","kind":"credit","kindLabel":"Credits granted","benefit":"Credits","title":"$1,000 usage credits per user for first-time Claude Code/Cowork activation (Enterprise)","summary":"Usage-based Claude Enterprise orgs: every user who activates Claude Code or Cowork for the first time between June 2 and July 2, 2026 (11:59:59 PM PT) gets $1,000 in usage credits for that user's Claude Code and Cowork usage; credits expire 90 days after issuance, capped at 10,000 seats per org.","when":"2026-06-02T12:00:00.000Z","whenLabel":"2 Jun 2026","url":"https://support.claude.com/en/articles/15282265-claude-enterprise-activation-promo-for-claude-code-and-cowork","source":"support.claude.com","activeUntil":"2026-07-02T23:59:59.000Z","backfilled":false},{"id":"3b32b0f381a9df3e","href":"/e/2026-06-01-5-hour-and-weekly-rate-limits-reset-for-pro-and-max-users/","provider":"anthropic","provName":"Anthropic","provColor":"#a8603a","productShort":"Claude","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"5-hour and weekly rate limits reset for Pro and Max users after subagent bug","summary":"Anthropic reset 5-hour and weekly rate limits for all Pro and Max users after fixing an issue that caused some Claude Code sessions to spawn excessive parallel subagents, burning through usage faster than expected.","when":"2026-06-01T17:35:01.000Z","whenLabel":"1 Jun 2026, 17:35 UTC","url":"https://x.com/ClaudeDevs/status/2061501787769893055","source":"x.com","activeUntil":null,"backfilled":false},{"id":"de11bc9d19154b97","href":"/e/2026-05-31-codex-usage-limits-reset-to-100-weekly-and-hourly-for-all/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Codex usage limits reset to 100% weekly and hourly for all paid subscriptions","summary":"The Codex usage limits have been reset for all paid ChatGPT subscriptions. You should be back to 100% weekly and 100% hourly limits. Let the tokens do incredible things today and have fun.","when":"2026-05-31T15:25:06.000Z","whenLabel":"31 May 2026, 15:25 UTC","url":"https://x.com/thsottiaux/status/2061106703446450392","source":"x.com","activeUntil":null,"backfilled":false},{"id":"975935a98dfbab0c","href":"/e/2026-05-23-codex-usage-limits-reset-after-a-cache-hit-regression/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Codex usage limits reset after a cache-hit regression drained limits faster","summary":"Some of you noticed limits drained faster in Codex, we root caused it to an optimization that we rolled back that had an impact on cache hit rates when compacting across long running sessions. We fixed this and have now reset usage limits for all accounts. Enjoy the weekend.","when":"2026-05-23T20:14:35.000Z","whenLabel":"23 May 2026, 20:14 UTC","url":"https://x.com/thsottiaux/status/2058280452851638313","source":"x.com","activeUntil":null,"backfilled":false},{"id":"2fb5413628855a10","href":"/e/2026-05-16-codex-usage-limits-reset-across-all-paid-plans/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Codex usage limits reset across all paid plans","summary":"Codex usage limits have now been reset across all paid plans. Enjoy the weekend!","when":"2026-05-16T17:51:03.000Z","whenLabel":"16 May 2026, 17:51 UTC","url":"https://x.com/thsottiaux/status/2055707616605835333","source":"x.com","activeUntil":null,"backfilled":false},{"id":"af77facb425af4f5","href":"/e/2026-05-15-5-hour-and-weekly-rate-limits-reset-for-everyone/","provider":"anthropic","provName":"Anthropic","provColor":"#a8603a","productShort":"Claude","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"5-hour and weekly rate limits reset for everyone","summary":"Happy Friday! We've reset everyone's 5-hour and weekly rate limits.","when":"2026-05-15T18:00:14.000Z","whenLabel":"15 May 2026, 18:00 UTC","url":"https://x.com/ClaudeDevs/status/2055347539923308703","source":"x.com","activeUntil":null,"backfilled":false},{"id":"8b30dbeafee9b203","href":"/e/2026-05-13-claude-code-weekly-limits-increased-50-through-july-13/","provider":"anthropic","provName":"Anthropic","provColor":"#a8603a","productShort":"Claude","kind":"usage_boost","kindLabel":"Usage limits increased","benefit":"Usage boost","title":"Claude Code weekly limits increased 50% through July 13","summary":"Claude Code weekly limits are increasing 50%, now through July 13. Live now for all Pro, Max, Team, and seat-based Enterprise users.","when":"2026-05-13T19:07:51.000Z","whenLabel":"13 May 2026, 19:07 UTC","url":"https://x.com/ClaudeDevs/status/2054639777685934564","source":"x.com","activeUntil":"2026-07-13T23:59:59.000Z","backfilled":false},{"id":"ce43194feee7a7bb","href":"/e/2026-05-13-two-months-of-free-codex-usage-for-companies-switching-over/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"free_access","kindLabel":"Free model access","benefit":"Free access","title":"Two months of free Codex usage for companies switching over","summary":"Sam Altman: for the next 30 days (from May 13, 2026), companies that want to try switching to Codex get two months of free Codex usage; sign-up via OpenAI's enterprise promo form.","when":"2026-05-13T18:13:58.000Z","whenLabel":"13 May 2026, 18:13 UTC","url":"https://x.com/sama/status/2054626219858293128","source":"x.com","activeUntil":null,"backfilled":false},{"id":"9fe633cfe76cafb0","href":"/e/2026-04-28-codex-rate-limits-reset-for-all-paid-plans-to-build-more/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Codex rate limits reset for all paid plans to build more with GPT-5.5","summary":"Don't just reset Codex rate limits for fun, it costs money. Don't just reset Codex rate limits for fun, it costs money. ... but the vibes are good ... I have reset Codex rate limits for ALL paid plans to celebrate a good week and allow everyone to build more with GPT-5.5. Enjoy","when":"2026-04-28T05:28:43.000Z","whenLabel":"28 Apr 2026, 05:28 UTC","url":"https://x.com/thsottiaux/status/2048997818673537399","source":"x.com","activeUntil":null,"backfilled":false},{"id":"733568b83171a0ae","href":"/e/2026-04-20-codex-rate-limits-reset-after-a-10-minute-incident-was/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Codex rate limits reset after a 10-minute incident was mitigated","summary":"Codex incident is mitigated, seeing recovery. Lasted about 10 mins, Codex itself helped with the remediation, but ultimately the insight came from a human this time. Apologies for the disruption and rate limit reset incoming.","when":"2026-04-20T23:15:21.000Z","whenLabel":"20 Apr 2026, 23:15 UTC","url":"https://x.com/thsottiaux/status/2046367145588916687","source":"x.com","activeUntil":null,"backfilled":false},{"id":"0860200b4af9910d","href":"/e/2026-04-17-codex-rate-limits-reset-across-all-plans-for-its-1-year/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Codex rate limits reset across all plans for its 1-year anniversary","summary":"Hi! To celebrate its 1-year anniversary, I have allowed Codex to reset its own rate limits across all plans. Enjoy all the new features.","when":"2026-04-17T00:58:21.000Z","whenLabel":"17 Apr 2026, 00:58 UTC","url":"https://x.com/thsottiaux/status/2044943514832871564","source":"x.com","activeUntil":null,"backfilled":false},{"id":"89c355229f1677f5","href":"/e/2026-04-16-5-hour-and-weekly-rate-limits-reset-after-an-opus-4-7-long/","provider":"anthropic","provName":"Anthropic","provColor":"#a8603a","productShort":"Claude","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"5-hour and weekly rate limits reset after an Opus 4.7 long-context bug","summary":"We fixed a bug where rate limits on Claude subscriptions weren't properly adjusted for long context requests in Opus 4.7. We've reset 5-hour and weekly rate limits. Enjoy Opus 4.7!","when":"2026-04-16T20:02:04.000Z","whenLabel":"16 Apr 2026, 20:02 UTC","url":"https://x.com/ClaudeDevs/status/2044868953206612154","source":"x.com","activeUntil":null,"backfilled":false},{"id":"a865661d0a78bfc9","href":"/e/2026-04-09-codex-limits-reset-alongside-the-100-chatgpt-plan-launch/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Codex limits reset alongside the $100 ChatGPT plan launch","summary":"We did it, say hi to the $100 plan! It should be the sweet spot for a ton of you. It comes with a ton of codex usage. And yes we are resetting the limits again too as I mentioned yesterday. Let’s keep building!","when":"2026-04-09T17:51:28.000Z","whenLabel":"9 Apr 2026, 17:51 UTC","url":"https://x.com/thsottiaux/status/2042299371602264319","source":"x.com","activeUntil":null,"backfilled":false},{"id":"406773adbaa3d2d5","href":"/e/2026-04-09-2x-codex-usage-promo-extended-to-may-31-for-200-pro-users/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_boost","kindLabel":"Usage limits increased","benefit":"Usage boost","title":"2x Codex usage promo extended to May 31 for $200 Pro users, with a rate-limit reset","summary":"Our existing $200 Pro tier still remains our highest usage option. And as a thank you to our existing Pro users on the $200 tier, we’re extending our 2x Codex usage promo (until May 31st) and we’ve reset your Codex rate limits (yes, again).","when":"2026-04-09T17:38:16.000Z","whenLabel":"9 Apr 2026, 17:38 UTC","url":"https://x.com/OpenAI/status/2042296046009626989","source":"x.com","activeUntil":"2026-05-31T23:59:59.000Z","backfilled":false},{"id":"1bf5d11c27fd72a0","href":"/e/2026-04-07-codex-rate-limits-reset-for-3-million-weekly-users-with-a/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Codex rate limits reset for 3 million weekly users, with a reset promised per additional 1M","summary":"Three million people are now using Codex weekly - up from two million a little under a month ago. Incredible to see the growth. Thank you to all of you and to the ecosystem we’re part of. To celebrate, we’re resetting rate limits so you can keep building, and we’ll reset them every additional 1M users until we reach 10M, so we can keep celebrating along the way. Enjoy and thank you!","when":"2026-04-07T23:13:48.000Z","whenLabel":"7 Apr 2026, 23:13 UTC","url":"https://x.com/thsottiaux/status/2041655710346572085","source":"x.com","activeUntil":null,"backfilled":false},{"id":"39839f1e9720c343","href":"/e/2026-04-01-codex-usage-limits-reset-for-all-plans-after-elevated-rate/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Codex usage limits reset for all plans after elevated rate-limit hits","summary":"Our Codex dashboards are showing increased rate of users hitting rate limits and since we don't fully understand why I have made the cautious decision of resetting the usage limits for all plans. Enjoy. I also wanted to celebrate us finding a pocket of fraudulent accounts that we banned and have helped us regain some compute. The fight against abuse never stops, but it's important to mark the moment and make it a little shared victory.","when":"2026-04-01T07:48:39.000Z","whenLabel":"1 Apr 2026, 07:48 UTC","url":"https://x.com/thsottiaux/status/2039248564967424483","source":"x.com","activeUntil":null,"backfilled":false},{"id":"dd07616b111657cb","href":"/e/2026-03-27-codex-usage-limits-reset-across-all-plans-for-the-plugins/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Codex usage limits reset across all plans for the plugins launch","summary":"Hello. We have reset Codex usage limits across all plans to let everyone experiment with the magnificent plugins we just launched, and because it had been a while! You can just build unlimited things with Codex. Have fun!","when":"2026-03-27T01:52:28.000Z","whenLabel":"27 Mar 2026, 01:52 UTC","url":"https://x.com/thsottiaux/status/2037346989244096581","source":"x.com","activeUntil":null,"backfilled":false},{"id":"b0f0287b43568b9e","href":"/e/2026-03-11-codex-rate-limits-reset-once-the-service-was-back-and-stable/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Codex rate limits reset once the service was back and stable","summary":"OK, Codex is back and stable and we should be good for a while. Reset button pressed, should see it in a bit","when":"2026-03-11T05:38:13.000Z","whenLabel":"11 Mar 2026, 05:38 UTC","url":"https://x.com/thsottiaux/status/2031605592352313567","source":"x.com","activeUntil":null,"backfilled":false},{"id":"d5c260ab3b6322c8","href":"/e/2026-03-10-codex-rate-limits-reset-after-the-outage-was-fully-resolved/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Codex rate limits reset after the outage was fully resolved","summary":"This codex issue is now fully resolved and stable for the last couple of hours. You have come to expect it, but yes, that means we will be reseting rate limits in a bit. Enjoy.","when":"2026-03-10T03:51:43.000Z","whenLabel":"10 Mar 2026, 03:51 UTC","url":"https://x.com/thsottiaux/status/2031216405266481489","source":"x.com","activeUntil":null,"backfilled":false},{"id":"be41d9a5a86ceea4","href":"/e/2026-03-08-codex-rate-limits-reset-for-plus-and-pro-during-a-usage/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Codex rate limits reset for Plus and Pro during a usage-drain investigation","summary":"We don’t have evidence of a widespread issue with codex usage being drained faster than it should but there are enough reports and we have reset rate limits for plus & pro subscriptions while we work towards wrapping up our investigation over the coming 1-3 days.","when":"2026-03-08T02:42:13.000Z","whenLabel":"8 Mar 2026, 02:42 UTC","url":"https://x.com/thsottiaux/status/2030474136024400173","source":"x.com","activeUntil":null,"backfilled":false},{"id":"605d68cddb464646","href":"/e/2026-03-04-codex-rate-limits-reset-for-plus-and-pro-after-a-2x-promo/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Codex rate limits reset for Plus and Pro after a 2X promo bug missed ~9% of users","summary":"We caught an issue that was causing the 2X promotional increase in limits to not be applied to an estimated 9% of plus and pro users for Codex. We have now fixed this issue and are reseting the rate limit for all plus and pro users to compensate. Apologies and thank you for the bug reports over the last couple of days.","when":"2026-03-04T21:30:47.000Z","whenLabel":"4 Mar 2026, 21:30 UTC","url":"https://x.com/thsottiaux/status/2029308599835738218","source":"x.com","activeUntil":null,"backfilled":false},{"id":"5ed11e154e0ab92b","href":"/e/2026-03-03-codex-rate-limits-reset-after-requests-were-wrongly-blocked/","provider":"openai","provName":"OpenAI","provColor":"#197a56","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Usage reset","title":"Codex rate limits reset after requests were wrongly blocked as high cyber risk","summary":"Codex is back up. We introduced an issue that caused requests to be blocked and rejected as high cyber risk. This was fixed in ~8 mins and we are now back online and fully operational. Team will reset rate limits, that’s been a while. Enjoy one on us.","when":"2026-03-03T01:50:07.000Z","whenLabel":"3 Mar 2026, 01:50 UTC","url":"https://x.com/thsottiaux/status/2028649088594436225","source":"x.com","activeUntil":null,"backfilled":false}]};</script>
+<script>
+(function () {
+  var DATA = window.__RESETS__;
+  if (!DATA || !DATA.events.length) return;
+  var now = DATA.now;
+  var state = { filter: "all", selectedId: DATA.events[0].id };
+  var CLOCK = "<svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7v5l3 2\"/></svg>";
+  var EXTERNAL = "<svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 5h5v5\"/><path d=\"M19 5l-9 9\"/><path d=\"M18 14v4a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h4\"/></svg>";
+  var CHEVRON = "<svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 6l6 6-6 6\"/></svg>";
+
+  function ago(when) {
+    var s = (new Date(now) - new Date(when)) / 1000;
+    if (s < 90) return "just now";
+    if (s < 3600) return Math.round(s / 60) + " min ago";
+    if (s < 86400) return Math.round(s / 3600) + " hours ago";
+    var d = Math.round(s / 86400);
+    return d === 1 ? "yesterday" : d + " days ago";
+  }
+  function agoShort(when) {
+    var s = (new Date(now) - new Date(when)) / 1000;
+    if (s < 3600) return Math.max(1, Math.round(s / 60)) + "m";
+    if (s < 86400) return Math.round(s / 3600) + "h";
+    return Math.round(s / 86400) + "d";
+  }
+  function esc(v) { return String(v).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function untilDate(iso) { return new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "short", timeZone: "UTC" }); }
+  function filtered() { return state.filter === "all" ? DATA.events : DATA.events.filter(function (e) { return e.provider === state.filter; }); }
+  function selected() { var f = filtered(); return f.filter(function (e) { return e.id === state.selectedId; })[0] || f[0]; }
+
+  function headline(e) {
+    if (e.kind === "usage_reset") return e.productShort + " usage limits were reset " + ago(e.when) + ".";
+    if (e.kind === "usage_boost") return e.productShort + " usage limits were boosted " + ago(e.when) + ".";
+    if (e.kind === "free_access") return "Free " + e.productShort + " access was granted " + ago(e.when) + ".";
+    return e.productShort + " usage credits were issued " + ago(e.when) + ".";
+  }
+  function latestHTML(e, isNewest) {
+    var until = e.activeUntil ? ' <span class="rt-until">· active until ' + esc(untilDate(e.activeUntil)) + "</span>" : "";
+    return '<p class="eyebrow">' + (isNewest ? "Most recent" : "Selected reset") + "</p>" +
+      '<div class="when"><span class="pmark" style="--pc:' + e.provColor + '">' + esc(e.provName) + "</span>" +
+      "<span>" + CLOCK + " " + esc(e.kindLabel) + " · " + esc(e.whenLabel) + until + "</span></div>" +
+      "<h1>" + esc(headline(e)) + "</h1>" +
+      '<p class="rt-src"><a href="' + esc(e.url) + '" target="_blank" rel="noopener nofollow">' + esc(e.title) + " " + EXTERNAL + "</a></p>";
+  }
+  function statsHTML(list) {
+    var resets = list.filter(function (e) { return e.kind === "usage_reset"; })
+      .map(function (e) { return new Date(e.when).getTime(); })
+      .sort(function (a, b) { return a - b; });
+    var gaps = [];
+    for (var i = 1; i < resets.length; i++) gaps.push(resets[i] - resets[i - 1]);
+    var DAY = 86400000;
+    var last = resets.length ? ago(new Date(resets[resets.length - 1]).toISOString()) : "—";
+    var avg = gaps.length ? (gaps.reduce(function (a, b) { return a + b; }, 0) / gaps.length / DAY).toFixed(1) + " days" : "—";
+    var longest = gaps.length ? Math.round(Math.max.apply(null, gaps) / DAY) + " days" : "—";
+    return '<div class="rt-stat"><dd>' + esc(last) + '</dd><dt>Last reset</dt></div>' +
+      '<div class="rt-stat"><dd>' + resets.length + '</dd><dt>Resets tracked</dt></div>' +
+      '<div class="rt-stat"><dd>' + esc(avg) + '</dd><dt>Avg between resets</dt></div>' +
+      '<div class="rt-stat"><dd>' + esc(longest) + '</dd><dt>Longest gap</dt></div>';
+  }
+
+  function railHTML(list) {
+    var asc = list.slice().sort(function (a, b) { return new Date(a.when) - new Date(b.when); });
+    var times = asc.map(function (e) { return new Date(e.when).getTime(); });
+    var min = times[0], max = times[times.length - 1];
+    var raw = times.map(function (t) { return asc.length < 2 || max === min ? 50 : 6 + ((t - min) / (max - min)) * 88; });
+    var GAP = 3;
+    for (var i = 1; i < raw.length; i++) if (raw[i] < raw[i - 1] + GAP) raw[i] = raw[i - 1] + GAP;
+    if (raw.length && raw[raw.length - 1] > 94) {
+      raw[raw.length - 1] = 94;
+      for (var j = raw.length - 2; j >= 0; j--) if (raw[j] > raw[j + 1] - GAP) raw[j] = raw[j + 1] - GAP;
+    }
+    var TIERS = ["down", "up"];
+    var placed = {};
+    // Every reset gets a dot, but only points far enough apart get a time
+    // caption — otherwise a dense stretch of resets turns into a smear of
+    // overlapping labels. The newest point is always labelled.
+    var lastLabel = -99, labelled = 0;
+    asc.forEach(function (e, i) {
+      var show = raw[i] - lastLabel >= 4 || i === asc.length - 1;
+      if (show) lastLabel = raw[i];
+      placed[e.id] = { left: raw[i], dir: TIERS[labelled % 2], label: show };
+      if (show) labelled++;
+    });
+    var sel = selected();
+    var nodes = list.map(function (e) {
+      var dir = placed[e.id].dir;
+      return '<button class="rt-node ' + dir + (e.id === sel.id ? " sel" : "") + '" style="left:' + placed[e.id].left + '%" data-id="' + esc(e.id) + '" title="' + esc(e.productShort + ": " + e.title) + " — " + ago(e.when) + '" aria-label="' + esc(e.provName + ": " + e.title) + '">' +
+        '<span class="pt" style="background:' + e.provColor + '"></span>' +
+        (placed[e.id].label ? '<span class="cap"><span class="t">' + agoShort(e.when) + "</span></span>" : "") + "</button>";
+    }).join("");
+    return '<div class="line"></div>' + nodes + '<div class="now"><span>Now</span></div>';
+  }
+
+  function listHTML(list) {
+    var sel = selected();
+    return list.map(function (e) {
+      return '<a class="rt-row' + (e.id === sel.id ? " sel" : "") + '" href="' + esc(e.href) + '" title="' + esc(e.whenLabel) + '">' +
+        '<span class="rmark" style="--pc:' + e.provColor + '" title="' + esc(e.provName) + '"></span>' +
+        '<span class="what"><strong>' + esc(e.title) + "</strong></span>" +
+        '<span class="rb">' + esc(e.benefit) + "</span>" +
+        '<span class="rw"><b>' + ago(e.when) + "</b></span>" +
+        CHEVRON + "</a>";
+    }).join("");
+  }
+
+  function render() {
+    var list = filtered();
+    var sel = selected();
+    document.getElementById("rt-latest").innerHTML = latestHTML(sel, sel.id === list[0].id);
+    document.getElementById("rt-stats").innerHTML = statsHTML(list);
+    document.getElementById("rt-rail").innerHTML = railHTML(list);
+    document.getElementById("rt-list").innerHTML = listHTML(list);
+    document.getElementById("rt-count").textContent = list.length + " tracked";
+    document.querySelectorAll("#rt-chips .rt-chip").forEach(function (chip) {
+      chip.classList.toggle("on", chip.getAttribute("data-p") === state.filter);
+    });
+  }
+
+  // URL state: "#openai" remembers the provider filter; "#openai/<id>" also
+  // pins a featured reset. Empty when showing all providers + newest, so the
+  // plain URL stays clean. Restored on load and on back/forward.
+  function hashFor() {
+    var f = filtered();
+    var isNewest = f.length > 0 && state.selectedId === f[0].id;
+    if (state.filter === "all" && isNewest) return "";
+    return isNewest ? state.filter : state.filter + "/" + encodeURIComponent(state.selectedId);
+  }
+  function writeHash() {
+    var h = hashFor();
+    if (h) { if (location.hash.slice(1) !== h) location.hash = h; }
+    else if (location.hash) history.replaceState(null, "", location.pathname + location.search);
+  }
+  function applyHash(scrollToPinned) {
+    var parts = location.hash.slice(1).split("/");
+    var prov = parts[0];
+    state.filter = prov === "anthropic" || prov === "openai" ? prov : "all";
+    var f = filtered();
+    var eid = parts[1] ? decodeURIComponent(parts[1]) : "";
+    var pinned = eid && f.some(function (e) { return e.id === eid; });
+    state.selectedId = pinned ? eid : f[0] && f[0].id;
+    render();
+    if (scrollToPinned && pinned) {
+      var safe = window.CSS && CSS.escape ? CSS.escape(eid) : eid;
+      var row = document.querySelector('#rt-list .rt-row[data-id="' + safe + '"]');
+      if (row) row.scrollIntoView({ block: "nearest" });
+    }
+  }
+
+  document.getElementById("rt-chips").addEventListener("click", function (ev) {
+    var chip = ev.target.closest(".rt-chip");
+    if (!chip) return;
+    state.filter = chip.getAttribute("data-p");
+    var f = filtered();
+    if (!f.some(function (e) { return e.id === state.selectedId; })) state.selectedId = f[0].id;
+    render();
+    writeHash();
+  });
+  function pick(ev) {
+    var node = ev.target.closest("[data-id]");
+    if (!node) return;
+    state.selectedId = node.getAttribute("data-id");
+    render();
+    writeHash();
+  }
+  document.getElementById("rt-rail").addEventListener("click", pick);
+  window.addEventListener("hashchange", function () { applyHash(false); });
+  // Mobile rail scrolls; start at the newest ("Now") end. The rtl/ltr CSS
+  // trick covers no-JS; this covers browsers that ignore it.
+  var railScroll = document.getElementById("rt-rail").parentElement;
+  if (railScroll.scrollWidth > railScroll.clientWidth) railScroll.scrollLeft = railScroll.scrollWidth;
+  if (location.hash) applyHash(true);
+  setInterval(render, 60000);
+})();
+</script>
+</body>
+</html>

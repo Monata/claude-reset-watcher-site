@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Usage Updates</title>
+  <link>https://usageupdates.com</link>
+  <description>Anthropic and OpenAI usage limit resets, boosts, free access, and credits.</description>
+
+  <item>
+    <title>Anthropic — Usage limits increased: Claude Cowork and Claude Code usage limits boosted (Jun–Aug 2026 promotion)</title>
+    <link>https://support.claude.com/en/articles/15400594-claude-cowork-june-august-2026-usage-promotion</link>
+    <guid isPermaLink="false">backfill-2026-06-cowork-promo</guid>
+    <pubDate>Sun, 19 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Weekly Claude Code limit raised 50% through Aug 19 and Cowork limit raised 100% through Aug 5; limits return to standard amounts when each promotion ends.</description>
+  </item>
+
+  <item>
+    <title>Anthropic — Usage limits increased: Claude Code weekly limits kept 50% higher through August 19</title>
+    <link>https://x.com/ClaudeDevs/status/2078511173759324328</link>
+    <guid isPermaLink="false">604ccbd792df5154</guid>
+    <pubDate>Sat, 18 Jul 2026 16:04:15 GMT</pubDate>
+    <description>We're also keeping Claude Code weekly limits 50% higher, now through August 19, for all Pro, Max, Team, and seat-based Enterprise users.</description>
+  </item>
+
+  <item>
+    <title>OpenAI — Usage limits reset: ChatGPT Work and Codex usage limits reset again, “Oops... I did it again”</title>
+    <link>https://x.com/thsottiaux/status/2078320950488297917</link>
+    <guid isPermaLink="false">curator-20260719-openai-reset-jul18</guid>
+    <pubDate>Sat, 18 Jul 2026 03:28:22 GMT</pubDate>
+    <description>Tibo Sottiaux (OpenAI): “Oops... I did it again. Enjoy reset usage limits for all paid users for Codex and ChatGPT Work.” Latest in a string of resets during the GPT-5.6 Sol demand surge.</description>
+  </item>
+
+  <item>
+    <title>Anthropic — Credits granted: One-time $100 usage credit for Pro/Team Standard users as Fable 5 moves to credits-only</title>
+    <link>https://x.com/claudeai/status/2078302415804379218</link>
+    <guid isPermaLink="false">curator-20260719-fable5-100-credit</guid>
+    <pubDate>Sat, 18 Jul 2026 02:14:43 GMT</pubDate>
+    <description>As included Fable 5 access ends for Pro and Team Standard plans on July 20, Anthropic is issuing those subscribers a one-time $100 usage credit to keep using Fable 5 at API rates ($10/$50 per million input/output tokens); Max and Team Premium keep Fable 5 included at 50% of weekly limits.</description>
+  </item>
+
+  <item>
+    <title>Anthropic — Usage limits reset: 5-hour and weekly rate limits reset for all users — third week running</title>
+    <link>https://www.implicator.ai/anthropic-resets-claude-limits-for-third-week-without-explaining-why/</link>
+    <guid isPermaLink="false">backfill-2026-07-16-reset</guid>
+    <pubDate>Thu, 16 Jul 2026 12:00:00 GMT</pubDate>
+    <description>Third blanket reset in three weeks; reporting says the notice used the same wording as July 9.</description>
+  </item>
+
+  <item>
+    <title>OpenAI — Usage limits reset: Codex and ChatGPT Work usage limits reset for 9M active-user milestone</title>
+    <link>https://x.com/thsottiaux/status/2077607697487188198</link>
+    <guid isPermaLink="false">backfill-2026-07-16-codex-reset</guid>
+    <pubDate>Thu, 16 Jul 2026 04:14:09 GMT</pubDate>
+    <description>Tibo Sottiaux (OpenAI): “Another reset for our Codex and ChatGPT Work users. Actually hit 9M active users way earlier today... Should have that sweet 100% weekly usage limit back in a few [minutes].”</description>
+  </item>
+
+  <item>
+    <title>OpenAI — Usage limits reset: ChatGPT Work and Codex usage limits reset for 8M active-user milestone</title>
+    <link>https://x.com/thsottiaux/status/2077114635308986427</link>
+    <guid isPermaLink="false">curator-20260719-openai-reset-8m-jul14</guid>
+    <pubDate>Tue, 14 Jul 2026 19:34:54 GMT</pubDate>
+    <description>Tibo Sottiaux (OpenAI): “We have reached 8M active users across Codex and ChatGPT Work. We are once again resetting the usage limits for all. And we continue to not have the 5h rate limit as well.”</description>
+  </item>
+
+  <item>
+    <title>OpenAI — Usage limits reset: Banked usage reset granted to all Codex and ChatGPT Work users for 7M-user milestone</title>
+    <link>https://x.com/thsottiaux/status/2076735790567338203</link>
+    <guid isPermaLink="false">79cfe425718fbd69</guid>
+    <pubDate>Mon, 13 Jul 2026 18:29:31 GMT</pubDate>
+    <description>To celebrate 7M active users, OpenAI added a banked reset to every Codex and ChatGPT Work account; applying it (desktop app or web) replenishes the weekly usage allowance on the user's own schedule.</description>
+  </item>
+
+  <item>
+    <title>OpenAI — Usage limits reset: Banked reset granted to 500,000 ChatGPT Work and Codex users after a reset-button bug</title>
+    <link>https://x.com/thsottiaux/status/2076418567143408112</link>
+    <guid isPermaLink="false">curator-20260719-openai-500k-banked-reset</guid>
+    <pubDate>Sun, 12 Jul 2026 21:28:59 GMT</pubDate>
+    <description>Tibo Sottiaux (OpenAI): after launching banked-reset access on web and mobile (previously desktop-only), a bug meant fewer than 10% of users who pressed reset during a roughly 2-hour window didn't actually get one; rather than track down exactly who was affected, OpenAI added a banked reset to every account that pressed the button in that window — about 500,000 users.</description>
+  </item>
+
+  <item>
+    <title>OpenAI — Usage limits increased: 5-hour usage cap temporarily removed on ChatGPT Plus, Pro, and Business</title>
+    <link>https://x.com/thsottiaux/status/2076365965915467978</link>
+    <guid isPermaLink="false">backfill-2026-07-15-openai-cap-removed</guid>
+    <pubDate>Sun, 12 Jul 2026 17:59:57 GMT</pubDate>
+    <description>Tibo Sottiaux (OpenAI): “Temporarily removing the 5 hour usage limit restriction for all Plus, Business and Pro plans” for Codex and ChatGPT Work, alongside GPT-5.6 Sol efficiency changes and a usage reset for the 6M active-user milestone landing within the hour. Weekly limits remained in place.</description>
+  </item>
+
+  <item>
+    <title>Anthropic — Free model access: Claude Fable 5 access and 50% higher Claude Code weekly limits extended through July 19</title>
+    <link>https://x.com/claudeai/status/2076351399999557669</link>
+    <guid isPermaLink="false">076c09f006c66928</guid>
+    <pubDate>Sun, 12 Jul 2026 17:02:05 GMT</pubDate>
+    <description>We're extending Claude Fable 5 access on all paid plans, as well as keeping Claude Code’s weekly rate limits 50% higher, through July 19.</description>
+  </item>
+
+  <item>
+    <title>OpenAI — Usage limits reset: Another ChatGPT Work and Codex usage limit reset over the weekend</title>
+    <link>https://x.com/thsottiaux/status/2075820987833274448</link>
+    <guid isPermaLink="false">curator-20260719-openai-reset-jul11</guid>
+    <pubDate>Sat, 11 Jul 2026 05:54:25 GMT</pubDate>
+    <description>Tibo Sottiaux (OpenAI): “Introducing... another usage limit reset for all our ChatGPT Work and Codex users. Should land over next 30 minutes... we have never seen traffic increase so quickly.”</description>
+  </item>
+
+  <item>
+    <title>OpenAI — Usage limits reset: ChatGPT Work and Codex usage limits reset again, second reset promised same day</title>
+    <link>https://x.com/thsottiaux/status/2075641131002700120</link>
+    <guid isPermaLink="false">curator-20260719-openai-reset-jul10</guid>
+    <pubDate>Fri, 10 Jul 2026 17:59:43 GMT</pubDate>
+    <description>Tibo Sottiaux (OpenAI): “Hello beautiful people! We have reset usage limits across Codex and ChatGPT Work. And another one will come later in the day.”</description>
+  </item>
+
+  <item>
+    <title>OpenAI — Usage limits reset: ChatGPT Work and Codex usage limits reset ahead of GPT-5.6 Sol demand surge</title>
+    <link>https://x.com/thsottiaux/status/2075330198887940337</link>
+    <guid isPermaLink="false">curator-20260719-openai-reset-jul9</guid>
+    <pubDate>Thu, 09 Jul 2026 21:24:11 GMT</pubDate>
+    <description>Tibo Sottiaux (OpenAI): “Enjoy a full reset of your usage limits for ChatGPT Work and Codex. Propagating in the next hour.” Applies to all paid ChatGPT Work and Codex users during a run of resets after the GPT-5.6 Sol launch.</description>
+  </item>
+
+  <item>
+    <title>Anthropic — Usage limits reset: “We've reset 5-hour and weekly rate limits for all users.”</title>
+    <link>https://x.com/ClaudeDevs/status/2075279141352706215</link>
+    <guid isPermaLink="false">backfill-2026-07-09-reset</guid>
+    <pubDate>Thu, 09 Jul 2026 18:01:19 GMT</pubDate>
+    <description>Blanket reset announced on the official ClaudeDevs X account after a rough week of outages; time recovered from the post id.</description>
+  </item>
+
+  <item>
+    <title>Anthropic — Free model access: Claude Fable 5 access on all paid plans extended through July 12</title>
+    <link>https://x.com/claudeai/status/2074548242386178258</link>
+    <guid isPermaLink="false">549a6df8a1467f7b</guid>
+    <pubDate>Tue, 07 Jul 2026 17:36:58 GMT</pubDate>
+    <description>We're extending access to Claude Fable 5 on all paid plans through July 12.</description>
+  </item>
+
+  <item>
+    <title>Anthropic — Usage limits increased: Doubled Claude Cowork usage limits extended through August 5</title>
+    <link>https://x.com/claudeai/status/2074525821755101458</link>
+    <guid isPermaLink="false">41bc7cbf2381624b</guid>
+    <pubDate>Tue, 07 Jul 2026 16:07:53 GMT</pubDate>
+    <description>We're extending doubled Cowork usage limits through August 5, so you can delegate bigger work to Claude. Read more: https://claude.com/blog/cowork-web-mobile/</description>
+  </item>
+
+  <item>
+    <title>Anthropic — Usage limits increased: Claude Code weekly limits increased by 50% through July 13</title>
+    <link>https://pasqualepillitteri.it/en/news/2494/claude-code-weekly-limits-50-percent-anti-codex-anthropic-2026</link>
+    <guid isPermaLink="false">backfill-2026-07-06-claude-code-boost</guid>
+    <pubDate>Mon, 06 Jul 2026 12:00:00 GMT</pubDate>
+    <description>Anthropic raised Claude Code weekly limits by 50% for a limited period.</description>
+  </item>
+
+  <item>
+    <title>Anthropic — Usage limits reset: 5-hour and weekly rate limits reset for all users</title>
+    <link>https://x.com/ClaudeDevs/status/2072429181565288665</link>
+    <guid isPermaLink="false">backfill-2026-07-02-reset</guid>
+    <pubDate>Wed, 01 Jul 2026 21:16:35 GMT</pubDate>
+    <description>First of three weekly blanket resets in July; announced on the official ClaudeDevs X account, time recovered from the post id.</description>
+  </item>
+
+  <item>
+    <title>Anthropic — Free model access: Claude Fable 5 included in paid plans at up to 50% of weekly usage limit</title>
+    <link>https://x.com/claudeai/status/2072402639644766602</link>
+    <guid isPermaLink="false">curator-20260719-fable5-included-access</guid>
+    <pubDate>Wed, 01 Jul 2026 19:31:07 GMT</pubDate>
+    <description>Fable 5 usage drew from existing Pro/Max/Team/Enterprise weekly limits at no extra charge, up to 50% of the weekly cap before requiring usage credits. Originally through July 7, the window was extended to July 12 and then to July 19, 2026 at 11:59:59 PM PT.</description>
+  </item>
+
+  <item>
+    <title>OpenAI — Usage limits reset: Codex usage limits fully reset with one additional banked reset</title>
+    <link>https://x.com/thsottiaux/status/2071740419030053227</link>
+    <guid isPermaLink="false">2eabf5dd16dc04b8</guid>
+    <pubDate>Mon, 29 Jun 2026 23:39:41 GMT</pubDate>
+    <description>Codex usage limits will be fully reset again in the next hour and we will credit one additional reset into your bank for your own usage over the next 24 hours. We investigated reports that Codex usage was being consumed faster than expected. There wasn't one central issue, but a few smaller problems compounded for some users. Here's what we found and changed: - Actual usage: Auto-review had become more proactive, another change was triggering more subagent work, and background suggestions could </description>
+  </item>
+
+  <item>
+    <title>OpenAI — Usage limits reset: Codex usage limits hard-reset for everyone during incident investigation</title>
+    <link>https://x.com/thsottiaux/status/2071381664853319742</link>
+    <guid isPermaLink="false">8905c5ebf2fd9f40</guid>
+    <pubDate>Sun, 28 Jun 2026 23:54:07 GMT</pubDate>
+    <description>OpenAI's Codex lead reset everyone's Codex usage limits while an issue was investigated — a hard reset, since some users had stacked up to three banked resets they can apply on their own schedule.</description>
+  </item>
+
+  <item>
+    <title>OpenAI — Usage limits reset: Codex usage reset granted to all users during a usage-drain investigation</title>
+    <link>https://x.com/thsottiaux/status/2070653282440405046</link>
+    <guid isPermaLink="false">95d421300d04516e</guid>
+    <pubDate>Fri, 26 Jun 2026 23:39:48 GMT</pubDate>
+    <description>We are giving all Codex users a usage reset on the house. Should be showing in your accounts in the next few hours. We have applied some mitigations, but our investigation hasn't shown users being impacted at large. We are continuing to monitor the situation.</description>
+  </item>
+
+  <item>
+    <title>Anthropic — Usage limits reset: 5-hour and weekly usage limits reset for everyone, across all plans</title>
+    <link>https://x.com/ClaudeDevs/status/2068122937308426676</link>
+    <guid isPermaLink="false">3840cf79b0dac59f</guid>
+    <pubDate>Sat, 20 Jun 2026 00:05:06 GMT</pubDate>
+    <description>ClaudeDevs: &quot;Update: we've gone ahead and reset 5-hour and weekly usage limits for everyone, across all plans. Enjoy your weekend!&quot;</description>
+  </item>
+
+  <item>
+    <title>OpenAI — Usage limits reset: Double reset: a full Codex reset plus one banked reset</title>
+    <link>https://x.com/thsottiaux/status/2067399435009622521</link>
+    <guid isPermaLink="false">a453c48f150b079c</guid>
+    <pubDate>Thu, 18 Jun 2026 00:10:10 GMT</pubDate>
+    <description>Dearest gentle codexer. We did a sneaky double reset. Not only do you get a full reset on us. But you are also getting one into the reset bank to use at your own leisure. Enjoy</description>
+  </item>
+
+  <item>
+    <title>Anthropic — Usage limits reset: 5-hour and weekly rate limits reset for all users at Fable 5 launch</title>
+    <link>https://x.com/ClaudeDevs/status/2064464557951852643</link>
+    <guid isPermaLink="false">4e385ea1b7d54878</guid>
+    <pubDate>Tue, 09 Jun 2026 21:48:01 GMT</pubDate>
+    <description>We've reset 5-hour and weekly rate limits for all users. Enjoy Fable 5!</description>
+  </item>
+
+  <item>
+    <title>Anthropic — Usage limits increased: Claude Cowork usage limits doubled for one month</title>
+    <link>https://x.com/claudeai/status/2063018337567670285</link>
+    <guid isPermaLink="false">b78d97139f7daa62</guid>
+    <pubDate>Fri, 05 Jun 2026 22:01:15 GMT</pubDate>
+    <description>We've doubled usage limits in Claude Cowork for the next month. Delegate bigger, more complex tasks to Claude.</description>
+  </item>
+
+  <item>
+    <title>OpenAI — Usage limits reset: Codex usage limits reset across all paid plans after three reliability incidents</title>
+    <link>https://x.com/thsottiaux/status/2062329981548802523</link>
+    <guid isPermaLink="false">46d0a0ba15e54aae</guid>
+    <pubDate>Thu, 04 Jun 2026 00:25:58 GMT</pubDate>
+    <description>Hi. Over the last 24 hours we had three separate small incidents that affected Codex reliability. Those are three too many and we are taking active steps for them to not reproduce. I have reset usage limits for Codex across all paid plans. May the tokens flow again.</description>
+  </item>
+
+  <item>
+    <title>Anthropic — Credits granted: $1,000 usage credits per user for first-time Claude Code/Cowork activation (Enterprise)</title>
+    <link>https://support.claude.com/en/articles/15282265-claude-enterprise-activation-promo-for-claude-code-and-cowork</link>
+    <guid isPermaLink="false">dbfcc46d79956b36</guid>
+    <pubDate>Tue, 02 Jun 2026 12:00:00 GMT</pubDate>
+    <description>Usage-based Claude Enterprise orgs: every user who activates Claude Code or Cowork for the first time between June 2 and July 2, 2026 (11:59:59 PM PT) gets $1,000 in usage credits for that user's Claude Code and Cowork usage; credits expire 90 days after issuance, capped at 10,000 seats per org.</description>
+  </item>
+
+  <item>
+    <title>Anthropic — Usage limits reset: 5-hour and weekly rate limits reset for Pro and Max users after subagent bug</title>
+    <link>https://x.com/ClaudeDevs/status/2061501787769893055</link>
+    <guid isPermaLink="false">3b32b0f381a9df3e</guid>
+    <pubDate>Mon, 01 Jun 2026 17:35:01 GMT</pubDate>
+    <description>Anthropic reset 5-hour and weekly rate limits for all Pro and Max users after fixing an issue that caused some Claude Code sessions to spawn excessive parallel subagents, burning through usage faster than expected.</description>
+  </item>
+</channel>
+</rss>
