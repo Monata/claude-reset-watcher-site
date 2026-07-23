@@ -1,0 +1,1073 @@
+{
+  "events": [
+    {
+      "id": "curator-20260721-openai-10m-reset",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "ChatGPT Work and Codex usage limits reset for 10M active-user milestone",
+      "excerpt": "Tibo Sottiaux (OpenAI): “10M! New day, new usage reset for paid users of Codex and ChatGPT Work. Lands in the next hour. Enjoy.”",
+      "url": "https://x.com/thsottiaux/status/2079609157934886975",
+      "source": "curator:x.com",
+      "detectedAt": "2026-07-21T23:19:53.000Z",
+      "announcedAt": "2026-07-21T16:47:15.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "10 milyon aktif kullanıcı için ChatGPT Work ve Codex limitleri resetlendi"
+      }
+    },
+    {
+      "id": "curator-20260722-openai-100-credit-chatgptwork-post",
+      "provider": "openai",
+      "kind": "credit",
+      "title": "OpenAI offers $100 ChatGPT Work credit to first 10,000 users who post about it",
+      "excerpt": "Greg Brockman (OpenAI): “We're doing the promotion again, except this time for ChatGPT Work: Tweet what you love about ChatGPT Work, claim $100 in free credits, get more work done. First 10k get the free tokens.”",
+      "url": "https://x.com/gdb/status/2079289658622738481",
+      "source": "curator:x.com",
+      "detectedAt": "2026-07-22T04:21:39.000Z",
+      "announcedAt": "2026-07-20T19:37:40.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "OpenAI, ChatGPT Work hakkında paylaşım yapan ilk 10.000 kullanıcıya 100 dolar kredi veriyor"
+      }
+    },
+    {
+      "id": "backfill-2026-06-cowork-promo",
+      "provider": "anthropic",
+      "kind": "usage_boost",
+      "title": "Claude Cowork and Claude Code usage limits boosted (Jun–Aug 2026 promotion)",
+      "excerpt": "Claude Code weekly limits were raised 50% through August 19. Cowork limits were doubled through August 5.",
+      "url": "https://support.claude.com/en/articles/15400594-claude-cowork-june-august-2026-usage-promotion",
+      "source": "support.claude.com",
+      "detectedAt": "2026-07-19T00:00:00.000Z",
+      "announcedAt": "2026-07-19T00:00:00.000Z",
+      "activeUntil": "2026-08-19T23:59:59.000Z",
+      "approximateDate": true,
+      "backfilled": true,
+      "titles": {
+        "tr": "Claude Cowork ve Claude Code limitleri artırıldı (Haz–Ağu 2026 kampanyası)",
+        "en": "Claude Cowork limits doubled and Claude Code limits raised 50%"
+      }
+    },
+    {
+      "id": "604ccbd792df5154",
+      "provider": "anthropic",
+      "kind": "usage_boost",
+      "title": "Claude Code weekly limits kept 50% higher through August 19",
+      "excerpt": "We're also keeping Claude Code weekly limits 50% higher, now through August 19, for all Pro, Max, Team, and seat-based Enterprise users.",
+      "url": "https://x.com/ClaudeDevs/status/2078511173759324328",
+      "source": "curator:x.com",
+      "detectedAt": "2026-07-18T16:04:15.000Z",
+      "announcedAt": "2026-07-18T16:04:15.000Z",
+      "activeUntil": "2026-08-19T23:59:59.000Z",
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Claude Code haftalık limitleri 19 Ağustos'a kadar %50 yüksek kalıyor"
+      }
+    },
+    {
+      "id": "curator-20260719-openai-reset-jul18",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "ChatGPT Work and Codex usage limits reset again, “Oops... I did it again”",
+      "excerpt": "“Oops... I did it again. Enjoy reset usage limits for all paid users for Codex and ChatGPT Work.”",
+      "url": "https://x.com/thsottiaux/status/2078320950488297917",
+      "source": "curator:x.com",
+      "detectedAt": "2026-07-19T20:31:18.000Z",
+      "announcedAt": "2026-07-18T03:28:22.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "ChatGPT Work ve Codex limitleri yine resetlendi: “Oops... I did it again”",
+        "en": "ChatGPT Work and Codex limits reset again"
+      }
+    },
+    {
+      "id": "curator-20260719-fable5-100-credit",
+      "provider": "anthropic",
+      "kind": "credit",
+      "title": "One-time $100 usage credit for Pro/Team Standard users as Fable 5 moves to credits-only",
+      "excerpt": "Anthropic gave Pro and Team Standard users a one-time $100 credit for Fable 5 after included access ended. Max and Team Premium users kept Fable 5 within 50% of their weekly limits.",
+      "url": "https://x.com/claudeai/status/2078302415804379218",
+      "source": "curator:x.com",
+      "detectedAt": "2026-07-19T21:00:00.000Z",
+      "announcedAt": "2026-07-18T02:14:43.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Fable 5 krediye geçerken Pro/Team Standard kullanıcılarına tek seferlik 100 dolar kredi",
+        "en": "Pro and Team Standard users get a $100 Fable 5 credit"
+      }
+    },
+    {
+      "id": "curator-20260722-fable5-jul17-credit",
+      "provider": "anthropic",
+      "kind": "credit",
+      "title": "Claude refunds overcharges and grants matching credit after Fable 5 glitch",
+      "excerpt": "A July 17 bug wrongly required usage credits to access Fable 5 on claude.ai and Claude Code for Pro/Max/Team/Enterprise users; Anthropic refunded any extra usage charged during the outage and added a matching credit to affected accounts.",
+      "url": "https://status.anthropic.com/?p=354",
+      "source": "curator:status.anthropic.com",
+      "detectedAt": "2026-07-22T02:22:51.000Z",
+      "announcedAt": "2026-07-17T12:00:00.000Z",
+      "activeUntil": null,
+      "approximateDate": true,
+      "backfilled": false,
+      "titles": {
+        "tr": "Claude, Fable 5 arızası sonrası fazla ücretlendirmeyi iade etti ve eşdeğer kredi verdi"
+      }
+    },
+    {
+      "id": "backfill-2026-07-16-reset",
+      "provider": "anthropic",
+      "kind": "usage_reset",
+      "title": "5-hour and weekly rate limits reset for all users — third week running",
+      "excerpt": "Anthropic reset the 5-hour and weekly limits for all users for the third week in a row.",
+      "url": "https://www.implicator.ai/anthropic-resets-claude-limits-for-third-week-without-explaining-why/",
+      "source": "backfill",
+      "detectedAt": "2026-07-16T12:00:00.000Z",
+      "announcedAt": "2026-07-16T12:00:00.000Z",
+      "activeUntil": null,
+      "approximateDate": true,
+      "backfilled": true,
+      "titles": {
+        "tr": "5 saatlik ve haftalık limitler tüm kullanıcılar için resetlendi — üst üste üçüncü hafta",
+        "en": "Claude limits reset for all users for a third week"
+      }
+    },
+    {
+      "id": "backfill-2026-07-16-codex-reset",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex and ChatGPT Work usage limits reset for 9M active-user milestone",
+      "excerpt": "Tibo Sottiaux (OpenAI): “Another reset for our Codex and ChatGPT Work users. Actually hit 9M active users way earlier today... Should have that sweet 100% weekly usage limit back in a few [minutes].”",
+      "url": "https://x.com/thsottiaux/status/2077607697487188198",
+      "source": "curator:x.com",
+      "detectedAt": "2026-07-19T20:31:18.000Z",
+      "announcedAt": "2026-07-16T04:14:09.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": true,
+      "titles": {
+        "tr": "9 milyon aktif kullanıcı için Codex ve ChatGPT Work limitleri resetlendi"
+      }
+    },
+    {
+      "id": "curator-20260722-openai-100-credit-codex-post",
+      "provider": "openai",
+      "kind": "credit",
+      "title": "OpenAI offers $100 Codex credit to first 10,000 users who post about GPT-5.6 Sol",
+      "excerpt": "Tibo Sottiaux (OpenAI): “What if we gave you $100 in Codex credits if you tell us what you love about GPT-5.6 Sol or why you switched? Tweet it, claim your gift, enjoy more usage. First 10k get the free tokens.”",
+      "url": "https://x.com/thsottiaux/status/2077248807533003257",
+      "source": "curator:x.com",
+      "detectedAt": "2026-07-22T04:21:39.000Z",
+      "announcedAt": "2026-07-15T04:28:03.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "OpenAI, GPT-5.6 Sol hakkında paylaşım yapan ilk 10.000 kullanıcıya 100 dolar Codex kredisi veriyor"
+      }
+    },
+    {
+      "id": "curator-20260719-openai-reset-8m-jul14",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "ChatGPT Work and Codex usage limits reset for 8M active-user milestone",
+      "excerpt": "Tibo Sottiaux (OpenAI): “We have reached 8M active users across Codex and ChatGPT Work. We are once again resetting the usage limits for all. And we continue to not have the 5h rate limit as well.”",
+      "url": "https://x.com/thsottiaux/status/2077114635308986427",
+      "source": "curator:x.com",
+      "detectedAt": "2026-07-19T20:31:18.000Z",
+      "announcedAt": "2026-07-14T19:34:54.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "8 milyon aktif kullanıcı için ChatGPT Work ve Codex limitleri resetlendi"
+      }
+    },
+    {
+      "id": "79cfe425718fbd69",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Banked usage reset granted to all Codex and ChatGPT Work users for 7M-user milestone",
+      "excerpt": "OpenAI added one banked reset to every Codex and ChatGPT Work account after reaching 7 million active users. Users could apply it whenever they chose.",
+      "url": "https://x.com/thsottiaux/status/2076735790567338203",
+      "source": "curator:x.com",
+      "detectedAt": "2026-07-19T13:09:47.175Z",
+      "announcedAt": "2026-07-13T18:29:31.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "7 milyon kullanıcı için tüm Codex ve ChatGPT Work kullanıcılarına biriktirilebilir reset verildi",
+        "en": "Codex and ChatGPT Work users get a banked reset at 7M users"
+      }
+    },
+    {
+      "id": "curator-20260723-openai-10pct-inference-boost",
+      "provider": "openai",
+      "kind": "usage_boost",
+      "title": "OpenAI passes inference savings to Codex, ChatGPT Work for about 10% more usage",
+      "excerpt": "Tibo Sottiaux (OpenAI): “We have landed inference optimizations and are passing down savings to all the subscriptions for GPT-5.6 Sol. That should result in around 10% more usage on its own.”",
+      "url": "https://x.com/thsottiaux/status/2076495156757577895",
+      "source": "curator:x.com",
+      "detectedAt": "2026-07-23T10:21:46.000Z",
+      "announcedAt": "2026-07-13T02:33:19.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "OpenAI, çıkarım optimizasyonu tasarruflarını Codex ve ChatGPT Work'e yansıttı: yaklaşık %10 daha fazla kullanım"
+      }
+    },
+    {
+      "id": "curator-20260719-openai-500k-banked-reset",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Banked reset granted to 500,000 ChatGPT Work and Codex users after a reset-button bug",
+      "excerpt": "A reset-button bug affected fewer than 10% of users during a two-hour window. OpenAI gave a banked reset to all 500,000 accounts that pressed the button during that period.",
+      "url": "https://x.com/thsottiaux/status/2076418567143408112",
+      "source": "curator:x.com",
+      "detectedAt": "2026-07-19T22:15:00.000Z",
+      "announcedAt": "2026-07-12T21:28:59.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Reset düğmesi hatasının ardından 500.000 ChatGPT Work ve Codex kullanıcısına biriktirilebilir reset verildi",
+        "en": "500,000 users get a banked reset after reset-button bug"
+      }
+    },
+    {
+      "id": "backfill-2026-07-15-openai-cap-removed",
+      "provider": "openai",
+      "kind": "usage_boost",
+      "title": "5-hour usage cap temporarily removed on ChatGPT Plus, Pro, and Business",
+      "excerpt": "“Temporarily removing the 5 hour usage limit restriction for all Plus, Business and Pro plans.” The change applied to Codex and ChatGPT Work; weekly limits remained in place.",
+      "url": "https://x.com/thsottiaux/status/2076365965915467978",
+      "source": "curator:x.com",
+      "detectedAt": "2026-07-19T20:31:18.000Z",
+      "announcedAt": "2026-07-12T17:59:57.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": true,
+      "titles": {
+        "tr": "ChatGPT Plus, Pro ve Business'ta 5 saatlik limit geçici olarak kaldırıldı",
+        "en": "5-hour limit temporarily removed for ChatGPT Plus, Pro and Business"
+      }
+    },
+    {
+      "id": "076c09f006c66928",
+      "provider": "anthropic",
+      "kind": "free_access",
+      "title": "Claude Fable 5 access and 50% higher Claude Code weekly limits extended through July 19",
+      "excerpt": "We're extending Claude Fable 5 access on all paid plans, as well as keeping Claude Code’s weekly rate limits 50% higher, through July 19.",
+      "url": "https://x.com/claudeai/status/2076351399999557669",
+      "source": "curator:x.com",
+      "detectedAt": "2026-07-12T17:02:05.000Z",
+      "announcedAt": "2026-07-12T17:02:05.000Z",
+      "activeUntil": "2026-07-19T23:59:59.000Z",
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Claude Fable 5 erişimi ve %50 yüksek Claude Code haftalık limitleri 19 Temmuz'a uzatıldı"
+      }
+    },
+    {
+      "id": "curator-20260719-openai-reset-jul11",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Another ChatGPT Work and Codex usage limit reset over the weekend",
+      "excerpt": "Tibo Sottiaux (OpenAI): “Introducing... another usage limit reset for all our ChatGPT Work and Codex users. Should land over next 30 minutes... we have never seen traffic increase so quickly.”",
+      "url": "https://x.com/thsottiaux/status/2075820987833274448",
+      "source": "curator:x.com",
+      "detectedAt": "2026-07-19T20:31:18.000Z",
+      "announcedAt": "2026-07-11T05:54:25.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Hafta sonu ChatGPT Work ve Codex limitleri bir kez daha resetlendi"
+      }
+    },
+    {
+      "id": "curator-20260719-openai-reset-jul10",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "ChatGPT Work and Codex usage limits reset again, second reset promised same day",
+      "excerpt": "Tibo Sottiaux (OpenAI): “Hello beautiful people! We have reset usage limits across Codex and ChatGPT Work. And another one will come later in the day.”",
+      "url": "https://x.com/thsottiaux/status/2075641131002700120",
+      "source": "curator:x.com",
+      "detectedAt": "2026-07-19T20:31:18.000Z",
+      "announcedAt": "2026-07-10T17:59:43.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "ChatGPT Work ve Codex limitleri yine resetlendi, aynı gün ikinci reset sözü verildi",
+        "en": "ChatGPT Work and Codex limits reset, with another promised that day"
+      }
+    },
+    {
+      "id": "curator-20260719-openai-reset-jul9",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "ChatGPT Work and Codex usage limits reset ahead of GPT-5.6 Sol demand surge",
+      "excerpt": "“Enjoy a full reset of your usage limits for ChatGPT Work and Codex. Propagating in the next hour.”",
+      "url": "https://x.com/thsottiaux/status/2075330198887940337",
+      "source": "curator:x.com",
+      "detectedAt": "2026-07-19T20:31:18.000Z",
+      "announcedAt": "2026-07-09T21:24:11.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "GPT-5.6 Sol talep artışı öncesi ChatGPT Work ve Codex limitleri resetlendi",
+        "en": "ChatGPT Work and Codex limits reset after GPT-5.6 Sol launch"
+      }
+    },
+    {
+      "id": "backfill-2026-07-09-reset",
+      "provider": "anthropic",
+      "kind": "usage_reset",
+      "title": "“We've reset 5-hour and weekly rate limits for all users.”",
+      "excerpt": "“We've reset 5-hour and weekly rate limits for all users.”",
+      "url": "https://x.com/ClaudeDevs/status/2075279141352706215",
+      "source": "backfill",
+      "detectedAt": "2026-07-09T18:01:19.000Z",
+      "announcedAt": "2026-07-09T18:01:19.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": true,
+      "titles": {
+        "tr": "“Tüm kullanıcılar için 5 saatlik ve haftalık limitleri resetledik.”"
+      }
+    },
+    {
+      "id": "549a6df8a1467f7b",
+      "provider": "anthropic",
+      "kind": "free_access",
+      "title": "Claude Fable 5 access on all paid plans extended through July 12",
+      "excerpt": "We're extending access to Claude Fable 5 on all paid plans through July 12.",
+      "url": "https://x.com/claudeai/status/2074548242386178258",
+      "source": "curator:x.com",
+      "detectedAt": "2026-07-07T17:36:58.000Z",
+      "announcedAt": "2026-07-07T17:36:58.000Z",
+      "activeUntil": "2026-07-12T23:59:59.000Z",
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Tüm ücretli paketlerde Claude Fable 5 erişimi 12 Temmuz'a uzatıldı"
+      }
+    },
+    {
+      "id": "41bc7cbf2381624b",
+      "provider": "anthropic",
+      "kind": "usage_boost",
+      "title": "Doubled Claude Cowork usage limits extended through August 5",
+      "excerpt": "We're extending doubled Cowork usage limits through August 5, so you can delegate bigger work to Claude. Read more: https://claude.com/blog/cowork-web-mobile/",
+      "url": "https://x.com/claudeai/status/2074525821755101458",
+      "source": "curator:x.com",
+      "detectedAt": "2026-07-07T16:07:53.000Z",
+      "announcedAt": "2026-07-07T16:07:53.000Z",
+      "activeUntil": "2026-08-05T23:59:59.000Z",
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "İki katına çıkarılan Claude Cowork limitleri 5 Ağustos'a uzatıldı"
+      }
+    },
+    {
+      "id": "backfill-2026-07-06-claude-code-boost",
+      "provider": "anthropic",
+      "kind": "usage_boost",
+      "title": "Claude Code weekly limits increased by 50% through July 13",
+      "excerpt": "Claude Code weekly limits were raised 50% through July 13.",
+      "url": "https://pasqualepillitteri.it/en/news/2494/claude-code-weekly-limits-50-percent-anti-codex-anthropic-2026",
+      "source": "backfill",
+      "detectedAt": "2026-07-06T12:00:00.000Z",
+      "announcedAt": "2026-07-06T12:00:00.000Z",
+      "activeUntil": "2026-07-13T23:59:59.000Z",
+      "approximateDate": true,
+      "backfilled": true,
+      "titles": {
+        "tr": "Claude Code haftalık limitleri 13 Temmuz'a kadar %50 artırıldı"
+      }
+    },
+    {
+      "id": "backfill-2026-07-02-reset",
+      "provider": "anthropic",
+      "kind": "usage_reset",
+      "title": "5-hour and weekly rate limits reset for all users",
+      "excerpt": "“We've reset 5-hour and weekly rate limits for all users.”",
+      "url": "https://x.com/ClaudeDevs/status/2072429181565288665",
+      "source": "backfill",
+      "detectedAt": "2026-07-01T21:16:35.000Z",
+      "announcedAt": "2026-07-01T21:16:35.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": true,
+      "titles": {
+        "tr": "5 saatlik ve haftalık limitler tüm kullanıcılar için resetlendi"
+      }
+    },
+    {
+      "id": "curator-20260719-fable5-included-access",
+      "provider": "anthropic",
+      "kind": "free_access",
+      "title": "Claude Fable 5 included in paid plans at up to 50% of weekly usage limit",
+      "excerpt": "Fable 5 was included on Pro, Max, Team and Enterprise plans at no extra charge, using up to 50% of the weekly limit. The offer ran through July 19.",
+      "url": "https://x.com/claudeai/status/2072402639644766602",
+      "source": "curator:x.com",
+      "detectedAt": "2026-07-19T21:00:00.000Z",
+      "announcedAt": "2026-07-01T19:31:07.000Z",
+      "activeUntil": "2026-07-20T06:59:59.000Z",
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Claude Fable 5, haftalık limitin %50'sine kadar ücretli paketlere dahil edildi",
+        "en": "Fable 5 included in paid plans within weekly limits"
+      }
+    },
+    {
+      "id": "2eabf5dd16dc04b8",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex usage limits fully reset with one additional banked reset",
+      "excerpt": "OpenAI reset Codex usage limits and added one banked reset after reports of unusually fast usage drain. It said several smaller issues had compounded for some users.",
+      "url": "https://x.com/thsottiaux/status/2071740419030053227",
+      "source": "curator:x.com",
+      "detectedAt": "2026-06-29T23:39:41.000Z",
+      "announcedAt": "2026-06-29T23:39:41.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Codex limitleri tamamen resetlendi, bir de biriktirilebilir reset eklendi",
+        "en": "Codex limits reset with one banked reset added"
+      }
+    },
+    {
+      "id": "8905c5ebf2fd9f40",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex usage limits hard-reset for everyone during incident investigation",
+      "excerpt": "OpenAI reset Codex limits for all users while investigating reports of unusually fast usage drain. Existing banked resets remained available.",
+      "url": "https://x.com/thsottiaux/status/2071381664853319742",
+      "source": "curator:x.com",
+      "detectedAt": "2026-07-19T13:09:47.161Z",
+      "announcedAt": "2026-06-28T23:54:07.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Olay incelemesi sırasında Codex limitleri herkes için sıfırdan resetlendi",
+        "en": "Codex limits reset during usage-drain investigation"
+      }
+    },
+    {
+      "id": "95d421300d04516e",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex usage reset granted to all users during a usage-drain investigation",
+      "excerpt": "We are giving all Codex users a usage reset on the house. Should be showing in your accounts in the next few hours. We have applied some mitigations, but our investigation hasn't shown users being impacted at large. We are continuing to monitor the situation.",
+      "url": "https://x.com/thsottiaux/status/2070653282440405046",
+      "source": "curator:x.com",
+      "detectedAt": "2026-06-26T23:39:48.000Z",
+      "announcedAt": "2026-06-26T23:39:48.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Hızlı limit tükenmesi incelenirken tüm kullanıcılara Codex reseti verildi"
+      }
+    },
+    {
+      "id": "3840cf79b0dac59f",
+      "provider": "anthropic",
+      "kind": "usage_reset",
+      "title": "5-hour and weekly usage limits reset for everyone, across all plans",
+      "excerpt": "ClaudeDevs: \"Update: we've gone ahead and reset 5-hour and weekly usage limits for everyone, across all plans. Enjoy your weekend!\"",
+      "url": "https://x.com/ClaudeDevs/status/2068122937308426676",
+      "source": "curator:x.com",
+      "detectedAt": "2026-07-19T13:09:36.250Z",
+      "announcedAt": "2026-06-20T00:05:06.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Tüm paketlerde 5 saatlik ve haftalık limitler herkes için resetlendi"
+      }
+    },
+    {
+      "id": "a453c48f150b079c",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Double reset: a full Codex reset plus one banked reset",
+      "excerpt": "Dearest gentle codexer. We did a sneaky double reset. Not only do you get a full reset on us. But you are also getting one into the reset bank to use at your own leisure. Enjoy",
+      "url": "https://x.com/thsottiaux/status/2067399435009622521",
+      "source": "curator:x.com",
+      "detectedAt": "2026-06-18T00:10:10.000Z",
+      "announcedAt": "2026-06-18T00:10:10.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Çifte reset: tam Codex reseti ve bir biriktirilebilir reset"
+      }
+    },
+    {
+      "id": "4e385ea1b7d54878",
+      "provider": "anthropic",
+      "kind": "usage_reset",
+      "title": "5-hour and weekly rate limits reset for all users at Fable 5 launch",
+      "excerpt": "We've reset 5-hour and weekly rate limits for all users. Enjoy Fable 5!",
+      "url": "https://x.com/ClaudeDevs/status/2064464557951852643",
+      "source": "curator:x.com",
+      "detectedAt": "2026-06-09T21:48:01.000Z",
+      "announcedAt": "2026-06-09T21:48:01.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Fable 5 çıkışında 5 saatlik ve haftalık limitler tüm kullanıcılar için resetlendi"
+      }
+    },
+    {
+      "id": "b78d97139f7daa62",
+      "provider": "anthropic",
+      "kind": "usage_boost",
+      "title": "Claude Cowork usage limits doubled for one month",
+      "excerpt": "We've doubled usage limits in Claude Cowork for the next month. Delegate bigger, more complex tasks to Claude.",
+      "url": "https://x.com/claudeai/status/2063018337567670285",
+      "source": "curator:x.com",
+      "detectedAt": "2026-06-05T22:01:15.000Z",
+      "announcedAt": "2026-06-05T22:01:15.000Z",
+      "activeUntil": "2026-07-05T23:59:59.000Z",
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Claude Cowork limitleri bir ay boyunca iki katına çıkarıldı"
+      }
+    },
+    {
+      "id": "46d0a0ba15e54aae",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex usage limits reset across all paid plans after three reliability incidents",
+      "excerpt": "Hi. Over the last 24 hours we had three separate small incidents that affected Codex reliability. Those are three too many and we are taking active steps for them to not reproduce. I have reset usage limits for Codex across all paid plans. May the tokens flow again.",
+      "url": "https://x.com/thsottiaux/status/2062329981548802523",
+      "source": "curator:x.com",
+      "detectedAt": "2026-06-04T00:25:58.000Z",
+      "announcedAt": "2026-06-04T00:25:58.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Üç kesinti sonrası tüm ücretli paketlerde Codex limitleri resetlendi"
+      }
+    },
+    {
+      "id": "dbfcc46d79956b36",
+      "provider": "anthropic",
+      "kind": "credit",
+      "title": "$1,000 usage credits per user for first-time Claude Code/Cowork activation (Enterprise)",
+      "excerpt": "Enterprise users who activated Claude Code or Cowork for the first time between June 2 and July 2 received $1,000 in usage credits. Credits expired after 90 days and were limited to 10,000 seats per organisation.",
+      "url": "https://support.claude.com/en/articles/15282265-claude-enterprise-activation-promo-for-claude-code-and-cowork",
+      "source": "curator:support.claude.com",
+      "detectedAt": "2026-07-19T13:09:36.267Z",
+      "announcedAt": "2026-06-02T12:00:00.000Z",
+      "activeUntil": "2026-07-02T23:59:59.000Z",
+      "approximateDate": true,
+      "backfilled": false,
+      "titles": {
+        "tr": "İlk kez Claude Code/Cowork kullanan her kullanıcıya 1.000 dolar kredi (Enterprise)",
+        "en": "$1,000 Claude Code and Cowork credits for Enterprise activations"
+      }
+    },
+    {
+      "id": "3b32b0f381a9df3e",
+      "provider": "anthropic",
+      "kind": "usage_reset",
+      "title": "5-hour and weekly rate limits reset for Pro and Max users after subagent bug",
+      "excerpt": "Anthropic reset 5-hour and weekly rate limits for all Pro and Max users after fixing an issue that caused some Claude Code sessions to spawn excessive parallel subagents, burning through usage faster than expected.",
+      "url": "https://x.com/ClaudeDevs/status/2061501787769893055",
+      "source": "curator:x.com",
+      "detectedAt": "2026-07-19T13:09:36.235Z",
+      "announcedAt": "2026-06-01T17:35:01.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Subagent hatası sonrası Pro ve Max kullanıcıları için limitler resetlendi"
+      }
+    },
+    {
+      "id": "de11bc9d19154b97",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex usage limits reset to 100% weekly and hourly for all paid subscriptions",
+      "excerpt": "The Codex usage limits have been reset for all paid ChatGPT subscriptions. You should be back to 100% weekly and 100% hourly limits. Let the tokens do incredible things today and have fun.",
+      "url": "https://x.com/thsottiaux/status/2061106703446450392",
+      "source": "curator:x.com",
+      "detectedAt": "2026-05-31T15:25:06.000Z",
+      "announcedAt": "2026-05-31T15:25:06.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Tüm ücretli aboneliklerde Codex haftalık ve saatlik limitleri %100'e resetlendi"
+      }
+    },
+    {
+      "id": "975935a98dfbab0c",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex usage limits reset after a cache-hit regression drained limits faster",
+      "excerpt": "Some of you noticed limits drained faster in Codex, we root caused it to an optimization that we rolled back that had an impact on cache hit rates when compacting across long running sessions. We fixed this and have now reset usage limits for all accounts. Enjoy the weekend.",
+      "url": "https://x.com/thsottiaux/status/2058280452851638313",
+      "source": "curator:x.com",
+      "detectedAt": "2026-05-23T20:14:35.000Z",
+      "announcedAt": "2026-05-23T20:14:35.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Önbellek hatası limitleri hızlı tükettikten sonra Codex limitleri resetlendi"
+      }
+    },
+    {
+      "id": "2fb5413628855a10",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex usage limits reset across all paid plans",
+      "excerpt": "Codex usage limits have now been reset across all paid plans. Enjoy the weekend!",
+      "url": "https://x.com/thsottiaux/status/2055707616605835333",
+      "source": "curator:x.com",
+      "detectedAt": "2026-05-16T17:51:03.000Z",
+      "announcedAt": "2026-05-16T17:51:03.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Tüm ücretli paketlerde Codex limitleri resetlendi"
+      }
+    },
+    {
+      "id": "af77facb425af4f5",
+      "provider": "anthropic",
+      "kind": "usage_reset",
+      "title": "5-hour and weekly rate limits reset for everyone",
+      "excerpt": "Happy Friday! We've reset everyone's 5-hour and weekly rate limits.",
+      "url": "https://x.com/ClaudeDevs/status/2055347539923308703",
+      "source": "curator:x.com",
+      "detectedAt": "2026-05-15T18:00:14.000Z",
+      "announcedAt": "2026-05-15T18:00:14.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "5 saatlik ve haftalık limitler herkes için resetlendi"
+      }
+    },
+    {
+      "id": "8b30dbeafee9b203",
+      "provider": "anthropic",
+      "kind": "usage_boost",
+      "title": "Claude Code weekly limits increased 50% through July 13",
+      "excerpt": "Claude Code weekly limits are increasing 50%, now through July 13. Live now for all Pro, Max, Team, and seat-based Enterprise users.",
+      "url": "https://x.com/ClaudeDevs/status/2054639777685934564",
+      "source": "curator:x.com",
+      "detectedAt": "2026-05-13T19:07:51.000Z",
+      "announcedAt": "2026-05-13T19:07:51.000Z",
+      "activeUntil": "2026-07-13T23:59:59.000Z",
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Claude Code haftalık limitleri 13 Temmuz'a kadar %50 artırıldı"
+      }
+    },
+    {
+      "id": "ce43194feee7a7bb",
+      "provider": "openai",
+      "kind": "free_access",
+      "title": "Two months of free Codex usage for companies switching over",
+      "excerpt": "For 30 days from May 13, companies considering a switch to Codex could request two months of free usage through OpenAI's enterprise form.",
+      "url": "https://x.com/sama/status/2054626219858293128",
+      "source": "curator:x.com",
+      "detectedAt": "2026-07-19T13:09:47.187Z",
+      "announcedAt": "2026-05-13T18:13:58.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Geçiş yapan şirketlere iki ay ücretsiz Codex kullanımı",
+        "en": "Two months of free Codex for companies switching"
+      }
+    },
+    {
+      "id": "9fe633cfe76cafb0",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex rate limits reset for all paid plans to build more with GPT-5.5",
+      "excerpt": "Don't just reset Codex rate limits for fun, it costs money. Don't just reset Codex rate limits for fun, it costs money. ... but the vibes are good ... I have reset Codex rate limits for ALL paid plans to celebrate a good week and allow everyone to build more with GPT-5.5. Enjoy",
+      "url": "https://x.com/thsottiaux/status/2048997818673537399",
+      "source": "curator:x.com",
+      "detectedAt": "2026-04-28T05:28:43.000Z",
+      "announcedAt": "2026-04-28T05:28:43.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "GPT-5.5 ile daha çok geliştirme için tüm ücretli paketlerde Codex limitleri resetlendi"
+      }
+    },
+    {
+      "id": "733568b83171a0ae",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex rate limits reset after a 10-minute incident was mitigated",
+      "excerpt": "Codex incident is mitigated, seeing recovery. Lasted about 10 mins, Codex itself helped with the remediation, but ultimately the insight came from a human this time. Apologies for the disruption and rate limit reset incoming.",
+      "url": "https://x.com/thsottiaux/status/2046367145588916687",
+      "source": "curator:x.com",
+      "detectedAt": "2026-04-20T23:15:21.000Z",
+      "announcedAt": "2026-04-20T23:15:21.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "10 dakikalık kesinti giderildikten sonra Codex limitleri resetlendi"
+      }
+    },
+    {
+      "id": "0860200b4af9910d",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex rate limits reset across all plans for its 1-year anniversary",
+      "excerpt": "Hi! To celebrate its 1-year anniversary, I have allowed Codex to reset its own rate limits across all plans. Enjoy all the new features.",
+      "url": "https://x.com/thsottiaux/status/2044943514832871564",
+      "source": "curator:x.com",
+      "detectedAt": "2026-04-17T00:58:21.000Z",
+      "announcedAt": "2026-04-17T00:58:21.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "1. yıl dönümü için tüm paketlerde Codex limitleri resetlendi"
+      }
+    },
+    {
+      "id": "89c355229f1677f5",
+      "provider": "anthropic",
+      "kind": "usage_reset",
+      "title": "5-hour and weekly rate limits reset after an Opus 4.7 long-context bug",
+      "excerpt": "We fixed a bug where rate limits on Claude subscriptions weren't properly adjusted for long context requests in Opus 4.7. We've reset 5-hour and weekly rate limits. Enjoy Opus 4.7!",
+      "url": "https://x.com/ClaudeDevs/status/2044868953206612154",
+      "source": "curator:x.com",
+      "detectedAt": "2026-04-16T20:02:04.000Z",
+      "announcedAt": "2026-04-16T20:02:04.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Opus 4.7 uzun bağlam hatası sonrası 5 saatlik ve haftalık limitler resetlendi"
+      }
+    },
+    {
+      "id": "a865661d0a78bfc9",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex limits reset alongside the $100 ChatGPT plan launch",
+      "excerpt": "We did it, say hi to the $100 plan! It should be the sweet spot for a ton of you. It comes with a ton of codex usage. And yes we are resetting the limits again too as I mentioned yesterday. Let’s keep building!",
+      "url": "https://x.com/thsottiaux/status/2042299371602264319",
+      "source": "curator:x.com",
+      "detectedAt": "2026-04-09T17:51:28.000Z",
+      "announcedAt": "2026-04-09T17:51:28.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "100 dolarlık ChatGPT paketinin çıkışıyla birlikte Codex limitleri resetlendi"
+      }
+    },
+    {
+      "id": "406773adbaa3d2d5",
+      "provider": "openai",
+      "kind": "usage_boost",
+      "title": "2x Codex usage promo extended to May 31 for $200 Pro users, with a rate-limit reset",
+      "excerpt": "Our existing $200 Pro tier still remains our highest usage option. And as a thank you to our existing Pro users on the $200 tier, we’re extending our 2x Codex usage promo (until May 31st) and we’ve reset your Codex rate limits (yes, again).",
+      "url": "https://x.com/OpenAI/status/2042296046009626989",
+      "source": "curator:x.com",
+      "detectedAt": "2026-04-09T17:38:16.000Z",
+      "announcedAt": "2026-04-09T17:38:16.000Z",
+      "activeUntil": "2026-05-31T23:59:59.000Z",
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "200 dolarlık Pro kullanıcıları için 2 kat Codex kampanyası 31 Mayıs'a uzatıldı, limitler de resetlendi"
+      }
+    },
+    {
+      "id": "1bf5d11c27fd72a0",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex rate limits reset for 3 million weekly users, with a reset promised per additional 1M",
+      "excerpt": "Three million people are now using Codex weekly - up from two million a little under a month ago. Incredible to see the growth. Thank you to all of you and to the ecosystem we’re part of. To celebrate, we’re resetting rate limits so you can keep building, and we’ll reset them every additional 1M users until we reach 10M, so we can keep celebrating along the way. Enjoy and thank you!",
+      "url": "https://x.com/thsottiaux/status/2041655710346572085",
+      "source": "curator:x.com",
+      "detectedAt": "2026-04-07T23:13:48.000Z",
+      "announcedAt": "2026-04-07T23:13:48.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "3 milyon haftalık kullanıcı için Codex limitleri resetlendi, her 1 milyonda bir reset sözü verildi"
+      }
+    },
+    {
+      "id": "39839f1e9720c343",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex usage limits reset for all plans after elevated rate-limit hits",
+      "excerpt": "Our Codex dashboards are showing increased rate of users hitting rate limits and since we don't fully understand why I have made the cautious decision of resetting the usage limits for all plans. Enjoy. I also wanted to celebrate us finding a pocket of fraudulent accounts that we banned and have helped us regain some compute. The fight against abuse never stops, but it's important to mark the moment and make it a little shared victory.",
+      "url": "https://x.com/thsottiaux/status/2039248564967424483",
+      "source": "curator:x.com",
+      "detectedAt": "2026-04-01T07:48:39.000Z",
+      "announcedAt": "2026-04-01T07:48:39.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Limit aşımları artınca tüm paketlerde Codex limitleri resetlendi"
+      }
+    },
+    {
+      "id": "dd07616b111657cb",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex usage limits reset across all plans for the plugins launch",
+      "excerpt": "Hello. We have reset Codex usage limits across all plans to let everyone experiment with the magnificent plugins we just launched, and because it had been a while! You can just build unlimited things with Codex. Have fun!",
+      "url": "https://x.com/thsottiaux/status/2037346989244096581",
+      "source": "curator:x.com",
+      "detectedAt": "2026-03-27T01:52:28.000Z",
+      "announcedAt": "2026-03-27T01:52:28.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Eklenti çıkışı için tüm paketlerde Codex limitleri resetlendi"
+      }
+    },
+    {
+      "id": "b0f0287b43568b9e",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex rate limits reset once the service was back and stable",
+      "excerpt": "OK, Codex is back and stable and we should be good for a while. Reset button pressed, should see it in a bit",
+      "url": "https://x.com/thsottiaux/status/2031605592352313567",
+      "source": "curator:x.com",
+      "detectedAt": "2026-03-11T05:38:13.000Z",
+      "announcedAt": "2026-03-11T05:38:13.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Servis tekrar kararlı hale gelince Codex limitleri resetlendi"
+      }
+    },
+    {
+      "id": "d5c260ab3b6322c8",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex rate limits reset after the outage was fully resolved",
+      "excerpt": "This codex issue is now fully resolved and stable for the last couple of hours. You have come to expect it, but yes, that means we will be reseting rate limits in a bit. Enjoy.",
+      "url": "https://x.com/thsottiaux/status/2031216405266481489",
+      "source": "curator:x.com",
+      "detectedAt": "2026-03-10T03:51:43.000Z",
+      "announcedAt": "2026-03-10T03:51:43.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Kesinti tamamen giderildikten sonra Codex limitleri resetlendi"
+      }
+    },
+    {
+      "id": "be41d9a5a86ceea4",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex rate limits reset for Plus and Pro during a usage-drain investigation",
+      "excerpt": "We don’t have evidence of a widespread issue with codex usage being drained faster than it should but there are enough reports and we have reset rate limits for plus & pro subscriptions while we work towards wrapping up our investigation over the coming 1-3 days.",
+      "url": "https://x.com/thsottiaux/status/2030474136024400173",
+      "source": "curator:x.com",
+      "detectedAt": "2026-03-08T02:42:13.000Z",
+      "announcedAt": "2026-03-08T02:42:13.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Hızlı limit tükenmesi incelenirken Plus ve Pro için Codex limitleri resetlendi"
+      }
+    },
+    {
+      "id": "605d68cddb464646",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex rate limits reset for Plus and Pro after a 2X promo bug missed ~9% of users",
+      "excerpt": "We caught an issue that was causing the 2X promotional increase in limits to not be applied to an estimated 9% of plus and pro users for Codex. We have now fixed this issue and are reseting the rate limit for all plus and pro users to compensate. Apologies and thank you for the bug reports over the last couple of days.",
+      "url": "https://x.com/thsottiaux/status/2029308599835738218",
+      "source": "curator:x.com",
+      "detectedAt": "2026-03-04T21:30:47.000Z",
+      "announcedAt": "2026-03-04T21:30:47.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "2 kat kampanya hatası kullanıcıların ~%9'unu atlayınca Plus ve Pro limitleri resetlendi"
+      }
+    },
+    {
+      "id": "5ed11e154e0ab92b",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex rate limits reset after requests were wrongly blocked as high cyber risk",
+      "excerpt": "Codex is back up. We introduced an issue that caused requests to be blocked and rejected as high cyber risk. This was fixed in ~8 mins and we are now back online and fully operational. Team will reset rate limits, that’s been a while. Enjoy one on us.",
+      "url": "https://x.com/thsottiaux/status/2028649088594436225",
+      "source": "curator:x.com",
+      "detectedAt": "2026-03-03T01:50:07.000Z",
+      "announcedAt": "2026-03-03T01:50:07.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "İstekler yanlışlıkla yüksek riskli sayılıp engellendikten sonra Codex limitleri resetlendi"
+      }
+    },
+    {
+      "id": "9a49f296322879de",
+      "provider": "openai",
+      "kind": "usage_boost",
+      "title": "Codex rate limits reset and lifted to 2x through 1 January",
+      "excerpt": "For Codex users, to thank you all for the fun we've had over the last months, our first gift is that we have **reset rate limits and are lifting the usage limits to 2X the usual limits until the 1st of Jan**. Wish you all a merry holiday and lots of coding!! Spread the word 👀",
+      "url": "https://x.com/thsottiaux/status/2004100061933064395",
+      "source": "curator:x.com",
+      "detectedAt": "2025-12-25T08:01:03.000Z",
+      "announcedAt": "2025-12-25T08:01:03.000Z",
+      "activeUntil": "2026-01-01T23:59:59.000Z",
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Codex limitleri resetlendi ve 1 Ocak'a kadar iki katına çıkarıldı"
+      }
+    },
+    {
+      "id": "3967c24be4f7d79a",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex usage limits reset during a usage-tracking system rewrite",
+      "excerpt": "We rewrote the underlying system to track and bill usage in Codex and we have reset usage limits in the process. Backfilling is time consuming and it’s more fun to give free usage. Enjoy!",
+      "url": "https://x.com/thsottiaux/status/2002137269134819610",
+      "source": "curator:x.com",
+      "detectedAt": "2025-12-19T22:01:37.000Z",
+      "announcedAt": "2025-12-19T22:01:37.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Kullanım takip sistemi yeniden yazılırken Codex limitleri resetlendi"
+      }
+    },
+    {
+      "id": "04ff2079d915be96",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex usage limits reset for everyone after a disruption",
+      "excerpt": "Didn’t need to do this in a while, but you know the drill. We have reset everyone’s usage limits, enjoy more Codex and apologies for the disruption.",
+      "url": "https://x.com/thsottiaux/status/2001114683047317723",
+      "source": "curator:x.com",
+      "detectedAt": "2025-12-17T02:18:14.000Z",
+      "announcedAt": "2025-12-17T02:18:14.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Bir aksaklık sonrası Codex limitleri herkes için resetlendi"
+      }
+    },
+    {
+      "id": "3e549839a89d801f",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex usage limits reset for everyone while an issue was mitigated",
+      "excerpt": "We have reset the usage limits for everyone in Codex, which helps us mitigate the issue the fastest and the team will continue to work on the underlying cause. This should propagate to all users over the next 10 mins, enjoy and apologies for the confusion!",
+      "url": "https://x.com/thsottiaux/status/1995988609896513743",
+      "source": "curator:x.com",
+      "detectedAt": "2025-12-02T22:49:02.000Z",
+      "announcedAt": "2025-12-02T22:49:02.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Bir sorun giderilirken Codex limitleri herkes için resetlendi"
+      }
+    },
+    {
+      "id": "60665b259317d045",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex rate limits reset to compensate for unusually high US latencies",
+      "excerpt": "We have reset rate limits for all Codex users to compensate for the unusual high latencies in or near the US in the previous hours. Grateful for the team working hard behind the scenes to keep Codex running 24/7. I do recommend trying out GPT-5.1-Codex-Max too if you haven’t!",
+      "url": "https://x.com/thsottiaux/status/1992370994028388670",
+      "source": "curator:x.com",
+      "detectedAt": "2025-11-22T23:13:56.000Z",
+      "announcedAt": "2025-11-22T23:13:56.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "ABD'deki olağandışı gecikmeleri telafi etmek için Codex limitleri resetlendi"
+      }
+    },
+    {
+      "id": "6a724f6b4e6c425d",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex rate limits reset after a global outage",
+      "excerpt": "Codex outage resolved. We suffered a minor outage for last 45 minutes which turned into a global outage for last 30 minutes, this is now resolved and we have reset the rate limits. Please let me know if you still see issues.",
+      "url": "https://x.com/thsottiaux/status/1986166501435711936",
+      "source": "curator:x.com",
+      "detectedAt": "2025-11-05T20:19:29.000Z",
+      "announcedAt": "2025-11-05T20:19:29.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "Küresel kesinti sonrası Codex limitleri resetlendi"
+      }
+    },
+    {
+      "id": "4d63a66f77ba2d67",
+      "provider": "openai",
+      "kind": "usage_reset",
+      "title": "Codex limits reset for everyone after GPU-provisioning slowdowns",
+      "excerpt": "We have reset everyone's limits for gpt-5-codex to allow you all to benefit more from it today and as a way to make up for the slowdowns earlier while we were provisioning additional GPUs. We'll continue to add capacity throughout the week to maintain the speed. Enjoy!",
+      "url": "https://x.com/thsottiaux/status/1968163721034994139",
+      "source": "curator:x.com",
+      "detectedAt": "2025-09-17T04:02:52.000Z",
+      "announcedAt": "2025-09-17T04:02:52.000Z",
+      "activeUntil": null,
+      "approximateDate": false,
+      "backfilled": false,
+      "titles": {
+        "tr": "GPU kaynaklı yavaşlamalar sonrası Codex limitleri herkes için resetlendi"
+      }
+    }
+  ],
+  "lastPollAt": "2026-07-23T10:22:24.959Z"
+}

@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Usage Updates — Claude ve ChatGPT kullanım limiti değişiklikleri</title>
+<meta name="description" content="Anthropic ve OpenAI’ın kullanım limitlerini sıfırladığı, artırdığı veya kredi verdiği her olay — her biri kaynağıyla birlikte, 30 dakikada bir güncellenir." />
+<link rel="canonical" href="https://usageupdates.com/tr/" />
+<link rel="alternate" hreflang="en" href="https://usageupdates.com/" />
+<link rel="alternate" hreflang="tr" href="https://usageupdates.com/tr/" />
+<link rel="alternate" hreflang="x-default" href="https://usageupdates.com/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Usage Updates" />
+<meta property="og:title" content="Usage Updates — Claude ve ChatGPT kullanım limiti değişiklikleri" />
+<meta property="og:description" content="Tracks when Anthropic and OpenAI reset or boost usage limits. Each entry links to its source." />
+<meta property="og:url" content="https://usageupdates.com/tr/" />
+<meta property="og:image" content="https://usageupdates.com/og.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Usage Updates: Claude and ChatGPT usage resets, boosts and credits" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#f8f6ef" />
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#174f3d" />
+<link rel="alternate" type="application/rss+xml" title="Usage Updates — kullanım limiti değişiklikleri" href="https://usageupdates.com/tr/feed.xml" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23174f3d%22%2F%3E%3Ccircle%20cx%3D%2222%22%20cy%3D%2242%22%20r%3D%224%22%20fill%3D%22%23d9f3e6%22%2F%3E%3Cpath%20d%3D%22M36%2042A14%2014%200%200%200%2022%2028%22%20fill%3D%22none%22%20stroke%3D%22%23d9f3e6%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M46%2042A24%2024%200%200%200%2022%2018%22%20fill%3D%22none%22%20stroke%3D%22%23d9f3e6%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%20opacity%3D%22.7%22%2F%3E%3C%2Fsvg%3E" />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Usage Updates","url":"https://usageupdates.com/tr/","description":"A dated, source-linked log of Claude and ChatGPT usage resets, boosts and credits."}</script>
+<style>
+  :root {
+    color-scheme: light;
+    --ink: #16211d; --ink-soft: #40504a; --muted: #68766f;
+    --paper: #f8f6ef; --paper-deep: #efede5; --white: #fffefa;
+    --line: #d9ddd6; --line-dark: #bbc4bc;
+    --forest: #174f3d; --forest-bright: #197a56; --forest-deep: #0c3c2e;
+    --mint: #d9f3e6; --mint-soft: #eff9f4;
+    --amber: #966614; --amber-soft: #fff1ce;
+    --serif: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    --radius: 4px; --radius-sm: 4px;
+    --shadow-sm: 0 1px 1px rgb(22 33 29 / 4%), 0 3px 10px rgb(22 33 29 / 4%);
+    --container: min(1120px, calc(100% - 40px));
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; font-family: var(--serif); font-size: 16px; line-height: 1.55;
+    color: var(--ink); background: radial-gradient(circle at 78% -20%, rgb(217 243 230 / 55%), transparent 30rem), var(--paper); }
+  h1, h2 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.035em; line-height: 1.08; margin: 0; text-wrap: balance; }
+  p { margin: 0; color: var(--ink-soft); }
+  a { color: inherit; text-underline-offset: 0.16em; }
+  button { font: inherit; }
+  :focus-visible { outline: 3px solid #78acff; outline-offset: 3px; }
+  ::selection { background: #b9e4ce; color: #0e3327; }
+  .eyebrow { color: var(--forest-bright); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; margin: 0; }
+  .rt-inner { width: var(--container); margin-inline: auto; }
+
+  .rt-top { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--line); background: rgb(248 246 239 / 88%); backdrop-filter: blur(18px); }
+  .rt-top-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; width: var(--container); margin-inline: auto; min-height: 62px; }
+  .rt-brand { display: inline-flex; align-items: center; gap: 11px; font-weight: 700; font-size: 1.06rem; letter-spacing: 0; color: var(--ink); text-decoration: none; }
+  .rt-brand svg { width: 26px; height: 26px; border-radius: 7px; }
+  .rt-headright { display: inline-flex; align-items: center; gap: 16px; }
+  .rt-lang { color: var(--forest); font-size: 0.76rem; font-weight: 750; text-decoration: none; }
+  .rt-lang:hover { text-decoration: underline; }
+  .rt-fresh { display: inline-flex; align-items: center; gap: 12px; color: var(--muted); font-size: 0.76rem; text-align: right; }
+  .rt-live { display: inline-flex; align-items: center; gap: 6px; color: var(--forest-bright); font-weight: 700; font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase; }
+  .rt-live::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: #35b483; box-shadow: 0 0 0 4px rgb(53 180 131 / 18%); }
+  .rt-live.delayed { color: var(--amber); } .rt-live.delayed::before { background: var(--amber); box-shadow: 0 0 0 4px rgb(150 102 20 / 16%); }
+  .rt-live.pending { color: var(--muted); } .rt-live.pending::before { background: var(--muted); box-shadow: none; }
+
+  .rt-intro { max-width: 60ch; margin: 26px 0 0; font-size: 1.02rem; line-height: 1.55; color: var(--ink-soft); }
+  .rt-chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 26px 0 24px; }
+  .rt-chip { display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--line); border-radius: 4px; background: var(--white); color: var(--ink-soft); font-size: 0.84rem; font-weight: 600; padding: 7px 14px; cursor: pointer; transition: border-color 140ms ease, background 140ms ease, color 140ms ease; }
+  .rt-chip:hover { border-color: var(--line-dark); }
+  .rt-chip.on { border-color: var(--forest); background: var(--forest); color: #fff; }
+  .rt-chip .dot { width: 9px; height: 9px; border-radius: 50%; }
+
+  .rt-latest { padding: 46px 0 44px; }
+  .rt-latest .eyebrow { display: inline-block; margin-bottom: 16px; }
+  .rt-latest .when { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-bottom: 16px; color: var(--muted); font-size: 0.92rem; }
+  .rt-latest .when b { color: var(--forest-bright); font-weight: 800; }
+  .rt-latest .when svg { display: inline; vertical-align: -2px; margin-right: 4px; }
+  .pmark { display: inline-flex; align-items: center; gap: 6px; font-weight: 750; color: var(--ink); font-size: 0.8rem; }
+  .pmark::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--pc); }
+  .rt-until { color: var(--forest-bright); font-weight: 700; }
+  .rt-latest h1 { font-size: clamp(2.1rem, 4.2vw, 3.4rem); max-width: 24ch; }
+  .rt-latest .sum { max-width: 62ch; margin-top: 20px; font-size: clamp(1.02rem, 1.6vw, 1.2rem); line-height: 1.62; }
+  .rt-src { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin-top: 20px; font-size: 0.95rem; }
+  .rt-src a { color: var(--forest); font-weight: 750; text-decoration: none; }
+  .rt-src a:hover { color: var(--forest-deep); text-decoration: underline; }
+  .rt-src svg { vertical-align: -2px; }
+  .badge { display: inline-flex; align-items: center; gap: 6px; border-radius: 4px; padding: 5px 11px; font-size: 0.7rem; font-weight: 780; }
+  .badge-green { background: var(--mint-soft); color: var(--forest-bright); }
+  .badge-amber { background: var(--amber-soft); color: var(--amber); }
+
+  .rt-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 26px 0; border-top: 1px solid var(--line); }
+  .rt-stats:empty { display: none; }
+  .rt-stat dd { margin: 0; font-family: var(--serif); font-size: 1.9rem; color: var(--forest); line-height: 1.1; }
+  .rt-stat dt { margin-top: 6px; color: var(--muted); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+
+  .rt-chart { padding: 4px 0 26px; border-top: 1px solid var(--line); }
+  .rt-chart .rt-tl-head { margin-bottom: 10px; }
+  .ch { width: 100%; height: auto; display: block; }
+  .ch-base { stroke: var(--line-dark); stroke-width: 1; }
+  .ch-m { fill: var(--muted); font-family: var(--serif); font-size: 12px; text-anchor: middle; }
+  .ch-v { fill: var(--ink); font-family: var(--serif); font-size: 15px; text-anchor: middle; }
+  .rt-legend { display: inline-flex; gap: 14px; align-items: center; }
+  .rt-key { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 0.74rem; }
+  .rt-key i { width: 9px; height: 9px; border-radius: 2px; display: inline-block; }
+  .rt-timeline { padding: 26px 0 10px; border-top: 1px solid var(--line); overflow-x: clip; background: linear-gradient(180deg, rgb(239 249 244 / 45%), transparent 70%); }
+  .rt-tl-head { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; }
+  .rt-tl-head h2 { font-family: var(--serif); font-size: 1.12rem; font-weight: 600; letter-spacing: 0; color: var(--ink); }
+  .rt-tl-head span { color: var(--muted); font-size: 0.76rem; }
+  .rt-rail { position: relative; height: 112px; margin-top: 4px; }
+  .rt-rail .line { position: absolute; left: 0; right: 0; top: 56px; height: 2px; background: linear-gradient(90deg, transparent, var(--line-dark) 6%, var(--line-dark) 94%, transparent); }
+  .rt-rail .now { position: absolute; top: 32px; right: 0; display: grid; justify-items: center; gap: 5px; color: var(--forest-bright); font-size: 0.6rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+  .rt-rail .now::after { content: ""; width: 2px; height: 22px; background: var(--forest-bright); opacity: 0.4; }
+  .rt-node { position: absolute; top: 56px; transform: translate(-50%, -50%); padding: 0; border: 0; background: none; cursor: pointer; }
+  .rt-node .pt { display: block; width: 13px; height: 13px; border-radius: 50%; border: 2px solid var(--paper); box-shadow: 0 0 0 1px var(--line-dark); transition: width 140ms ease, height 140ms ease, box-shadow 140ms ease; }
+  .rt-node:hover .pt { box-shadow: 0 0 0 4px rgb(23 79 61 / 12%); }
+  .rt-node.sel .pt { width: 22px; height: 22px; box-shadow: 0 0 0 6px rgb(25 122 86 / 16%); }
+  .rt-node .cap { position: absolute; left: 50%; transform: translateX(-50%); width: 64px; text-align: center; }
+  .rt-node .cap .t { color: var(--ink); font-size: 0.74rem; font-weight: 600; white-space: nowrap; }
+  .rt-node.up .cap { bottom: 20px; } .rt-node.down .cap { top: 20px; }
+  .rt-node.sel .cap .t { color: var(--forest); }
+  .rt-node:focus-visible { outline: none; } .rt-node:focus-visible .pt { outline: 3px solid #78acff; outline-offset: 3px; }
+
+  .rt-recent { padding: 26px 0 20px; }
+  .rt-recent .rt-tl-head { margin-bottom: 20px; }
+  .rt-list { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--white); box-shadow: var(--shadow-sm); }
+  .rt-row { display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto 20px; align-items: center; gap: 20px; width: 100%; text-align: left; border: 0; border-bottom: 1px solid var(--line); background: none; padding: 17px 20px; cursor: pointer; transition: background 120ms ease; }
+  .rt-row { text-decoration: none; color: inherit; }
+  .rt-row:last-child { border-bottom: 0; }
+  .rt-row:hover { background: #f7faf7; }
+  .rt-row.sel { background: var(--mint-soft); box-shadow: inset 3px 0 0 var(--forest-bright); }
+  .rmark { width: 14px; height: 14px; border-radius: 50%; background: var(--pc); box-shadow: 0 0 0 3px color-mix(in srgb, var(--pc) 16%, transparent); }
+  .rt-row .what { min-width: 0; }
+  .rt-row .what strong { display: block; font-size: 1rem; font-weight: 600; color: var(--ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .rt-row .rb { font-family: var(--serif); font-size: 1rem; color: var(--forest); white-space: nowrap; }
+  .rt-row .rw { color: var(--muted); font-size: 0.78rem; white-space: nowrap; text-align: right; }
+  .rt-row .rw b { color: var(--ink); font-weight: 720; }
+  .rt-row > svg { color: var(--muted); }
+  .rt-empty { padding: 28px 20px; color: var(--muted); }
+
+  /* Fact grid: used by event permalinks (the index hero dropped it). */
+  .rt-facts { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 30px; margin-top: 26px; }
+  .rt-fact { display: grid; gap: 4px; }
+  .rt-fact dt { color: var(--muted); font-size: 0.64rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+  .rt-fact dd { margin: 0; color: var(--ink); font-size: 0.98rem; font-weight: 720; }
+  .rt-back { color: var(--forest-bright); text-decoration: none; }
+  .rt-back:hover { text-decoration: underline; }
+  .rt-lede { margin-top: 18px; font-size: 1.05rem; color: var(--ink-soft); }
+  .rt-quote { margin: 22px 0 0; padding: 16px 20px; border-left: 3px solid var(--forest-bright); background: var(--mint-soft); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; font-size: 1rem; line-height: 1.6; color: var(--ink); }
+  .rt-eventnav { display: flex; flex-wrap: wrap; gap: 14px 30px; justify-content: space-between; padding: 26px 0 10px; border-top: 1px solid var(--line); font-size: 0.85rem; }
+  .rt-eventnav a { color: var(--forest); font-weight: 700; text-decoration: none; max-width: 46ch; }
+  .rt-eventnav a:hover { text-decoration: underline; }
+  .rt-foot { padding: 26px 0 44px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.72rem; }
+  .rt-about { max-width: 72ch; margin: 0 0 16px; color: var(--ink-soft); font-size: 0.82rem; line-height: 1.6; }
+  .rt-footrow { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  .rt-foot a { color: var(--forest); font-weight: 700; }
+
+  @media (max-width: 720px) {
+    .rt-row { grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; }
+    .rt-row .rb, .rt-row > svg { display: none; }
+    .rt-stats { grid-template-columns: 1fr 1fr; gap: 16px; }
+    .rt-stat dd { font-size: 1.5rem; }
+    /* The newest node's caption sits at the rail end; the tick alone marks now. */
+    .rt-rail .now span { display: none; }
+    .rt-row .what strong { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; white-space: normal; }
+    .rt-node .cap { width: 84px; }
+    /* Scroll the rail instead of squeezing it; rtl/ltr keeps the initial
+       position at the newest ("Now") end even without JS. */
+    .rt-rail-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; direction: rtl; }
+    .rt-rail { min-width: 640px; direction: ltr; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="rt-wrap">
+  <header class="rt-top">
+    <div class="rt-top-inner">
+      <a class="rt-brand" href="./">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#174f3d"/><circle cx="22" cy="42" r="4" fill="#d9f3e6"/><path d="M36 42A14 14 0 0 0 22 28" fill="none" stroke="#d9f3e6" stroke-width="3" stroke-linecap="round"/><path d="M46 42A24 24 0 0 0 22 18" fill="none" stroke="#d9f3e6" stroke-width="3" stroke-linecap="round" opacity=".7"/></svg>
+        Usage Updates
+      </a>
+      <span class="rt-headright"><a class="rt-lang" href="/" hreflang="en">English</a><span class="rt-fresh"><span class="rt-live">Canlı</span><span>az önce güncellendi</span></span></span>
+    </div>
+  </header>
+
+  <div class="rt-inner">
+    <div class="rt-chips" id="rt-chips"><button class="rt-chip on" data-p="all">Tüm sağlayıcılar</button><button class="rt-chip" data-p="openai"><span class="dot" style="background:#3f9e78"></span>OpenAI</button><button class="rt-chip" data-p="anthropic"><span class="dot" style="background:#8a4a20"></span>Anthropic</button></div>
+
+    <section class="rt-stats" id="rt-stats"><div class="rt-stat"><dd>2 gün önce</dd><dt>Son reset</dt></div><div class="rt-stat"><dd>43</dd><dt>Kayıtlı reset</dt></div><div class="rt-stat"><dd>7.3 gün</dd><dt>Ortalama resetlenme aralığı</dt></div><div class="rt-stat"><dd>73 gün</dd><dt>En uzun aralık</dt></div></section>
+
+    <section class="rt-chart">
+      <div class="rt-tl-head">
+        <h2>Aya göre hareketlilik</h2>
+        <span class="rt-legend"><span class="rt-key"><i style="background:#8a4a20"></i>Anthropic</span><span class="rt-key"><i style="background:#3f9e78"></i>OpenAI</span></span>
+      </div>
+      <svg class="ch" viewBox="0 0 1160 210" role="img" aria-label="Aya göre hareketlilik" preserveAspectRatio="xMidYMax meet">
+        <line class="ch-base" x1="6" y1="180" x2="1154" y2="180" />
+        <path d="M31.18181818181818 180 L31.18181818181818 176.92000000000002 Q31.18181818181818 173.84 34.26181818181818 173.84 L82.10181818181819 173.84 Q85.18181818181819 173.84 85.18181818181819 176.92000000000002 L85.18181818181819 180 Z" fill="#3f9e78"><title>Eyl — OpenAI: 1</title></path><text class="ch-m" x="58.2" y="198">Eyl</text><text class="ch-m" x="162.5" y="198">Eki</text><path d="M239.90909090909088 180 L239.90909090909088 171.68 Q239.90909090909088 167.68 243.90909090909088 167.68 L289.9090909090909 167.68 Q293.9090909090909 167.68 293.9090909090909 171.68 L293.9090909090909 180 Z" fill="#3f9e78"><title>Kas — OpenAI: 2</title></path><text class="ch-m" x="266.9" y="198">Kas</text><path d="M344.27272727272725 180 L344.27272727272725 159.36 Q344.27272727272725 155.36 348.27272727272725 155.36 L394.27272727272725 155.36 Q398.27272727272725 155.36 398.27272727272725 159.36 L398.27272727272725 180 Z" fill="#3f9e78"><title>Ara — OpenAI: 4</title></path><text class="ch-m" x="371.3" y="198">Ara</text><text class="ch-m" x="475.6" y="198">Oca</text><text class="ch-m" x="580.0" y="198">Şub</text><path d="M657.3636363636363 180 L657.3636363636363 147.04 Q657.3636363636363 143.04 661.3636363636363 143.04 L707.3636363636363 143.04 Q711.3636363636363 143.04 711.3636363636363 147.04 L711.3636363636363 180 Z" fill="#3f9e78"><title>Mar — OpenAI: 6</title></path><text class="ch-m" x="684.4" y="198">Mar</text><path d="M761.7272727272726 180 L761.7272727272726 173.84 L815.7272727272726 173.84 L815.7272727272726 180 Z" fill="#8a4a20"><title>Nis — Anthropic: 1</title></path><path d="M761.7272727272726 171.84 L761.7272727272726 132.72 Q761.7272727272726 128.72 765.7272727272726 128.72 L811.7272727272726 128.72 Q815.7272727272726 128.72 815.7272727272726 132.72 L815.7272727272726 171.84 Z" fill="#3f9e78"><title>Nis — OpenAI: 7</title></path><text class="ch-m" x="788.7" y="198">Nis</text><path d="M866.090909090909 180 L866.090909090909 167.68 L920.090909090909 167.68 L920.090909090909 180 Z" fill="#8a4a20"><title>May — Anthropic: 2</title></path><path d="M866.090909090909 165.68 L866.090909090909 145.04000000000002 Q866.090909090909 141.04000000000002 870.090909090909 141.04000000000002 L916.090909090909 141.04000000000002 Q920.090909090909 141.04000000000002 920.090909090909 145.04000000000002 L920.090909090909 165.68 Z" fill="#3f9e78"><title>May — OpenAI: 4</title></path><text class="ch-m" x="893.1" y="198">May</text><path d="M970.4545454545454 180 L970.4545454545454 149.2 L1024.4545454545455 149.2 L1024.4545454545455 180 Z" fill="#8a4a20"><title>Haz — Anthropic: 5</title></path><path d="M970.4545454545454 147.2 L970.4545454545454 120.39999999999999 Q970.4545454545454 116.39999999999999 974.4545454545454 116.39999999999999 L1020.4545454545455 116.39999999999999 Q1024.4545454545455 116.39999999999999 1024.4545454545455 120.39999999999999 L1024.4545454545455 147.2 Z" fill="#3f9e78"><title>Haz — OpenAI: 5</title></path><text class="ch-m" x="997.5" y="198">Haz</text><path d="M1074.8181818181818 180 L1074.8181818181818 106.08 L1128.8181818181818 106.08 L1128.8181818181818 180 Z" fill="#8a4a20"><title>Tem — Anthropic: 12</title></path><path d="M1074.8181818181818 104.08 L1074.8181818181818 28 Q1074.8181818181818 24 1078.8181818181818 24 L1124.8181818181818 24 Q1128.8181818181818 24 1128.8181818181818 28 L1128.8181818181818 104.08 Z" fill="#3f9e78"><title>Tem — OpenAI: 13</title></path><text class="ch-v" x="1101.8" y="16.0">25</text><text class="ch-m" x="1101.8" y="198">Tem</text>
+      </svg>
+    </section>
+
+    <section class="rt-timeline">
+      <div class="rt-tl-head"><h2>Zaman çizelgesi</h2></div>
+      <div class="rt-rail-scroll"><div class="rt-rail" id="rt-rail"><div class="line"></div><button class="rt-node up sel" style="left:94%" data-id="curator-20260721-openai-10m-reset" title="ChatGPT: 10 milyon aktif kullanıcı için ChatGPT Work ve Codex limitleri resetlendi — 2 days ago" aria-label="OpenAI: 10 milyon aktif kullanıcı için ChatGPT Work ve Codex limitleri resetlendi"><span class="pt" style="background:#3f9e78"></span><span class="cap"><span class="t">2d</span></span></button><button class="rt-node down" style="left:91%" data-id="curator-20260722-openai-100-credit-chatgptwork-post" title="ChatGPT: OpenAI, ChatGPT Work hakkında paylaşım yapan ilk 10.000 kullanıcıya 100 dolar kredi veriyor — 3 days ago" aria-label="OpenAI: OpenAI, ChatGPT Work hakkında paylaşım yapan ilk 10.000 kullanıcıya 100 dolar kredi veriyor"><span class="pt" style="background:#3f9e78"></span><span class="cap"><span class="t">3d</span></span></button><button class="rt-node down" style="left:88%" data-id="backfill-2026-06-cowork-promo" title="Claude: Claude Cowork ve Claude Code limitleri artırıldı (Haz–Ağu 2026 kampanyası) — 4 days ago" aria-label="Anthropic: Claude Cowork ve Claude Code limitleri artırıldı (Haz–Ağu 2026 kampanyası)"><span class="pt" style="background:#8a4a20"></span></button><button class="rt-node up" style="left:85%" data-id="604ccbd792df5154" title="Claude: Claude Code haftalık limitleri 19 Ağustos'a kadar %50 yüksek kalıyor — 5 days ago" aria-label="Anthropic: Claude Code haftalık limitleri 19 Ağustos'a kadar %50 yüksek kalıyor"><span class="pt" style="background:#8a4a20"></span><span class="cap"><span class="t">5d</span></span></button><button class="rt-node up" style="left:82%" data-id="curator-20260719-openai-reset-jul18" title="ChatGPT: ChatGPT Work ve Codex limitleri yine resetlendi: “Oops... I did it again” — 5 days ago" aria-label="OpenAI: ChatGPT Work ve Codex limitleri yine resetlendi: “Oops... I did it again”"><span class="pt" style="background:#3f9e78"></span></button><button class="rt-node down" style="left:79%" data-id="curator-20260719-fable5-100-credit" title="Claude: Fable 5 krediye geçerken Pro/Team Standard kullanıcılarına tek seferlik 100 dolar kredi — 5 days ago" aria-label="Anthropic: Fable 5 krediye geçerken Pro/Team Standard kullanıcılarına tek seferlik 100 dolar kredi"><span class="pt" style="background:#8a4a20"></span><span class="cap"><span class="t">5d</span></span></button><button class="rt-node down" style="left:76%" data-id="curator-20260722-fable5-jul17-credit" title="Claude: Claude, Fable 5 arızası sonrası fazla ücretlendirmeyi iade etti ve eşdeğer kredi verdi — 6 days ago" aria-label="Anthropic: Claude, Fable 5 arızası sonrası fazla ücretlendirmeyi iade etti ve eşdeğer kredi verdi"><span class="pt" style="background:#8a4a20"></span></button><button class="rt-node up" style="left:73%" data-id="backfill-2026-07-16-reset" title="Claude: 5 saatlik ve haftalık limitler tüm kullanıcılar için resetlendi — üst üste üçüncü hafta — 7 days ago" aria-label="Anthropic: 5 saatlik ve haftalık limitler tüm kullanıcılar için resetlendi — üst üste üçüncü hafta"><span class="pt" style="background:#8a4a20"></span><span class="cap"><span class="t">7d</span></span></button><button class="rt-node up" style="left:70%" data-id="backfill-2026-07-16-codex-reset" title="ChatGPT: 9 milyon aktif kullanıcı için Codex ve ChatGPT Work limitleri resetlendi — 7 days ago" aria-label="OpenAI: 9 milyon aktif kullanıcı için Codex ve ChatGPT Work limitleri resetlendi"><span class="pt" style="background:#3f9e78"></span></button><button class="rt-node down" style="left:67%" data-id="curator-20260722-openai-100-credit-codex-post" title="ChatGPT: OpenAI, GPT-5.6 Sol hakkında paylaşım yapan ilk 10.000 kullanıcıya 100 dolar Codex kredisi veriyor — 8 days ago" aria-label="OpenAI: OpenAI, GPT-5.6 Sol hakkında paylaşım yapan ilk 10.000 kullanıcıya 100 dolar Codex kredisi veriyor"><span class="pt" style="background:#3f9e78"></span><span class="cap"><span class="t">8d</span></span></button><button class="rt-node down" style="left:64%" data-id="curator-20260719-openai-reset-8m-jul14" title="ChatGPT: 8 milyon aktif kullanıcı için ChatGPT Work ve Codex limitleri resetlendi — 9 days ago" aria-label="OpenAI: 8 milyon aktif kullanıcı için ChatGPT Work ve Codex limitleri resetlendi"><span class="pt" style="background:#3f9e78"></span></button><button class="rt-node up" style="left:61%" data-id="79cfe425718fbd69" title="ChatGPT: 7 milyon kullanıcı için tüm Codex ve ChatGPT Work kullanıcılarına biriktirilebilir reset verildi — 10 days ago" aria-label="OpenAI: 7 milyon kullanıcı için tüm Codex ve ChatGPT Work kullanıcılarına biriktirilebilir reset verildi"><span class="pt" style="background:#3f9e78"></span><span class="cap"><span class="t">10d</span></span></button><button class="rt-node up" style="left:58%" data-id="curator-20260723-openai-10pct-inference-boost" title="ChatGPT: OpenAI, çıkarım optimizasyonu tasarruflarını Codex ve ChatGPT Work'e yansıttı: yaklaşık %10 daha fazla kullanım — 10 days ago" aria-label="OpenAI: OpenAI, çıkarım optimizasyonu tasarruflarını Codex ve ChatGPT Work'e yansıttı: yaklaşık %10 daha fazla kullanım"><span class="pt" style="background:#3f9e78"></span></button><button class="rt-node down" style="left:55%" data-id="curator-20260719-openai-500k-banked-reset" title="ChatGPT: Reset düğmesi hatasının ardından 500.000 ChatGPT Work ve Codex kullanıcısına biriktirilebilir reset verildi — 11 days ago" aria-label="OpenAI: Reset düğmesi hatasının ardından 500.000 ChatGPT Work ve Codex kullanıcısına biriktirilebilir reset verildi"><span class="pt" style="background:#3f9e78"></span><span class="cap"><span class="t">11d</span></span></button><button class="rt-node down" style="left:52%" data-id="backfill-2026-07-15-openai-cap-removed" title="ChatGPT: ChatGPT Plus, Pro ve Business'ta 5 saatlik limit geçici olarak kaldırıldı — 11 days ago" aria-label="OpenAI: ChatGPT Plus, Pro ve Business'ta 5 saatlik limit geçici olarak kaldırıldı"><span class="pt" style="background:#3f9e78"></span></button><button class="rt-node up" style="left:49%" data-id="076c09f006c66928" title="Claude: Claude Fable 5 erişimi ve %50 yüksek Claude Code haftalık limitleri 19 Temmuz'a uzatıldı — 11 days ago" aria-label="Anthropic: Claude Fable 5 erişimi ve %50 yüksek Claude Code haftalık limitleri 19 Temmuz'a uzatıldı"><span class="pt" style="background:#8a4a20"></span><span class="cap"><span class="t">11d</span></span></button><button class="rt-node up" style="left:46%" data-id="curator-20260719-openai-reset-jul11" title="ChatGPT: Hafta sonu ChatGPT Work ve Codex limitleri bir kez daha resetlendi — 12 days ago" aria-label="OpenAI: Hafta sonu ChatGPT Work ve Codex limitleri bir kez daha resetlendi"><span class="pt" style="background:#3f9e78"></span></button><button class="rt-node down" style="left:43%" data-id="curator-20260719-openai-reset-jul10" title="ChatGPT: ChatGPT Work ve Codex limitleri yine resetlendi, aynı gün ikinci reset sözü verildi — 13 days ago" aria-label="OpenAI: ChatGPT Work ve Codex limitleri yine resetlendi, aynı gün ikinci reset sözü verildi"><span class="pt" style="background:#3f9e78"></span><span class="cap"><span class="t">13d</span></span></button><button class="rt-node down" style="left:40%" data-id="curator-20260719-openai-reset-jul9" title="ChatGPT: GPT-5.6 Sol talep artışı öncesi ChatGPT Work ve Codex limitleri resetlendi — 14 days ago" aria-label="OpenAI: GPT-5.6 Sol talep artışı öncesi ChatGPT Work ve Codex limitleri resetlendi"><span class="pt" style="background:#3f9e78"></span></button><button class="rt-node up" style="left:37%" data-id="backfill-2026-07-09-reset" title="Claude: “Tüm kullanıcılar için 5 saatlik ve haftalık limitleri resetledik.” — 14 days ago" aria-label="Anthropic: “Tüm kullanıcılar için 5 saatlik ve haftalık limitleri resetledik.”"><span class="pt" style="background:#8a4a20"></span><span class="cap"><span class="t">14d</span></span></button><button class="rt-node up" style="left:34%" data-id="549a6df8a1467f7b" title="Claude: Tüm ücretli paketlerde Claude Fable 5 erişimi 12 Temmuz'a uzatıldı — 16 days ago" aria-label="Anthropic: Tüm ücretli paketlerde Claude Fable 5 erişimi 12 Temmuz'a uzatıldı"><span class="pt" style="background:#8a4a20"></span></button><button class="rt-node down" style="left:31%" data-id="41bc7cbf2381624b" title="Claude: İki katına çıkarılan Claude Cowork limitleri 5 Ağustos'a uzatıldı — 16 days ago" aria-label="Anthropic: İki katına çıkarılan Claude Cowork limitleri 5 Ağustos'a uzatıldı"><span class="pt" style="background:#8a4a20"></span><span class="cap"><span class="t">16d</span></span></button><button class="rt-node down" style="left:28%" data-id="backfill-2026-07-06-claude-code-boost" title="Claude: Claude Code haftalık limitleri 13 Temmuz'a kadar %50 artırıldı — 17 days ago" aria-label="Anthropic: Claude Code haftalık limitleri 13 Temmuz'a kadar %50 artırıldı"><span class="pt" style="background:#8a4a20"></span></button><button class="rt-node up" style="left:25%" data-id="backfill-2026-07-02-reset" title="Claude: 5 saatlik ve haftalık limitler tüm kullanıcılar için resetlendi — 22 days ago" aria-label="Anthropic: 5 saatlik ve haftalık limitler tüm kullanıcılar için resetlendi"><span class="pt" style="background:#8a4a20"></span><span class="cap"><span class="t">22d</span></span></button><button class="rt-node up" style="left:22%" data-id="curator-20260719-fable5-included-access" title="Claude: Claude Fable 5, haftalık limitin %50'sine kadar ücretli paketlere dahil edildi — 22 days ago" aria-label="Anthropic: Claude Fable 5, haftalık limitin %50'sine kadar ücretli paketlere dahil edildi"><span class="pt" style="background:#8a4a20"></span></button><button class="rt-node down" style="left:19%" data-id="2eabf5dd16dc04b8" title="ChatGPT: Codex limitleri tamamen resetlendi, bir de biriktirilebilir reset eklendi — 23 days ago" aria-label="OpenAI: Codex limitleri tamamen resetlendi, bir de biriktirilebilir reset eklendi"><span class="pt" style="background:#3f9e78"></span><span class="cap"><span class="t">23d</span></span></button><button class="rt-node down" style="left:16%" data-id="8905c5ebf2fd9f40" title="ChatGPT: Olay incelemesi sırasında Codex limitleri herkes için sıfırdan resetlendi — 24 days ago" aria-label="OpenAI: Olay incelemesi sırasında Codex limitleri herkes için sıfırdan resetlendi"><span class="pt" style="background:#3f9e78"></span></button><button class="rt-node up" style="left:13%" data-id="95d421300d04516e" title="ChatGPT: Hızlı limit tükenmesi incelenirken tüm kullanıcılara Codex reseti verildi — 26 days ago" aria-label="OpenAI: Hızlı limit tükenmesi incelenirken tüm kullanıcılara Codex reseti verildi"><span class="pt" style="background:#3f9e78"></span><span class="cap"><span class="t">26d</span></span></button><button class="rt-node up" style="left:10%" data-id="3840cf79b0dac59f" title="Claude: Tüm paketlerde 5 saatlik ve haftalık limitler herkes için resetlendi — 33 days ago" aria-label="Anthropic: Tüm paketlerde 5 saatlik ve haftalık limitler herkes için resetlendi"><span class="pt" style="background:#8a4a20"></span></button><button class="rt-node down" style="left:7%" data-id="a453c48f150b079c" title="ChatGPT: Çifte reset: tam Codex reseti ve bir biriktirilebilir reset — 35 days ago" aria-label="OpenAI: Çifte reset: tam Codex reseti ve bir biriktirilebilir reset"><span class="pt" style="background:#3f9e78"></span><span class="cap"><span class="t">35d</span></span></button><button class="rt-node down" style="left:4%" data-id="4e385ea1b7d54878" title="Claude: Fable 5 çıkışında 5 saatlik ve haftalık limitler tüm kullanıcılar için resetlendi — 44 days ago" aria-label="Anthropic: Fable 5 çıkışında 5 saatlik ve haftalık limitler tüm kullanıcılar için resetlendi"><span class="pt" style="background:#8a4a20"></span></button><button class="rt-node up" style="left:1%" data-id="b78d97139f7daa62" title="Claude: Claude Cowork limitleri bir ay boyunca iki katına çıkarıldı — 48 days ago" aria-label="Anthropic: Claude Cowork limitleri bir ay boyunca iki katına çıkarıldı"><span class="pt" style="background:#8a4a20"></span><span class="cap"><span class="t">48d</span></span></button><button class="rt-node up" style="left:-2%" data-id="46d0a0ba15e54aae" title="ChatGPT: Üç kesinti sonrası tüm ücretli paketlerde Codex limitleri resetlendi — 49 days ago" aria-label="OpenAI: Üç kesinti sonrası tüm ücretli paketlerde Codex limitleri resetlendi"><span class="pt" style="background:#3f9e78"></span></button><button class="rt-node down" style="left:-5%" data-id="dbfcc46d79956b36" title="Claude: İlk kez Claude Code/Cowork kullanan her kullanıcıya 1.000 dolar kredi (Enterprise) — 51 days ago" aria-label="Anthropic: İlk kez Claude Code/Cowork kullanan her kullanıcıya 1.000 dolar kredi (Enterprise)"><span class="pt" style="background:#8a4a20"></span><span class="cap"><span class="t">51d</span></span></button><button class="rt-node down" style="left:-8%" data-id="3b32b0f381a9df3e" title="Claude: Subagent hatası sonrası Pro ve Max kullanıcıları için limitler resetlendi — 52 days ago" aria-label="Anthropic: Subagent hatası sonrası Pro ve Max kullanıcıları için limitler resetlendi"><span class="pt" style="background:#8a4a20"></span></button><button class="rt-node up" style="left:-11%" data-id="de11bc9d19154b97" title="ChatGPT: Tüm ücretli aboneliklerde Codex haftalık ve saatlik limitleri %100'e resetlendi — 53 days ago" aria-label="OpenAI: Tüm ücretli aboneliklerde Codex haftalık ve saatlik limitleri %100'e resetlendi"><span class="pt" style="background:#3f9e78"></span><span class="cap"><span class="t">53d</span></span></button><button class="rt-node up" style="left:-14%" data-id="975935a98dfbab0c" title="ChatGPT: Önbellek hatası limitleri hızlı tükettikten sonra Codex limitleri resetlendi — 61 days ago" aria-label="OpenAI: Önbellek hatası limitleri hızlı tükettikten sonra Codex limitleri resetlendi"><span class="pt" style="background:#3f9e78"></span></button><button class="rt-node down" style="left:-17%" data-id="2fb5413628855a10" title="ChatGPT: Tüm ücretli paketlerde Codex limitleri resetlendi — 68 days ago" aria-label="OpenAI: Tüm ücretli paketlerde Codex limitleri resetlendi"><span class="pt" style="background:#3f9e78"></span><span class="cap"><span class="t">68d</span></span></button><button class="rt-node down" style="left:-20%" data-id="af77facb425af4f5" title="Claude: 5 saatlik ve haftalık limitler herkes için resetlendi — 69 days ago" aria-label="Anthropic: 5 saatlik ve haftalık limitler herkes için resetlendi"><span class="pt" style="background:#8a4a20"></span></button><button class="rt-node up" style="left:-23%" data-id="8b30dbeafee9b203" title="Claude: Claude Code haftalık limitleri 13 Temmuz'a kadar %50 artırıldı — 71 days ago" aria-label="Anthropic: Claude Code haftalık limitleri 13 Temmuz'a kadar %50 artırıldı"><span class="pt" style="background:#8a4a20"></span><span class="cap"><span class="t">71d</span></span></button><button class="rt-node up" style="left:-26%" data-id="ce43194feee7a7bb" title="ChatGPT: Geçiş yapan şirketlere iki ay ücretsiz Codex kullanımı — 71 days ago" aria-label="OpenAI: Geçiş yapan şirketlere iki ay ücretsiz Codex kullanımı"><span class="pt" style="background:#3f9e78"></span></button><button class="rt-node down" style="left:-29%" data-id="9fe633cfe76cafb0" title="ChatGPT: GPT-5.5 ile daha çok geliştirme için tüm ücretli paketlerde Codex limitleri resetlendi — 86 days ago" aria-label="OpenAI: GPT-5.5 ile daha çok geliştirme için tüm ücretli paketlerde Codex limitleri resetlendi"><span class="pt" style="background:#3f9e78"></span><span class="cap"><span class="t">86d</span></span></button><button class="rt-node down" style="left:-32%" data-id="733568b83171a0ae" title="ChatGPT: 10 dakikalık kesinti giderildikten sonra Codex limitleri resetlendi — 93 days ago" aria-label="OpenAI: 10 dakikalık kesinti giderildikten sonra Codex limitleri resetlendi"><span class="pt" style="background:#3f9e78"></span></button><button class="rt-node up" style="left:-35%" data-id="0860200b4af9910d" title="ChatGPT: 1. yıl dönümü için tüm paketlerde Codex limitleri resetlendi — 97 days ago" aria-label="OpenAI: 1. yıl dönümü için tüm paketlerde Codex limitleri resetlendi"><span class="pt" style="background:#3f9e78"></span><span class="cap"><span class="t">97d</span></span></button><button class="rt-node up" style="left:-38%" data-id="89c355229f1677f5" title="Claude: Opus 4.7 uzun bağlam hatası sonrası 5 saatlik ve haftalık limitler resetlendi — 98 days ago" aria-label="Anthropic: Opus 4.7 uzun bağlam hatası sonrası 5 saatlik ve haftalık limitler resetlendi"><span class="pt" style="background:#8a4a20"></span></button><button class="rt-node down" style="left:-41%" data-id="a865661d0a78bfc9" title="ChatGPT: 100 dolarlık ChatGPT paketinin çıkışıyla birlikte Codex limitleri resetlendi — 105 days ago" aria-label="OpenAI: 100 dolarlık ChatGPT paketinin çıkışıyla birlikte Codex limitleri resetlendi"><span class="pt" style="background:#3f9e78"></span><span class="cap"><span class="t">105d</span></span></button><button class="rt-node down" style="left:-44%" data-id="406773adbaa3d2d5" title="ChatGPT: 200 dolarlık Pro kullanıcıları için 2 kat Codex kampanyası 31 Mayıs'a uzatıldı, limitler de resetlendi — 105 days ago" aria-label="OpenAI: 200 dolarlık Pro kullanıcıları için 2 kat Codex kampanyası 31 Mayıs'a uzatıldı, limitler de resetlendi"><span class="pt" style="background:#3f9e78"></span></button><button class="rt-node up" style="left:-47%" data-id="1bf5d11c27fd72a0" title="ChatGPT: 3 milyon haftalık kullanıcı için Codex limitleri resetlendi, her 1 milyonda bir reset sözü verildi — 106 days ago" aria-label="OpenAI: 3 milyon haftalık kullanıcı için Codex limitleri resetlendi, her 1 milyonda bir reset sözü verildi"><span class="pt" style="background:#3f9e78"></span><span class="cap"><span class="t">106d</span></span></button><button class="rt-node up" style="left:-50%" data-id="39839f1e9720c343" title="ChatGPT: Limit aşımları artınca tüm paketlerde Codex limitleri resetlendi — 113 days ago" aria-label="OpenAI: Limit aşımları artınca tüm paketlerde Codex limitleri resetlendi"><span class="pt" style="background:#3f9e78"></span></button><button class="rt-node down" style="left:-53%" data-id="dd07616b111657cb" title="ChatGPT: Eklenti çıkışı için tüm paketlerde Codex limitleri resetlendi — 118 days ago" aria-label="OpenAI: Eklenti çıkışı için tüm paketlerde Codex limitleri resetlendi"><span class="pt" style="background:#3f9e78"></span><span class="cap"><span class="t">118d</span></span></button><button class="rt-node down" style="left:-56%" data-id="b0f0287b43568b9e" title="ChatGPT: Servis tekrar kararlı hale gelince Codex limitleri resetlendi — 134 days ago" aria-label="OpenAI: Servis tekrar kararlı hale gelince Codex limitleri resetlendi"><span class="pt" style="background:#3f9e78"></span></button><button class="rt-node up" style="left:-59%" data-id="d5c260ab3b6322c8" title="ChatGPT: Kesinti tamamen giderildikten sonra Codex limitleri resetlendi — 135 days ago" aria-label="OpenAI: Kesinti tamamen giderildikten sonra Codex limitleri resetlendi"><span class="pt" style="background:#3f9e78"></span><span class="cap"><span class="t">135d</span></span></button><button class="rt-node up" style="left:-62%" data-id="be41d9a5a86ceea4" title="ChatGPT: Hızlı limit tükenmesi incelenirken Plus ve Pro için Codex limitleri resetlendi — 137 days ago" aria-label="OpenAI: Hızlı limit tükenmesi incelenirken Plus ve Pro için Codex limitleri resetlendi"><span class="pt" style="background:#3f9e78"></span></button><button class="rt-node down" style="left:-65%" data-id="605d68cddb464646" title="ChatGPT: 2 kat kampanya hatası kullanıcıların ~%9'unu atlayınca Plus ve Pro limitleri resetlendi — 141 days ago" aria-label="OpenAI: 2 kat kampanya hatası kullanıcıların ~%9'unu atlayınca Plus ve Pro limitleri resetlendi"><span class="pt" style="background:#3f9e78"></span><span class="cap"><span class="t">141d</span></span></button><button class="rt-node down" style="left:-68%" data-id="5ed11e154e0ab92b" title="ChatGPT: İstekler yanlışlıkla yüksek riskli sayılıp engellendikten sonra Codex limitleri resetlendi — 142 days ago" aria-label="OpenAI: İstekler yanlışlıkla yüksek riskli sayılıp engellendikten sonra Codex limitleri resetlendi"><span class="pt" style="background:#3f9e78"></span></button><button class="rt-node up" style="left:-71%" data-id="9a49f296322879de" title="ChatGPT: Codex limitleri resetlendi ve 1 Ocak'a kadar iki katına çıkarıldı — 210 days ago" aria-label="OpenAI: Codex limitleri resetlendi ve 1 Ocak'a kadar iki katına çıkarıldı"><span class="pt" style="background:#3f9e78"></span><span class="cap"><span class="t">210d</span></span></button><button class="rt-node up" style="left:-74%" data-id="3967c24be4f7d79a" title="ChatGPT: Kullanım takip sistemi yeniden yazılırken Codex limitleri resetlendi — 216 days ago" aria-label="OpenAI: Kullanım takip sistemi yeniden yazılırken Codex limitleri resetlendi"><span class="pt" style="background:#3f9e78"></span></button><button class="rt-node down" style="left:-77%" data-id="04ff2079d915be96" title="ChatGPT: Bir aksaklık sonrası Codex limitleri herkes için resetlendi — 218 days ago" aria-label="OpenAI: Bir aksaklık sonrası Codex limitleri herkes için resetlendi"><span class="pt" style="background:#3f9e78"></span><span class="cap"><span class="t">218d</span></span></button><button class="rt-node down" style="left:-80%" data-id="3e549839a89d801f" title="ChatGPT: Bir sorun giderilirken Codex limitleri herkes için resetlendi — 232 days ago" aria-label="OpenAI: Bir sorun giderilirken Codex limitleri herkes için resetlendi"><span class="pt" style="background:#3f9e78"></span></button><button class="rt-node up" style="left:-83%" data-id="60665b259317d045" title="ChatGPT: ABD'deki olağandışı gecikmeleri telafi etmek için Codex limitleri resetlendi — 242 days ago" aria-label="OpenAI: ABD'deki olağandışı gecikmeleri telafi etmek için Codex limitleri resetlendi"><span class="pt" style="background:#3f9e78"></span><span class="cap"><span class="t">242d</span></span></button><button class="rt-node up" style="left:-86%" data-id="6a724f6b4e6c425d" title="ChatGPT: Küresel kesinti sonrası Codex limitleri resetlendi — 260 days ago" aria-label="OpenAI: Küresel kesinti sonrası Codex limitleri resetlendi"><span class="pt" style="background:#3f9e78"></span></button><button class="rt-node down" style="left:-89%" data-id="4d63a66f77ba2d67" title="ChatGPT: GPU kaynaklı yavaşlamalar sonrası Codex limitleri herkes için resetlendi — 309 days ago" aria-label="OpenAI: GPU kaynaklı yavaşlamalar sonrası Codex limitleri herkes için resetlendi"><span class="pt" style="background:#3f9e78"></span><span class="cap"><span class="t">309d</span></span></button><div class="now"><span>Şimdi</span></div></div></div>
+    </section>
+
+    <section class="rt-recent">
+      <div class="rt-tl-head"><h2>Son değişiklikler</h2><span id="rt-count">62 kayıt</span></div>
+      <div class="rt-list" id="rt-list"><a class="rt-row sel" href="/e/2026-07-21-chatgpt-work-and-codex-usage-limits-reset-for-10m-active/" title="21 Tem 2026, 16:47 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>10 milyon aktif kullanıcı için ChatGPT Work ve Codex limitleri resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>2 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-20-openai-offers-100-chatgpt-work-credit-to-first-10-000-users/" title="20 Tem 2026, 19:37 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>OpenAI, ChatGPT Work hakkında paylaşım yapan ilk 10.000 kullanıcıya 100 dolar kredi veriyor</strong></span>
+      <span class="rb">Kredi</span>
+      <span class="rw"><b>3 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-19-claude-cowork-and-claude-code-usage-limits-boosted-jun-aug/" title="19 Tem 2026">
+      <span class="rmark" style="--pc:#8a4a20" title="Anthropic"></span>
+      <span class="what"><strong>Claude Cowork ve Claude Code limitleri artırıldı (Haz–Ağu 2026 kampanyası)</strong></span>
+      <span class="rb">Limit artışı</span>
+      <span class="rw"><b>4 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-18-claude-code-weekly-limits-kept-50-higher-through-august-19/" title="18 Tem 2026, 16:04 UTC">
+      <span class="rmark" style="--pc:#8a4a20" title="Anthropic"></span>
+      <span class="what"><strong>Claude Code haftalık limitleri 19 Ağustos'a kadar %50 yüksek kalıyor</strong></span>
+      <span class="rb">Limit artışı</span>
+      <span class="rw"><b>5 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-18-chatgpt-work-and-codex-usage-limits-reset-again-oops-i-did/" title="18 Tem 2026, 03:28 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>ChatGPT Work ve Codex limitleri yine resetlendi: “Oops... I did it again”</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>5 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-18-one-time-100-usage-credit-for-pro-team-standard-users-as/" title="18 Tem 2026, 02:14 UTC">
+      <span class="rmark" style="--pc:#8a4a20" title="Anthropic"></span>
+      <span class="what"><strong>Fable 5 krediye geçerken Pro/Team Standard kullanıcılarına tek seferlik 100 dolar kredi</strong></span>
+      <span class="rb">Kredi</span>
+      <span class="rw"><b>5 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-17-claude-refunds-overcharges-and-grants-matching-credit-after/" title="17 Tem 2026">
+      <span class="rmark" style="--pc:#8a4a20" title="Anthropic"></span>
+      <span class="what"><strong>Claude, Fable 5 arızası sonrası fazla ücretlendirmeyi iade etti ve eşdeğer kredi verdi</strong></span>
+      <span class="rb">Kredi</span>
+      <span class="rw"><b>6 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-16-5-hour-and-weekly-rate-limits-reset-for-all-users-third-week/" title="16 Tem 2026">
+      <span class="rmark" style="--pc:#8a4a20" title="Anthropic"></span>
+      <span class="what"><strong>5 saatlik ve haftalık limitler tüm kullanıcılar için resetlendi — üst üste üçüncü hafta</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>7 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-16-codex-and-chatgpt-work-usage-limits-reset-for-9m-active-user/" title="16 Tem 2026, 04:14 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>9 milyon aktif kullanıcı için Codex ve ChatGPT Work limitleri resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>7 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-15-openai-offers-100-codex-credit-to-first-10-000-users-who/" title="15 Tem 2026, 04:28 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>OpenAI, GPT-5.6 Sol hakkında paylaşım yapan ilk 10.000 kullanıcıya 100 dolar Codex kredisi veriyor</strong></span>
+      <span class="rb">Kredi</span>
+      <span class="rw"><b>8 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-14-chatgpt-work-and-codex-usage-limits-reset-for-8m-active-user/" title="14 Tem 2026, 19:34 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>8 milyon aktif kullanıcı için ChatGPT Work ve Codex limitleri resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>9 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-13-banked-usage-reset-granted-to-all-codex-and-chatgpt-work/" title="13 Tem 2026, 18:29 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>7 milyon kullanıcı için tüm Codex ve ChatGPT Work kullanıcılarına biriktirilebilir reset verildi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>10 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-13-openai-passes-inference-savings-to-codex-chatgpt-work-for/" title="13 Tem 2026, 02:33 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>OpenAI, çıkarım optimizasyonu tasarruflarını Codex ve ChatGPT Work'e yansıttı: yaklaşık %10 daha fazla kullanım</strong></span>
+      <span class="rb">Limit artışı</span>
+      <span class="rw"><b>10 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-12-banked-reset-granted-to-500-000-chatgpt-work-and-codex-users/" title="12 Tem 2026, 21:28 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>Reset düğmesi hatasının ardından 500.000 ChatGPT Work ve Codex kullanıcısına biriktirilebilir reset verildi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>11 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-12-5-hour-usage-cap-temporarily-removed-on-chatgpt-plus-pro-and/" title="12 Tem 2026, 17:59 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>ChatGPT Plus, Pro ve Business'ta 5 saatlik limit geçici olarak kaldırıldı</strong></span>
+      <span class="rb">Limit artışı</span>
+      <span class="rw"><b>11 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-12-claude-fable-5-access-and-50-higher-claude-code-weekly/" title="12 Tem 2026, 17:02 UTC">
+      <span class="rmark" style="--pc:#8a4a20" title="Anthropic"></span>
+      <span class="what"><strong>Claude Fable 5 erişimi ve %50 yüksek Claude Code haftalık limitleri 19 Temmuz'a uzatıldı</strong></span>
+      <span class="rb">Ücretsiz erişim</span>
+      <span class="rw"><b>11 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-11-another-chatgpt-work-and-codex-usage-limit-reset-over-the/" title="11 Tem 2026, 05:54 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>Hafta sonu ChatGPT Work ve Codex limitleri bir kez daha resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>12 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-10-chatgpt-work-and-codex-usage-limits-reset-again-second-reset/" title="10 Tem 2026, 17:59 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>ChatGPT Work ve Codex limitleri yine resetlendi, aynı gün ikinci reset sözü verildi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>13 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-09-chatgpt-work-and-codex-usage-limits-reset-ahead-of-gpt-5-6/" title="9 Tem 2026, 21:24 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>GPT-5.6 Sol talep artışı öncesi ChatGPT Work ve Codex limitleri resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>14 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-09-we-ve-reset-5-hour-and-weekly-rate-limits-for-all-users/" title="9 Tem 2026, 18:01 UTC">
+      <span class="rmark" style="--pc:#8a4a20" title="Anthropic"></span>
+      <span class="what"><strong>“Tüm kullanıcılar için 5 saatlik ve haftalık limitleri resetledik.”</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>14 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-07-claude-fable-5-access-on-all-paid-plans-extended-through/" title="7 Tem 2026, 17:36 UTC">
+      <span class="rmark" style="--pc:#8a4a20" title="Anthropic"></span>
+      <span class="what"><strong>Tüm ücretli paketlerde Claude Fable 5 erişimi 12 Temmuz'a uzatıldı</strong></span>
+      <span class="rb">Ücretsiz erişim</span>
+      <span class="rw"><b>16 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-07-doubled-claude-cowork-usage-limits-extended-through-august-5/" title="7 Tem 2026, 16:07 UTC">
+      <span class="rmark" style="--pc:#8a4a20" title="Anthropic"></span>
+      <span class="what"><strong>İki katına çıkarılan Claude Cowork limitleri 5 Ağustos'a uzatıldı</strong></span>
+      <span class="rb">Limit artışı</span>
+      <span class="rw"><b>16 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-06-claude-code-weekly-limits-increased-by-50-through-july-13/" title="6 Tem 2026">
+      <span class="rmark" style="--pc:#8a4a20" title="Anthropic"></span>
+      <span class="what"><strong>Claude Code haftalık limitleri 13 Temmuz'a kadar %50 artırıldı</strong></span>
+      <span class="rb">Limit artışı</span>
+      <span class="rw"><b>17 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-01-5-hour-and-weekly-rate-limits-reset-for-all-users/" title="1 Tem 2026, 21:16 UTC">
+      <span class="rmark" style="--pc:#8a4a20" title="Anthropic"></span>
+      <span class="what"><strong>5 saatlik ve haftalık limitler tüm kullanıcılar için resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>22 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-07-01-claude-fable-5-included-in-paid-plans-at-up-to-50-of-weekly/" title="1 Tem 2026, 19:31 UTC">
+      <span class="rmark" style="--pc:#8a4a20" title="Anthropic"></span>
+      <span class="what"><strong>Claude Fable 5, haftalık limitin %50'sine kadar ücretli paketlere dahil edildi</strong></span>
+      <span class="rb">Ücretsiz erişim</span>
+      <span class="rw"><b>22 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-06-29-codex-usage-limits-fully-reset-with-one-additional-banked/" title="29 Haz 2026, 23:39 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>Codex limitleri tamamen resetlendi, bir de biriktirilebilir reset eklendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>23 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-06-28-codex-usage-limits-hard-reset-for-everyone-during-incident/" title="28 Haz 2026, 23:54 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>Olay incelemesi sırasında Codex limitleri herkes için sıfırdan resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>24 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-06-26-codex-usage-reset-granted-to-all-users-during-a-usage-drain/" title="26 Haz 2026, 23:39 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>Hızlı limit tükenmesi incelenirken tüm kullanıcılara Codex reseti verildi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>26 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-06-20-5-hour-and-weekly-usage-limits-reset-for-everyone-across-all/" title="20 Haz 2026, 00:05 UTC">
+      <span class="rmark" style="--pc:#8a4a20" title="Anthropic"></span>
+      <span class="what"><strong>Tüm paketlerde 5 saatlik ve haftalık limitler herkes için resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>33 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-06-18-double-reset-a-full-codex-reset-plus-one-banked-reset/" title="18 Haz 2026, 00:10 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>Çifte reset: tam Codex reseti ve bir biriktirilebilir reset</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>35 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-06-09-5-hour-and-weekly-rate-limits-reset-for-all-users-at-fable-5/" title="9 Haz 2026, 21:48 UTC">
+      <span class="rmark" style="--pc:#8a4a20" title="Anthropic"></span>
+      <span class="what"><strong>Fable 5 çıkışında 5 saatlik ve haftalık limitler tüm kullanıcılar için resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>44 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-06-05-claude-cowork-usage-limits-doubled-for-one-month/" title="5 Haz 2026, 22:01 UTC">
+      <span class="rmark" style="--pc:#8a4a20" title="Anthropic"></span>
+      <span class="what"><strong>Claude Cowork limitleri bir ay boyunca iki katına çıkarıldı</strong></span>
+      <span class="rb">Limit artışı</span>
+      <span class="rw"><b>48 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-06-04-codex-usage-limits-reset-across-all-paid-plans-after-three/" title="4 Haz 2026, 00:25 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>Üç kesinti sonrası tüm ücretli paketlerde Codex limitleri resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>49 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-06-02-1-000-usage-credits-per-user-for-first-time-claude-code/" title="2 Haz 2026">
+      <span class="rmark" style="--pc:#8a4a20" title="Anthropic"></span>
+      <span class="what"><strong>İlk kez Claude Code/Cowork kullanan her kullanıcıya 1.000 dolar kredi (Enterprise)</strong></span>
+      <span class="rb">Kredi</span>
+      <span class="rw"><b>51 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-06-01-5-hour-and-weekly-rate-limits-reset-for-pro-and-max-users/" title="1 Haz 2026, 17:35 UTC">
+      <span class="rmark" style="--pc:#8a4a20" title="Anthropic"></span>
+      <span class="what"><strong>Subagent hatası sonrası Pro ve Max kullanıcıları için limitler resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>52 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-05-31-codex-usage-limits-reset-to-100-weekly-and-hourly-for-all/" title="31 May 2026, 15:25 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>Tüm ücretli aboneliklerde Codex haftalık ve saatlik limitleri %100'e resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>53 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-05-23-codex-usage-limits-reset-after-a-cache-hit-regression/" title="23 May 2026, 20:14 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>Önbellek hatası limitleri hızlı tükettikten sonra Codex limitleri resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>61 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-05-16-codex-usage-limits-reset-across-all-paid-plans/" title="16 May 2026, 17:51 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>Tüm ücretli paketlerde Codex limitleri resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>68 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-05-15-5-hour-and-weekly-rate-limits-reset-for-everyone/" title="15 May 2026, 18:00 UTC">
+      <span class="rmark" style="--pc:#8a4a20" title="Anthropic"></span>
+      <span class="what"><strong>5 saatlik ve haftalık limitler herkes için resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>69 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-05-13-claude-code-weekly-limits-increased-50-through-july-13/" title="13 May 2026, 19:07 UTC">
+      <span class="rmark" style="--pc:#8a4a20" title="Anthropic"></span>
+      <span class="what"><strong>Claude Code haftalık limitleri 13 Temmuz'a kadar %50 artırıldı</strong></span>
+      <span class="rb">Limit artışı</span>
+      <span class="rw"><b>71 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-05-13-two-months-of-free-codex-usage-for-companies-switching-over/" title="13 May 2026, 18:13 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>Geçiş yapan şirketlere iki ay ücretsiz Codex kullanımı</strong></span>
+      <span class="rb">Ücretsiz erişim</span>
+      <span class="rw"><b>71 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-04-28-codex-rate-limits-reset-for-all-paid-plans-to-build-more/" title="28 Nis 2026, 05:28 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>GPT-5.5 ile daha çok geliştirme için tüm ücretli paketlerde Codex limitleri resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>86 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-04-20-codex-rate-limits-reset-after-a-10-minute-incident-was/" title="20 Nis 2026, 23:15 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>10 dakikalık kesinti giderildikten sonra Codex limitleri resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>93 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-04-17-codex-rate-limits-reset-across-all-plans-for-its-1-year/" title="17 Nis 2026, 00:58 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>1. yıl dönümü için tüm paketlerde Codex limitleri resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>97 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-04-16-5-hour-and-weekly-rate-limits-reset-after-an-opus-4-7-long/" title="16 Nis 2026, 20:02 UTC">
+      <span class="rmark" style="--pc:#8a4a20" title="Anthropic"></span>
+      <span class="what"><strong>Opus 4.7 uzun bağlam hatası sonrası 5 saatlik ve haftalık limitler resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>98 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-04-09-codex-limits-reset-alongside-the-100-chatgpt-plan-launch/" title="9 Nis 2026, 17:51 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>100 dolarlık ChatGPT paketinin çıkışıyla birlikte Codex limitleri resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>105 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-04-09-2x-codex-usage-promo-extended-to-may-31-for-200-pro-users/" title="9 Nis 2026, 17:38 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>200 dolarlık Pro kullanıcıları için 2 kat Codex kampanyası 31 Mayıs'a uzatıldı, limitler de resetlendi</strong></span>
+      <span class="rb">Limit artışı</span>
+      <span class="rw"><b>105 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-04-07-codex-rate-limits-reset-for-3-million-weekly-users-with-a/" title="7 Nis 2026, 23:13 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>3 milyon haftalık kullanıcı için Codex limitleri resetlendi, her 1 milyonda bir reset sözü verildi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>106 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-04-01-codex-usage-limits-reset-for-all-plans-after-elevated-rate/" title="1 Nis 2026, 07:48 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>Limit aşımları artınca tüm paketlerde Codex limitleri resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>113 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-03-27-codex-usage-limits-reset-across-all-plans-for-the-plugins/" title="27 Mar 2026, 01:52 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>Eklenti çıkışı için tüm paketlerde Codex limitleri resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>118 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-03-11-codex-rate-limits-reset-once-the-service-was-back-and-stable/" title="11 Mar 2026, 05:38 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>Servis tekrar kararlı hale gelince Codex limitleri resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>134 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-03-10-codex-rate-limits-reset-after-the-outage-was-fully-resolved/" title="10 Mar 2026, 03:51 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>Kesinti tamamen giderildikten sonra Codex limitleri resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>135 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-03-08-codex-rate-limits-reset-for-plus-and-pro-during-a-usage/" title="8 Mar 2026, 02:42 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>Hızlı limit tükenmesi incelenirken Plus ve Pro için Codex limitleri resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>137 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-03-04-codex-rate-limits-reset-for-plus-and-pro-after-a-2x-promo/" title="4 Mar 2026, 21:30 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>2 kat kampanya hatası kullanıcıların ~%9'unu atlayınca Plus ve Pro limitleri resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>141 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2026-03-03-codex-rate-limits-reset-after-requests-were-wrongly-blocked/" title="3 Mar 2026, 01:50 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>İstekler yanlışlıkla yüksek riskli sayılıp engellendikten sonra Codex limitleri resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>142 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2025-12-25-codex-rate-limits-reset-and-lifted-to-2x-through-1-january/" title="25 Ara 2025, 08:01 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>Codex limitleri resetlendi ve 1 Ocak'a kadar iki katına çıkarıldı</strong></span>
+      <span class="rb">Limit artışı</span>
+      <span class="rw"><b>210 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2025-12-19-codex-usage-limits-reset-during-a-usage-tracking-system/" title="19 Ara 2025, 22:01 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>Kullanım takip sistemi yeniden yazılırken Codex limitleri resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>216 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2025-12-17-codex-usage-limits-reset-for-everyone-after-a-disruption/" title="17 Ara 2025, 02:18 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>Bir aksaklık sonrası Codex limitleri herkes için resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>218 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2025-12-02-codex-usage-limits-reset-for-everyone-while-an-issue-was/" title="2 Ara 2025, 22:49 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>Bir sorun giderilirken Codex limitleri herkes için resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>232 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2025-11-22-codex-rate-limits-reset-to-compensate-for-unusually-high-us/" title="22 Kas 2025, 23:13 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>ABD'deki olağandışı gecikmeleri telafi etmek için Codex limitleri resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>242 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2025-11-05-codex-rate-limits-reset-after-a-global-outage/" title="5 Kas 2025, 20:19 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>Küresel kesinti sonrası Codex limitleri resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>260 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a><a class="rt-row" href="/e/2025-09-17-codex-limits-reset-for-everyone-after-gpu-provisioning/" title="17 Eyl 2025, 04:02 UTC">
+      <span class="rmark" style="--pc:#3f9e78" title="OpenAI"></span>
+      <span class="what"><strong>GPU kaynaklı yavaşlamalar sonrası Codex limitleri herkes için resetlendi</strong></span>
+      <span class="rb">Limit resetleme</span>
+      <span class="rw"><b>309 gün önce</b></span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a></div>
+    </section>
+
+    <footer class="rt-foot">
+      <p class="rt-about">Claude ve ChatGPT kullanım limiti resetlerinin, geçici artışlarının ve kredilerinin tarihli kaydı. Her kayıt özgün duyuruya bağlanır. 30 dakikada bir güncellenir.</p>
+      <div class="rt-footrow">
+        <span>Anthropic veya OpenAI ile bağlantılı değildir.</span>
+        <span><a href="/tr/feed.xml">RSS</a> · <a href="/api/events.json">JSON</a></span>
+      </div>
+    </footer>
+  </div>
+</div>
+<script>window.__RESETS__ = {"now":"2026-07-23T10:22:24.959Z","events":[{"id":"curator-20260721-openai-10m-reset","href":"/e/2026-07-21-chatgpt-work-and-codex-usage-limits-reset-for-10m-active/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"10 milyon aktif kullanıcı için ChatGPT Work ve Codex limitleri resetlendi","summary":"Tibo Sottiaux (OpenAI): “10M! New day, new usage reset for paid users of Codex and ChatGPT Work. Lands in the next hour. Enjoy.”","when":"2026-07-21T16:47:15.000Z","whenLabel":"21 Tem 2026, 16:47 UTC","url":"https://x.com/thsottiaux/status/2079609157934886975","source":"x.com","activeUntil":null,"backfilled":false},{"id":"curator-20260722-openai-100-credit-chatgptwork-post","href":"/e/2026-07-20-openai-offers-100-chatgpt-work-credit-to-first-10-000-users/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"credit","kindLabel":"Credits granted","benefit":"Kredi","title":"OpenAI, ChatGPT Work hakkında paylaşım yapan ilk 10.000 kullanıcıya 100 dolar kredi veriyor","summary":"Greg Brockman (OpenAI): “We're doing the promotion again, except this time for ChatGPT Work: Tweet what you love about ChatGPT Work, claim $100 in free credits, get more work done. First 10k get the free tokens.”","when":"2026-07-20T19:37:40.000Z","whenLabel":"20 Tem 2026, 19:37 UTC","url":"https://x.com/gdb/status/2079289658622738481","source":"x.com","activeUntil":null,"backfilled":false},{"id":"backfill-2026-06-cowork-promo","href":"/e/2026-07-19-claude-cowork-and-claude-code-usage-limits-boosted-jun-aug/","provider":"anthropic","provName":"Anthropic","provColor":"#8a4a20","productShort":"Claude","kind":"usage_boost","kindLabel":"Usage limits increased","benefit":"Limit artışı","title":"Claude Cowork ve Claude Code limitleri artırıldı (Haz–Ağu 2026 kampanyası)","summary":"Claude Code weekly limits were raised 50% through August 19. Cowork limits were doubled through August 5.","when":"2026-07-19T00:00:00.000Z","whenLabel":"19 Tem 2026","url":"https://support.claude.com/en/articles/15400594-claude-cowork-june-august-2026-usage-promotion","source":"support.claude.com","activeUntil":"2026-08-19T23:59:59.000Z","backfilled":true},{"id":"604ccbd792df5154","href":"/e/2026-07-18-claude-code-weekly-limits-kept-50-higher-through-august-19/","provider":"anthropic","provName":"Anthropic","provColor":"#8a4a20","productShort":"Claude","kind":"usage_boost","kindLabel":"Usage limits increased","benefit":"Limit artışı","title":"Claude Code haftalık limitleri 19 Ağustos'a kadar %50 yüksek kalıyor","summary":"We're also keeping Claude Code weekly limits 50% higher, now through August 19, for all Pro, Max, Team, and seat-based Enterprise users.","when":"2026-07-18T16:04:15.000Z","whenLabel":"18 Tem 2026, 16:04 UTC","url":"https://x.com/ClaudeDevs/status/2078511173759324328","source":"x.com","activeUntil":"2026-08-19T23:59:59.000Z","backfilled":false},{"id":"curator-20260719-openai-reset-jul18","href":"/e/2026-07-18-chatgpt-work-and-codex-usage-limits-reset-again-oops-i-did/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"ChatGPT Work ve Codex limitleri yine resetlendi: “Oops... I did it again”","summary":"“Oops... I did it again. Enjoy reset usage limits for all paid users for Codex and ChatGPT Work.”","when":"2026-07-18T03:28:22.000Z","whenLabel":"18 Tem 2026, 03:28 UTC","url":"https://x.com/thsottiaux/status/2078320950488297917","source":"x.com","activeUntil":null,"backfilled":false},{"id":"curator-20260719-fable5-100-credit","href":"/e/2026-07-18-one-time-100-usage-credit-for-pro-team-standard-users-as/","provider":"anthropic","provName":"Anthropic","provColor":"#8a4a20","productShort":"Claude","kind":"credit","kindLabel":"Credits granted","benefit":"Kredi","title":"Fable 5 krediye geçerken Pro/Team Standard kullanıcılarına tek seferlik 100 dolar kredi","summary":"Anthropic gave Pro and Team Standard users a one-time $100 credit for Fable 5 after included access ended. Max and Team Premium users kept Fable 5 within 50% of their weekly limits.","when":"2026-07-18T02:14:43.000Z","whenLabel":"18 Tem 2026, 02:14 UTC","url":"https://x.com/claudeai/status/2078302415804379218","source":"x.com","activeUntil":null,"backfilled":false},{"id":"curator-20260722-fable5-jul17-credit","href":"/e/2026-07-17-claude-refunds-overcharges-and-grants-matching-credit-after/","provider":"anthropic","provName":"Anthropic","provColor":"#8a4a20","productShort":"Claude","kind":"credit","kindLabel":"Credits granted","benefit":"Kredi","title":"Claude, Fable 5 arızası sonrası fazla ücretlendirmeyi iade etti ve eşdeğer kredi verdi","summary":"A July 17 bug wrongly required usage credits to access Fable 5 on claude.ai and Claude Code for Pro/Max/Team/Enterprise users; Anthropic refunded any extra usage charged during the outage and added a matching credit to affected accounts.","when":"2026-07-17T12:00:00.000Z","whenLabel":"17 Tem 2026","url":"https://status.anthropic.com/?p=354","source":"status.anthropic.com","activeUntil":null,"backfilled":false},{"id":"backfill-2026-07-16-reset","href":"/e/2026-07-16-5-hour-and-weekly-rate-limits-reset-for-all-users-third-week/","provider":"anthropic","provName":"Anthropic","provColor":"#8a4a20","productShort":"Claude","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"5 saatlik ve haftalık limitler tüm kullanıcılar için resetlendi — üst üste üçüncü hafta","summary":"Anthropic reset the 5-hour and weekly limits for all users for the third week in a row.","when":"2026-07-16T12:00:00.000Z","whenLabel":"16 Tem 2026","url":"https://www.implicator.ai/anthropic-resets-claude-limits-for-third-week-without-explaining-why/","source":"implicator.ai","activeUntil":null,"backfilled":true},{"id":"backfill-2026-07-16-codex-reset","href":"/e/2026-07-16-codex-and-chatgpt-work-usage-limits-reset-for-9m-active-user/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"9 milyon aktif kullanıcı için Codex ve ChatGPT Work limitleri resetlendi","summary":"Tibo Sottiaux (OpenAI): “Another reset for our Codex and ChatGPT Work users. Actually hit 9M active users way earlier today... Should have that sweet 100% weekly usage limit back in a few [minutes].”","when":"2026-07-16T04:14:09.000Z","whenLabel":"16 Tem 2026, 04:14 UTC","url":"https://x.com/thsottiaux/status/2077607697487188198","source":"x.com","activeUntil":null,"backfilled":true},{"id":"curator-20260722-openai-100-credit-codex-post","href":"/e/2026-07-15-openai-offers-100-codex-credit-to-first-10-000-users-who/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"credit","kindLabel":"Credits granted","benefit":"Kredi","title":"OpenAI, GPT-5.6 Sol hakkında paylaşım yapan ilk 10.000 kullanıcıya 100 dolar Codex kredisi veriyor","summary":"Tibo Sottiaux (OpenAI): “What if we gave you $100 in Codex credits if you tell us what you love about GPT-5.6 Sol or why you switched? Tweet it, claim your gift, enjoy more usage. First 10k get the free tokens.”","when":"2026-07-15T04:28:03.000Z","whenLabel":"15 Tem 2026, 04:28 UTC","url":"https://x.com/thsottiaux/status/2077248807533003257","source":"x.com","activeUntil":null,"backfilled":false},{"id":"curator-20260719-openai-reset-8m-jul14","href":"/e/2026-07-14-chatgpt-work-and-codex-usage-limits-reset-for-8m-active-user/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"8 milyon aktif kullanıcı için ChatGPT Work ve Codex limitleri resetlendi","summary":"Tibo Sottiaux (OpenAI): “We have reached 8M active users across Codex and ChatGPT Work. We are once again resetting the usage limits for all. And we continue to not have the 5h rate limit as well.”","when":"2026-07-14T19:34:54.000Z","whenLabel":"14 Tem 2026, 19:34 UTC","url":"https://x.com/thsottiaux/status/2077114635308986427","source":"x.com","activeUntil":null,"backfilled":false},{"id":"79cfe425718fbd69","href":"/e/2026-07-13-banked-usage-reset-granted-to-all-codex-and-chatgpt-work/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"7 milyon kullanıcı için tüm Codex ve ChatGPT Work kullanıcılarına biriktirilebilir reset verildi","summary":"OpenAI added one banked reset to every Codex and ChatGPT Work account after reaching 7 million active users. Users could apply it whenever they chose.","when":"2026-07-13T18:29:31.000Z","whenLabel":"13 Tem 2026, 18:29 UTC","url":"https://x.com/thsottiaux/status/2076735790567338203","source":"x.com","activeUntil":null,"backfilled":false},{"id":"curator-20260723-openai-10pct-inference-boost","href":"/e/2026-07-13-openai-passes-inference-savings-to-codex-chatgpt-work-for/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_boost","kindLabel":"Usage limits increased","benefit":"Limit artışı","title":"OpenAI, çıkarım optimizasyonu tasarruflarını Codex ve ChatGPT Work'e yansıttı: yaklaşık %10 daha fazla kullanım","summary":"Tibo Sottiaux (OpenAI): “We have landed inference optimizations and are passing down savings to all the subscriptions for GPT-5.6 Sol. That should result in around 10% more usage on its own.”","when":"2026-07-13T02:33:19.000Z","whenLabel":"13 Tem 2026, 02:33 UTC","url":"https://x.com/thsottiaux/status/2076495156757577895","source":"x.com","activeUntil":null,"backfilled":false},{"id":"curator-20260719-openai-500k-banked-reset","href":"/e/2026-07-12-banked-reset-granted-to-500-000-chatgpt-work-and-codex-users/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"Reset düğmesi hatasının ardından 500.000 ChatGPT Work ve Codex kullanıcısına biriktirilebilir reset verildi","summary":"A reset-button bug affected fewer than 10% of users during a two-hour window. OpenAI gave a banked reset to all 500,000 accounts that pressed the button during that period.","when":"2026-07-12T21:28:59.000Z","whenLabel":"12 Tem 2026, 21:28 UTC","url":"https://x.com/thsottiaux/status/2076418567143408112","source":"x.com","activeUntil":null,"backfilled":false},{"id":"backfill-2026-07-15-openai-cap-removed","href":"/e/2026-07-12-5-hour-usage-cap-temporarily-removed-on-chatgpt-plus-pro-and/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_boost","kindLabel":"Usage limits increased","benefit":"Limit artışı","title":"ChatGPT Plus, Pro ve Business'ta 5 saatlik limit geçici olarak kaldırıldı","summary":"“Temporarily removing the 5 hour usage limit restriction for all Plus, Business and Pro plans.” The change applied to Codex and ChatGPT Work; weekly limits remained in place.","when":"2026-07-12T17:59:57.000Z","whenLabel":"12 Tem 2026, 17:59 UTC","url":"https://x.com/thsottiaux/status/2076365965915467978","source":"x.com","activeUntil":null,"backfilled":true},{"id":"076c09f006c66928","href":"/e/2026-07-12-claude-fable-5-access-and-50-higher-claude-code-weekly/","provider":"anthropic","provName":"Anthropic","provColor":"#8a4a20","productShort":"Claude","kind":"free_access","kindLabel":"Free model access","benefit":"Ücretsiz erişim","title":"Claude Fable 5 erişimi ve %50 yüksek Claude Code haftalık limitleri 19 Temmuz'a uzatıldı","summary":"We're extending Claude Fable 5 access on all paid plans, as well as keeping Claude Code’s weekly rate limits 50% higher, through July 19.","when":"2026-07-12T17:02:05.000Z","whenLabel":"12 Tem 2026, 17:02 UTC","url":"https://x.com/claudeai/status/2076351399999557669","source":"x.com","activeUntil":"2026-07-19T23:59:59.000Z","backfilled":false},{"id":"curator-20260719-openai-reset-jul11","href":"/e/2026-07-11-another-chatgpt-work-and-codex-usage-limit-reset-over-the/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"Hafta sonu ChatGPT Work ve Codex limitleri bir kez daha resetlendi","summary":"Tibo Sottiaux (OpenAI): “Introducing... another usage limit reset for all our ChatGPT Work and Codex users. Should land over next 30 minutes... we have never seen traffic increase so quickly.”","when":"2026-07-11T05:54:25.000Z","whenLabel":"11 Tem 2026, 05:54 UTC","url":"https://x.com/thsottiaux/status/2075820987833274448","source":"x.com","activeUntil":null,"backfilled":false},{"id":"curator-20260719-openai-reset-jul10","href":"/e/2026-07-10-chatgpt-work-and-codex-usage-limits-reset-again-second-reset/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"ChatGPT Work ve Codex limitleri yine resetlendi, aynı gün ikinci reset sözü verildi","summary":"Tibo Sottiaux (OpenAI): “Hello beautiful people! We have reset usage limits across Codex and ChatGPT Work. And another one will come later in the day.”","when":"2026-07-10T17:59:43.000Z","whenLabel":"10 Tem 2026, 17:59 UTC","url":"https://x.com/thsottiaux/status/2075641131002700120","source":"x.com","activeUntil":null,"backfilled":false},{"id":"curator-20260719-openai-reset-jul9","href":"/e/2026-07-09-chatgpt-work-and-codex-usage-limits-reset-ahead-of-gpt-5-6/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"GPT-5.6 Sol talep artışı öncesi ChatGPT Work ve Codex limitleri resetlendi","summary":"“Enjoy a full reset of your usage limits for ChatGPT Work and Codex. Propagating in the next hour.”","when":"2026-07-09T21:24:11.000Z","whenLabel":"9 Tem 2026, 21:24 UTC","url":"https://x.com/thsottiaux/status/2075330198887940337","source":"x.com","activeUntil":null,"backfilled":false},{"id":"backfill-2026-07-09-reset","href":"/e/2026-07-09-we-ve-reset-5-hour-and-weekly-rate-limits-for-all-users/","provider":"anthropic","provName":"Anthropic","provColor":"#8a4a20","productShort":"Claude","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"“Tüm kullanıcılar için 5 saatlik ve haftalık limitleri resetledik.”","summary":"“We've reset 5-hour and weekly rate limits for all users.”","when":"2026-07-09T18:01:19.000Z","whenLabel":"9 Tem 2026, 18:01 UTC","url":"https://x.com/ClaudeDevs/status/2075279141352706215","source":"x.com","activeUntil":null,"backfilled":true},{"id":"549a6df8a1467f7b","href":"/e/2026-07-07-claude-fable-5-access-on-all-paid-plans-extended-through/","provider":"anthropic","provName":"Anthropic","provColor":"#8a4a20","productShort":"Claude","kind":"free_access","kindLabel":"Free model access","benefit":"Ücretsiz erişim","title":"Tüm ücretli paketlerde Claude Fable 5 erişimi 12 Temmuz'a uzatıldı","summary":"We're extending access to Claude Fable 5 on all paid plans through July 12.","when":"2026-07-07T17:36:58.000Z","whenLabel":"7 Tem 2026, 17:36 UTC","url":"https://x.com/claudeai/status/2074548242386178258","source":"x.com","activeUntil":"2026-07-12T23:59:59.000Z","backfilled":false},{"id":"41bc7cbf2381624b","href":"/e/2026-07-07-doubled-claude-cowork-usage-limits-extended-through-august-5/","provider":"anthropic","provName":"Anthropic","provColor":"#8a4a20","productShort":"Claude","kind":"usage_boost","kindLabel":"Usage limits increased","benefit":"Limit artışı","title":"İki katına çıkarılan Claude Cowork limitleri 5 Ağustos'a uzatıldı","summary":"We're extending doubled Cowork usage limits through August 5, so you can delegate bigger work to Claude. Read more: https://claude.com/blog/cowork-web-mobile/","when":"2026-07-07T16:07:53.000Z","whenLabel":"7 Tem 2026, 16:07 UTC","url":"https://x.com/claudeai/status/2074525821755101458","source":"x.com","activeUntil":"2026-08-05T23:59:59.000Z","backfilled":false},{"id":"backfill-2026-07-06-claude-code-boost","href":"/e/2026-07-06-claude-code-weekly-limits-increased-by-50-through-july-13/","provider":"anthropic","provName":"Anthropic","provColor":"#8a4a20","productShort":"Claude","kind":"usage_boost","kindLabel":"Usage limits increased","benefit":"Limit artışı","title":"Claude Code haftalık limitleri 13 Temmuz'a kadar %50 artırıldı","summary":"Claude Code weekly limits were raised 50% through July 13.","when":"2026-07-06T12:00:00.000Z","whenLabel":"6 Tem 2026","url":"https://pasqualepillitteri.it/en/news/2494/claude-code-weekly-limits-50-percent-anti-codex-anthropic-2026","source":"pasqualepillitteri.it","activeUntil":"2026-07-13T23:59:59.000Z","backfilled":true},{"id":"backfill-2026-07-02-reset","href":"/e/2026-07-01-5-hour-and-weekly-rate-limits-reset-for-all-users/","provider":"anthropic","provName":"Anthropic","provColor":"#8a4a20","productShort":"Claude","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"5 saatlik ve haftalık limitler tüm kullanıcılar için resetlendi","summary":"“We've reset 5-hour and weekly rate limits for all users.”","when":"2026-07-01T21:16:35.000Z","whenLabel":"1 Tem 2026, 21:16 UTC","url":"https://x.com/ClaudeDevs/status/2072429181565288665","source":"x.com","activeUntil":null,"backfilled":true},{"id":"curator-20260719-fable5-included-access","href":"/e/2026-07-01-claude-fable-5-included-in-paid-plans-at-up-to-50-of-weekly/","provider":"anthropic","provName":"Anthropic","provColor":"#8a4a20","productShort":"Claude","kind":"free_access","kindLabel":"Free model access","benefit":"Ücretsiz erişim","title":"Claude Fable 5, haftalık limitin %50'sine kadar ücretli paketlere dahil edildi","summary":"Fable 5 was included on Pro, Max, Team and Enterprise plans at no extra charge, using up to 50% of the weekly limit. The offer ran through July 19.","when":"2026-07-01T19:31:07.000Z","whenLabel":"1 Tem 2026, 19:31 UTC","url":"https://x.com/claudeai/status/2072402639644766602","source":"x.com","activeUntil":"2026-07-20T06:59:59.000Z","backfilled":false},{"id":"2eabf5dd16dc04b8","href":"/e/2026-06-29-codex-usage-limits-fully-reset-with-one-additional-banked/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"Codex limitleri tamamen resetlendi, bir de biriktirilebilir reset eklendi","summary":"OpenAI reset Codex usage limits and added one banked reset after reports of unusually fast usage drain. It said several smaller issues had compounded for some users.","when":"2026-06-29T23:39:41.000Z","whenLabel":"29 Haz 2026, 23:39 UTC","url":"https://x.com/thsottiaux/status/2071740419030053227","source":"x.com","activeUntil":null,"backfilled":false},{"id":"8905c5ebf2fd9f40","href":"/e/2026-06-28-codex-usage-limits-hard-reset-for-everyone-during-incident/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"Olay incelemesi sırasında Codex limitleri herkes için sıfırdan resetlendi","summary":"OpenAI reset Codex limits for all users while investigating reports of unusually fast usage drain. Existing banked resets remained available.","when":"2026-06-28T23:54:07.000Z","whenLabel":"28 Haz 2026, 23:54 UTC","url":"https://x.com/thsottiaux/status/2071381664853319742","source":"x.com","activeUntil":null,"backfilled":false},{"id":"95d421300d04516e","href":"/e/2026-06-26-codex-usage-reset-granted-to-all-users-during-a-usage-drain/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"Hızlı limit tükenmesi incelenirken tüm kullanıcılara Codex reseti verildi","summary":"We are giving all Codex users a usage reset on the house. Should be showing in your accounts in the next few hours. We have applied some mitigations, but our investigation hasn't shown users being impacted at large. We are continuing to monitor the situation.","when":"2026-06-26T23:39:48.000Z","whenLabel":"26 Haz 2026, 23:39 UTC","url":"https://x.com/thsottiaux/status/2070653282440405046","source":"x.com","activeUntil":null,"backfilled":false},{"id":"3840cf79b0dac59f","href":"/e/2026-06-20-5-hour-and-weekly-usage-limits-reset-for-everyone-across-all/","provider":"anthropic","provName":"Anthropic","provColor":"#8a4a20","productShort":"Claude","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"Tüm paketlerde 5 saatlik ve haftalık limitler herkes için resetlendi","summary":"ClaudeDevs: \"Update: we've gone ahead and reset 5-hour and weekly usage limits for everyone, across all plans. Enjoy your weekend!\"","when":"2026-06-20T00:05:06.000Z","whenLabel":"20 Haz 2026, 00:05 UTC","url":"https://x.com/ClaudeDevs/status/2068122937308426676","source":"x.com","activeUntil":null,"backfilled":false},{"id":"a453c48f150b079c","href":"/e/2026-06-18-double-reset-a-full-codex-reset-plus-one-banked-reset/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"Çifte reset: tam Codex reseti ve bir biriktirilebilir reset","summary":"Dearest gentle codexer. We did a sneaky double reset. Not only do you get a full reset on us. But you are also getting one into the reset bank to use at your own leisure. Enjoy","when":"2026-06-18T00:10:10.000Z","whenLabel":"18 Haz 2026, 00:10 UTC","url":"https://x.com/thsottiaux/status/2067399435009622521","source":"x.com","activeUntil":null,"backfilled":false},{"id":"4e385ea1b7d54878","href":"/e/2026-06-09-5-hour-and-weekly-rate-limits-reset-for-all-users-at-fable-5/","provider":"anthropic","provName":"Anthropic","provColor":"#8a4a20","productShort":"Claude","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"Fable 5 çıkışında 5 saatlik ve haftalık limitler tüm kullanıcılar için resetlendi","summary":"We've reset 5-hour and weekly rate limits for all users. Enjoy Fable 5!","when":"2026-06-09T21:48:01.000Z","whenLabel":"9 Haz 2026, 21:48 UTC","url":"https://x.com/ClaudeDevs/status/2064464557951852643","source":"x.com","activeUntil":null,"backfilled":false},{"id":"b78d97139f7daa62","href":"/e/2026-06-05-claude-cowork-usage-limits-doubled-for-one-month/","provider":"anthropic","provName":"Anthropic","provColor":"#8a4a20","productShort":"Claude","kind":"usage_boost","kindLabel":"Usage limits increased","benefit":"Limit artışı","title":"Claude Cowork limitleri bir ay boyunca iki katına çıkarıldı","summary":"We've doubled usage limits in Claude Cowork for the next month. Delegate bigger, more complex tasks to Claude.","when":"2026-06-05T22:01:15.000Z","whenLabel":"5 Haz 2026, 22:01 UTC","url":"https://x.com/claudeai/status/2063018337567670285","source":"x.com","activeUntil":"2026-07-05T23:59:59.000Z","backfilled":false},{"id":"46d0a0ba15e54aae","href":"/e/2026-06-04-codex-usage-limits-reset-across-all-paid-plans-after-three/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"Üç kesinti sonrası tüm ücretli paketlerde Codex limitleri resetlendi","summary":"Hi. Over the last 24 hours we had three separate small incidents that affected Codex reliability. Those are three too many and we are taking active steps for them to not reproduce. I have reset usage limits for Codex across all paid plans. May the tokens flow again.","when":"2026-06-04T00:25:58.000Z","whenLabel":"4 Haz 2026, 00:25 UTC","url":"https://x.com/thsottiaux/status/2062329981548802523","source":"x.com","activeUntil":null,"backfilled":false},{"id":"dbfcc46d79956b36","href":"/e/2026-06-02-1-000-usage-credits-per-user-for-first-time-claude-code/","provider":"anthropic","provName":"Anthropic","provColor":"#8a4a20","productShort":"Claude","kind":"credit","kindLabel":"Credits granted","benefit":"Kredi","title":"İlk kez Claude Code/Cowork kullanan her kullanıcıya 1.000 dolar kredi (Enterprise)","summary":"Enterprise users who activated Claude Code or Cowork for the first time between June 2 and July 2 received $1,000 in usage credits. Credits expired after 90 days and were limited to 10,000 seats per organisation.","when":"2026-06-02T12:00:00.000Z","whenLabel":"2 Haz 2026","url":"https://support.claude.com/en/articles/15282265-claude-enterprise-activation-promo-for-claude-code-and-cowork","source":"support.claude.com","activeUntil":"2026-07-02T23:59:59.000Z","backfilled":false},{"id":"3b32b0f381a9df3e","href":"/e/2026-06-01-5-hour-and-weekly-rate-limits-reset-for-pro-and-max-users/","provider":"anthropic","provName":"Anthropic","provColor":"#8a4a20","productShort":"Claude","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"Subagent hatası sonrası Pro ve Max kullanıcıları için limitler resetlendi","summary":"Anthropic reset 5-hour and weekly rate limits for all Pro and Max users after fixing an issue that caused some Claude Code sessions to spawn excessive parallel subagents, burning through usage faster than expected.","when":"2026-06-01T17:35:01.000Z","whenLabel":"1 Haz 2026, 17:35 UTC","url":"https://x.com/ClaudeDevs/status/2061501787769893055","source":"x.com","activeUntil":null,"backfilled":false},{"id":"de11bc9d19154b97","href":"/e/2026-05-31-codex-usage-limits-reset-to-100-weekly-and-hourly-for-all/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"Tüm ücretli aboneliklerde Codex haftalık ve saatlik limitleri %100'e resetlendi","summary":"The Codex usage limits have been reset for all paid ChatGPT subscriptions. You should be back to 100% weekly and 100% hourly limits. Let the tokens do incredible things today and have fun.","when":"2026-05-31T15:25:06.000Z","whenLabel":"31 May 2026, 15:25 UTC","url":"https://x.com/thsottiaux/status/2061106703446450392","source":"x.com","activeUntil":null,"backfilled":false},{"id":"975935a98dfbab0c","href":"/e/2026-05-23-codex-usage-limits-reset-after-a-cache-hit-regression/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"Önbellek hatası limitleri hızlı tükettikten sonra Codex limitleri resetlendi","summary":"Some of you noticed limits drained faster in Codex, we root caused it to an optimization that we rolled back that had an impact on cache hit rates when compacting across long running sessions. We fixed this and have now reset usage limits for all accounts. Enjoy the weekend.","when":"2026-05-23T20:14:35.000Z","whenLabel":"23 May 2026, 20:14 UTC","url":"https://x.com/thsottiaux/status/2058280452851638313","source":"x.com","activeUntil":null,"backfilled":false},{"id":"2fb5413628855a10","href":"/e/2026-05-16-codex-usage-limits-reset-across-all-paid-plans/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"Tüm ücretli paketlerde Codex limitleri resetlendi","summary":"Codex usage limits have now been reset across all paid plans. Enjoy the weekend!","when":"2026-05-16T17:51:03.000Z","whenLabel":"16 May 2026, 17:51 UTC","url":"https://x.com/thsottiaux/status/2055707616605835333","source":"x.com","activeUntil":null,"backfilled":false},{"id":"af77facb425af4f5","href":"/e/2026-05-15-5-hour-and-weekly-rate-limits-reset-for-everyone/","provider":"anthropic","provName":"Anthropic","provColor":"#8a4a20","productShort":"Claude","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"5 saatlik ve haftalık limitler herkes için resetlendi","summary":"Happy Friday! We've reset everyone's 5-hour and weekly rate limits.","when":"2026-05-15T18:00:14.000Z","whenLabel":"15 May 2026, 18:00 UTC","url":"https://x.com/ClaudeDevs/status/2055347539923308703","source":"x.com","activeUntil":null,"backfilled":false},{"id":"8b30dbeafee9b203","href":"/e/2026-05-13-claude-code-weekly-limits-increased-50-through-july-13/","provider":"anthropic","provName":"Anthropic","provColor":"#8a4a20","productShort":"Claude","kind":"usage_boost","kindLabel":"Usage limits increased","benefit":"Limit artışı","title":"Claude Code haftalık limitleri 13 Temmuz'a kadar %50 artırıldı","summary":"Claude Code weekly limits are increasing 50%, now through July 13. Live now for all Pro, Max, Team, and seat-based Enterprise users.","when":"2026-05-13T19:07:51.000Z","whenLabel":"13 May 2026, 19:07 UTC","url":"https://x.com/ClaudeDevs/status/2054639777685934564","source":"x.com","activeUntil":"2026-07-13T23:59:59.000Z","backfilled":false},{"id":"ce43194feee7a7bb","href":"/e/2026-05-13-two-months-of-free-codex-usage-for-companies-switching-over/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"free_access","kindLabel":"Free model access","benefit":"Ücretsiz erişim","title":"Geçiş yapan şirketlere iki ay ücretsiz Codex kullanımı","summary":"For 30 days from May 13, companies considering a switch to Codex could request two months of free usage through OpenAI's enterprise form.","when":"2026-05-13T18:13:58.000Z","whenLabel":"13 May 2026, 18:13 UTC","url":"https://x.com/sama/status/2054626219858293128","source":"x.com","activeUntil":null,"backfilled":false},{"id":"9fe633cfe76cafb0","href":"/e/2026-04-28-codex-rate-limits-reset-for-all-paid-plans-to-build-more/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"GPT-5.5 ile daha çok geliştirme için tüm ücretli paketlerde Codex limitleri resetlendi","summary":"Don't just reset Codex rate limits for fun, it costs money. Don't just reset Codex rate limits for fun, it costs money. ... but the vibes are good ... I have reset Codex rate limits for ALL paid plans to celebrate a good week and allow everyone to build more with GPT-5.5. Enjoy","when":"2026-04-28T05:28:43.000Z","whenLabel":"28 Nis 2026, 05:28 UTC","url":"https://x.com/thsottiaux/status/2048997818673537399","source":"x.com","activeUntil":null,"backfilled":false},{"id":"733568b83171a0ae","href":"/e/2026-04-20-codex-rate-limits-reset-after-a-10-minute-incident-was/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"10 dakikalık kesinti giderildikten sonra Codex limitleri resetlendi","summary":"Codex incident is mitigated, seeing recovery. Lasted about 10 mins, Codex itself helped with the remediation, but ultimately the insight came from a human this time. Apologies for the disruption and rate limit reset incoming.","when":"2026-04-20T23:15:21.000Z","whenLabel":"20 Nis 2026, 23:15 UTC","url":"https://x.com/thsottiaux/status/2046367145588916687","source":"x.com","activeUntil":null,"backfilled":false},{"id":"0860200b4af9910d","href":"/e/2026-04-17-codex-rate-limits-reset-across-all-plans-for-its-1-year/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"1. yıl dönümü için tüm paketlerde Codex limitleri resetlendi","summary":"Hi! To celebrate its 1-year anniversary, I have allowed Codex to reset its own rate limits across all plans. Enjoy all the new features.","when":"2026-04-17T00:58:21.000Z","whenLabel":"17 Nis 2026, 00:58 UTC","url":"https://x.com/thsottiaux/status/2044943514832871564","source":"x.com","activeUntil":null,"backfilled":false},{"id":"89c355229f1677f5","href":"/e/2026-04-16-5-hour-and-weekly-rate-limits-reset-after-an-opus-4-7-long/","provider":"anthropic","provName":"Anthropic","provColor":"#8a4a20","productShort":"Claude","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"Opus 4.7 uzun bağlam hatası sonrası 5 saatlik ve haftalık limitler resetlendi","summary":"We fixed a bug where rate limits on Claude subscriptions weren't properly adjusted for long context requests in Opus 4.7. We've reset 5-hour and weekly rate limits. Enjoy Opus 4.7!","when":"2026-04-16T20:02:04.000Z","whenLabel":"16 Nis 2026, 20:02 UTC","url":"https://x.com/ClaudeDevs/status/2044868953206612154","source":"x.com","activeUntil":null,"backfilled":false},{"id":"a865661d0a78bfc9","href":"/e/2026-04-09-codex-limits-reset-alongside-the-100-chatgpt-plan-launch/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"100 dolarlık ChatGPT paketinin çıkışıyla birlikte Codex limitleri resetlendi","summary":"We did it, say hi to the $100 plan! It should be the sweet spot for a ton of you. It comes with a ton of codex usage. And yes we are resetting the limits again too as I mentioned yesterday. Let’s keep building!","when":"2026-04-09T17:51:28.000Z","whenLabel":"9 Nis 2026, 17:51 UTC","url":"https://x.com/thsottiaux/status/2042299371602264319","source":"x.com","activeUntil":null,"backfilled":false},{"id":"406773adbaa3d2d5","href":"/e/2026-04-09-2x-codex-usage-promo-extended-to-may-31-for-200-pro-users/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_boost","kindLabel":"Usage limits increased","benefit":"Limit artışı","title":"200 dolarlık Pro kullanıcıları için 2 kat Codex kampanyası 31 Mayıs'a uzatıldı, limitler de resetlendi","summary":"Our existing $200 Pro tier still remains our highest usage option. And as a thank you to our existing Pro users on the $200 tier, we’re extending our 2x Codex usage promo (until May 31st) and we’ve reset your Codex rate limits (yes, again).","when":"2026-04-09T17:38:16.000Z","whenLabel":"9 Nis 2026, 17:38 UTC","url":"https://x.com/OpenAI/status/2042296046009626989","source":"x.com","activeUntil":"2026-05-31T23:59:59.000Z","backfilled":false},{"id":"1bf5d11c27fd72a0","href":"/e/2026-04-07-codex-rate-limits-reset-for-3-million-weekly-users-with-a/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"3 milyon haftalık kullanıcı için Codex limitleri resetlendi, her 1 milyonda bir reset sözü verildi","summary":"Three million people are now using Codex weekly - up from two million a little under a month ago. Incredible to see the growth. Thank you to all of you and to the ecosystem we’re part of. To celebrate, we’re resetting rate limits so you can keep building, and we’ll reset them every additional 1M users until we reach 10M, so we can keep celebrating along the way. Enjoy and thank you!","when":"2026-04-07T23:13:48.000Z","whenLabel":"7 Nis 2026, 23:13 UTC","url":"https://x.com/thsottiaux/status/2041655710346572085","source":"x.com","activeUntil":null,"backfilled":false},{"id":"39839f1e9720c343","href":"/e/2026-04-01-codex-usage-limits-reset-for-all-plans-after-elevated-rate/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"Limit aşımları artınca tüm paketlerde Codex limitleri resetlendi","summary":"Our Codex dashboards are showing increased rate of users hitting rate limits and since we don't fully understand why I have made the cautious decision of resetting the usage limits for all plans. Enjoy. I also wanted to celebrate us finding a pocket of fraudulent accounts that we banned and have helped us regain some compute. The fight against abuse never stops, but it's important to mark the moment and make it a little shared victory.","when":"2026-04-01T07:48:39.000Z","whenLabel":"1 Nis 2026, 07:48 UTC","url":"https://x.com/thsottiaux/status/2039248564967424483","source":"x.com","activeUntil":null,"backfilled":false},{"id":"dd07616b111657cb","href":"/e/2026-03-27-codex-usage-limits-reset-across-all-plans-for-the-plugins/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"Eklenti çıkışı için tüm paketlerde Codex limitleri resetlendi","summary":"Hello. We have reset Codex usage limits across all plans to let everyone experiment with the magnificent plugins we just launched, and because it had been a while! You can just build unlimited things with Codex. Have fun!","when":"2026-03-27T01:52:28.000Z","whenLabel":"27 Mar 2026, 01:52 UTC","url":"https://x.com/thsottiaux/status/2037346989244096581","source":"x.com","activeUntil":null,"backfilled":false},{"id":"b0f0287b43568b9e","href":"/e/2026-03-11-codex-rate-limits-reset-once-the-service-was-back-and-stable/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"Servis tekrar kararlı hale gelince Codex limitleri resetlendi","summary":"OK, Codex is back and stable and we should be good for a while. Reset button pressed, should see it in a bit","when":"2026-03-11T05:38:13.000Z","whenLabel":"11 Mar 2026, 05:38 UTC","url":"https://x.com/thsottiaux/status/2031605592352313567","source":"x.com","activeUntil":null,"backfilled":false},{"id":"d5c260ab3b6322c8","href":"/e/2026-03-10-codex-rate-limits-reset-after-the-outage-was-fully-resolved/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"Kesinti tamamen giderildikten sonra Codex limitleri resetlendi","summary":"This codex issue is now fully resolved and stable for the last couple of hours. You have come to expect it, but yes, that means we will be reseting rate limits in a bit. Enjoy.","when":"2026-03-10T03:51:43.000Z","whenLabel":"10 Mar 2026, 03:51 UTC","url":"https://x.com/thsottiaux/status/2031216405266481489","source":"x.com","activeUntil":null,"backfilled":false},{"id":"be41d9a5a86ceea4","href":"/e/2026-03-08-codex-rate-limits-reset-for-plus-and-pro-during-a-usage/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"Hızlı limit tükenmesi incelenirken Plus ve Pro için Codex limitleri resetlendi","summary":"We don’t have evidence of a widespread issue with codex usage being drained faster than it should but there are enough reports and we have reset rate limits for plus & pro subscriptions while we work towards wrapping up our investigation over the coming 1-3 days.","when":"2026-03-08T02:42:13.000Z","whenLabel":"8 Mar 2026, 02:42 UTC","url":"https://x.com/thsottiaux/status/2030474136024400173","source":"x.com","activeUntil":null,"backfilled":false},{"id":"605d68cddb464646","href":"/e/2026-03-04-codex-rate-limits-reset-for-plus-and-pro-after-a-2x-promo/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"2 kat kampanya hatası kullanıcıların ~%9'unu atlayınca Plus ve Pro limitleri resetlendi","summary":"We caught an issue that was causing the 2X promotional increase in limits to not be applied to an estimated 9% of plus and pro users for Codex. We have now fixed this issue and are reseting the rate limit for all plus and pro users to compensate. Apologies and thank you for the bug reports over the last couple of days.","when":"2026-03-04T21:30:47.000Z","whenLabel":"4 Mar 2026, 21:30 UTC","url":"https://x.com/thsottiaux/status/2029308599835738218","source":"x.com","activeUntil":null,"backfilled":false},{"id":"5ed11e154e0ab92b","href":"/e/2026-03-03-codex-rate-limits-reset-after-requests-were-wrongly-blocked/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"İstekler yanlışlıkla yüksek riskli sayılıp engellendikten sonra Codex limitleri resetlendi","summary":"Codex is back up. We introduced an issue that caused requests to be blocked and rejected as high cyber risk. This was fixed in ~8 mins and we are now back online and fully operational. Team will reset rate limits, that’s been a while. Enjoy one on us.","when":"2026-03-03T01:50:07.000Z","whenLabel":"3 Mar 2026, 01:50 UTC","url":"https://x.com/thsottiaux/status/2028649088594436225","source":"x.com","activeUntil":null,"backfilled":false},{"id":"9a49f296322879de","href":"/e/2025-12-25-codex-rate-limits-reset-and-lifted-to-2x-through-1-january/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_boost","kindLabel":"Usage limits increased","benefit":"Limit artışı","title":"Codex limitleri resetlendi ve 1 Ocak'a kadar iki katına çıkarıldı","summary":"For Codex users, to thank you all for the fun we've had over the last months, our first gift is that we have **reset rate limits and are lifting the usage limits to 2X the usual limits until the 1st of Jan**. Wish you all a merry holiday and lots of coding!! Spread the word 👀","when":"2025-12-25T08:01:03.000Z","whenLabel":"25 Ara 2025, 08:01 UTC","url":"https://x.com/thsottiaux/status/2004100061933064395","source":"x.com","activeUntil":"2026-01-01T23:59:59.000Z","backfilled":false},{"id":"3967c24be4f7d79a","href":"/e/2025-12-19-codex-usage-limits-reset-during-a-usage-tracking-system/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"Kullanım takip sistemi yeniden yazılırken Codex limitleri resetlendi","summary":"We rewrote the underlying system to track and bill usage in Codex and we have reset usage limits in the process. Backfilling is time consuming and it’s more fun to give free usage. Enjoy!","when":"2025-12-19T22:01:37.000Z","whenLabel":"19 Ara 2025, 22:01 UTC","url":"https://x.com/thsottiaux/status/2002137269134819610","source":"x.com","activeUntil":null,"backfilled":false},{"id":"04ff2079d915be96","href":"/e/2025-12-17-codex-usage-limits-reset-for-everyone-after-a-disruption/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"Bir aksaklık sonrası Codex limitleri herkes için resetlendi","summary":"Didn’t need to do this in a while, but you know the drill. We have reset everyone’s usage limits, enjoy more Codex and apologies for the disruption.","when":"2025-12-17T02:18:14.000Z","whenLabel":"17 Ara 2025, 02:18 UTC","url":"https://x.com/thsottiaux/status/2001114683047317723","source":"x.com","activeUntil":null,"backfilled":false},{"id":"3e549839a89d801f","href":"/e/2025-12-02-codex-usage-limits-reset-for-everyone-while-an-issue-was/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"Bir sorun giderilirken Codex limitleri herkes için resetlendi","summary":"We have reset the usage limits for everyone in Codex, which helps us mitigate the issue the fastest and the team will continue to work on the underlying cause. This should propagate to all users over the next 10 mins, enjoy and apologies for the confusion!","when":"2025-12-02T22:49:02.000Z","whenLabel":"2 Ara 2025, 22:49 UTC","url":"https://x.com/thsottiaux/status/1995988609896513743","source":"x.com","activeUntil":null,"backfilled":false},{"id":"60665b259317d045","href":"/e/2025-11-22-codex-rate-limits-reset-to-compensate-for-unusually-high-us/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"ABD'deki olağandışı gecikmeleri telafi etmek için Codex limitleri resetlendi","summary":"We have reset rate limits for all Codex users to compensate for the unusual high latencies in or near the US in the previous hours. Grateful for the team working hard behind the scenes to keep Codex running 24/7. I do recommend trying out GPT-5.1-Codex-Max too if you haven’t!","when":"2025-11-22T23:13:56.000Z","whenLabel":"22 Kas 2025, 23:13 UTC","url":"https://x.com/thsottiaux/status/1992370994028388670","source":"x.com","activeUntil":null,"backfilled":false},{"id":"6a724f6b4e6c425d","href":"/e/2025-11-05-codex-rate-limits-reset-after-a-global-outage/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"Küresel kesinti sonrası Codex limitleri resetlendi","summary":"Codex outage resolved. We suffered a minor outage for last 45 minutes which turned into a global outage for last 30 minutes, this is now resolved and we have reset the rate limits. Please let me know if you still see issues.","when":"2025-11-05T20:19:29.000Z","whenLabel":"5 Kas 2025, 20:19 UTC","url":"https://x.com/thsottiaux/status/1986166501435711936","source":"x.com","activeUntil":null,"backfilled":false},{"id":"4d63a66f77ba2d67","href":"/e/2025-09-17-codex-limits-reset-for-everyone-after-gpu-provisioning/","provider":"openai","provName":"OpenAI","provColor":"#3f9e78","productShort":"ChatGPT","kind":"usage_reset","kindLabel":"Usage limits reset","benefit":"Limit resetleme","title":"GPU kaynaklı yavaşlamalar sonrası Codex limitleri herkes için resetlendi","summary":"We have reset everyone's limits for gpt-5-codex to allow you all to benefit more from it today and as a way to make up for the slowdowns earlier while we were provisioning additional GPUs. We'll continue to add capacity throughout the week to maintain the speed. Enjoy!","when":"2025-09-17T04:02:52.000Z","whenLabel":"17 Eyl 2025, 04:02 UTC","url":"https://x.com/thsottiaux/status/1968163721034994139","source":"x.com","activeUntil":null,"backfilled":false}]};window.__COPY__ = {"lang":"tr","htmlLang":"tr","locale":"tr-TR","title":"Usage Updates — Claude ve ChatGPT kullanım limiti değişiklikleri","description":"Anthropic ve OpenAI’ın kullanım limitlerini sıfırladığı, artırdığı veya kredi verdiği her olay — her biri kaynağıyla birlikte, 30 dakikada bir güncellenir.","allProviders":"Tüm sağlayıcılar","live":"Canlı","delayed":"Gecikmeli","idle":"Beklemede","updated":"{t} güncellendi","notPolled":"Henüz kontrol edilmedi","lastReset":"Son reset","resetsTracked":"Kayıtlı reset","avgBetween":"Ortalama resetlenme aralığı","longestGap":"En uzun aralık","days":"gün","activity":"Aya göre hareketlilik","timeline":"Zaman çizelgesi","recent":"Son değişiklikler","tracked":"{n} kayıt","nowMark":"Şimdi","empty":"Henüz kayıt yok.","justNow":"az önce","minAgo":"{n} dakika önce","hoursAgo":"{n} saat önce","yesterday":"dün","daysAgo":"{n} gün önce","kinds":{"usage_reset":"Limit resetleme","usage_boost":"Limit artışı","free_access":"Ücretsiz erişim","credit":"Kredi"},"about":"Claude ve ChatGPT kullanım limiti resetlerinin, geçici artışlarının ve kredilerinin tarihli kaydı. Her kayıt özgün duyuruya bağlanır. 30 dakikada bir güncellenir.","footer":"Anthropic veya OpenAI ile bağlantılı değildir.","feedPath":"/tr/feed.xml","feedTitle":"Usage Updates — kullanım limiti değişiklikleri","feedDescription":"Anthropic ve OpenAI kullanım limitlerini resetlediğinde, artırdığında, ücretsiz erişim veya kredi verdiğinde.","altLabel":"English","altPath":"/","path":"/tr/"};</script>
+<script>
+(function () {
+  var DATA = window.__RESETS__;
+  var T = window.__COPY__;
+  if (!DATA || !DATA.events.length || !T) return;
+  var now = DATA.now;
+  var state = { filter: "all", selectedId: DATA.events[0].id };
+  var CHEVRON = "<svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 6l6 6-6 6\"/></svg>";
+
+  function ago(when) {
+    var s = (new Date(now) - new Date(when)) / 1000;
+    if (s < 90) return T.justNow;
+    if (s < 3600) return T.minAgo.replace("{n}", Math.round(s / 60));
+    if (s < 86400) return T.hoursAgo.replace("{n}", Math.round(s / 3600));
+    var d = Math.round(s / 86400);
+    return d === 1 ? T.yesterday : T.daysAgo.replace("{n}", d);
+  }
+  function agoShort(when) {
+    var s = (new Date(now) - new Date(when)) / 1000;
+    if (s < 3600) return Math.max(1, Math.round(s / 60)) + "m";
+    if (s < 86400) return Math.round(s / 3600) + "h";
+    return Math.round(s / 86400) + "d";
+  }
+  function esc(v) { return String(v).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function filtered() { return state.filter === "all" ? DATA.events : DATA.events.filter(function (e) { return e.provider === state.filter; }); }
+  function selected() { var f = filtered(); return f.filter(function (e) { return e.id === state.selectedId; })[0] || f[0]; }
+
+  function statsHTML(list) {
+    var resets = list.filter(function (e) { return e.kind === "usage_reset"; })
+      .map(function (e) { return new Date(e.when).getTime(); })
+      .sort(function (a, b) { return a - b; });
+    var gaps = [];
+    for (var i = 1; i < resets.length; i++) gaps.push(resets[i] - resets[i - 1]);
+    var DAY = 86400000;
+    var last = resets.length ? ago(new Date(resets[resets.length - 1]).toISOString()) : "—";
+    var avg = gaps.length ? (gaps.reduce(function (a, b) { return a + b; }, 0) / gaps.length / DAY).toFixed(1) + " " + T.days : "—";
+    var longest = gaps.length ? Math.round(Math.max.apply(null, gaps) / DAY) + " " + T.days : "—";
+    return '<div class="rt-stat"><dd>' + esc(last) + '</dd><dt>' + esc(T.lastReset) + '</dt></div>' +
+      '<div class="rt-stat"><dd>' + resets.length + '</dd><dt>' + esc(T.resetsTracked) + '</dt></div>' +
+      '<div class="rt-stat"><dd>' + esc(avg) + '</dd><dt>' + esc(T.avgBetween) + '</dt></div>' +
+      '<div class="rt-stat"><dd>' + esc(longest) + '</dd><dt>' + esc(T.longestGap) + '</dt></div>';
+  }
+
+  function railHTML(list) {
+    var asc = list.slice().sort(function (a, b) { return new Date(a.when) - new Date(b.when); });
+    var times = asc.map(function (e) { return new Date(e.when).getTime(); });
+    var min = times[0], max = times[times.length - 1];
+    var raw = times.map(function (t) { return asc.length < 2 || max === min ? 50 : 6 + ((t - min) / (max - min)) * 88; });
+    var GAP = 3;
+    for (var i = 1; i < raw.length; i++) if (raw[i] < raw[i - 1] + GAP) raw[i] = raw[i - 1] + GAP;
+    if (raw.length && raw[raw.length - 1] > 94) {
+      raw[raw.length - 1] = 94;
+      for (var j = raw.length - 2; j >= 0; j--) if (raw[j] > raw[j + 1] - GAP) raw[j] = raw[j + 1] - GAP;
+    }
+    var TIERS = ["down", "up"];
+    var placed = {};
+    // Every reset gets a dot, but only points far enough apart get a time
+    // caption — otherwise a dense stretch of resets turns into a smear of
+    // overlapping labels. The newest point is always labelled.
+    var lastLabel = -99, labelled = 0;
+    asc.forEach(function (e, i) {
+      var show = raw[i] - lastLabel >= 4 || i === asc.length - 1;
+      if (show) lastLabel = raw[i];
+      placed[e.id] = { left: raw[i], dir: TIERS[labelled % 2], label: show };
+      if (show) labelled++;
+    });
+    var sel = selected();
+    var nodes = list.map(function (e) {
+      var dir = placed[e.id].dir;
+      return '<button class="rt-node ' + dir + (e.id === sel.id ? " sel" : "") + '" style="left:' + placed[e.id].left + '%" data-id="' + esc(e.id) + '" title="' + esc(e.productShort + ": " + e.title) + " — " + ago(e.when) + '" aria-label="' + esc(e.provName + ": " + e.title) + '">' +
+        '<span class="pt" style="background:' + e.provColor + '"></span>' +
+        (placed[e.id].label ? '<span class="cap"><span class="t">' + agoShort(e.when) + "</span></span>" : "") + "</button>";
+    }).join("");
+    return '<div class="line"></div>' + nodes + '<div class="now"><span>' + esc(T.nowMark) + '</span></div>';
+  }
+
+  function listHTML(list) {
+    var sel = selected();
+    return list.map(function (e) {
+      return '<a class="rt-row' + (e.id === sel.id ? " sel" : "") + '" href="' + esc(e.href) + '" title="' + esc(e.whenLabel) + '">' +
+        '<span class="rmark" style="--pc:' + e.provColor + '" title="' + esc(e.provName) + '"></span>' +
+        '<span class="what"><strong>' + esc(e.title) + "</strong></span>" +
+        '<span class="rb">' + esc(e.benefit) + "</span>" +
+        '<span class="rw"><b>' + ago(e.when) + "</b></span>" +
+        CHEVRON + "</a>";
+    }).join("");
+  }
+
+  function render() {
+    var list = filtered();
+    var sel = selected();
+    document.getElementById("rt-stats").innerHTML = statsHTML(list);
+    document.getElementById("rt-rail").innerHTML = railHTML(list);
+    document.getElementById("rt-list").innerHTML = listHTML(list);
+    document.getElementById("rt-count").textContent = T.tracked.replace("{n}", list.length);
+    document.querySelectorAll("#rt-chips .rt-chip").forEach(function (chip) {
+      chip.classList.toggle("on", chip.getAttribute("data-p") === state.filter);
+    });
+  }
+
+  // URL state: "#openai" remembers the provider filter; "#openai/<id>" also
+  // pins a featured reset. Empty when showing all providers + newest, so the
+  // plain URL stays clean. Restored on load and on back/forward.
+  function hashFor() {
+    var f = filtered();
+    var isNewest = f.length > 0 && state.selectedId === f[0].id;
+    if (state.filter === "all" && isNewest) return "";
+    return isNewest ? state.filter : state.filter + "/" + encodeURIComponent(state.selectedId);
+  }
+  function writeHash() {
+    var h = hashFor();
+    if (h) { if (location.hash.slice(1) !== h) location.hash = h; }
+    else if (location.hash) history.replaceState(null, "", location.pathname + location.search);
+  }
+  function applyHash(scrollToPinned) {
+    var parts = location.hash.slice(1).split("/");
+    var prov = parts[0];
+    state.filter = prov === "anthropic" || prov === "openai" ? prov : "all";
+    var f = filtered();
+    var eid = parts[1] ? decodeURIComponent(parts[1]) : "";
+    var pinned = eid && f.some(function (e) { return e.id === eid; });
+    state.selectedId = pinned ? eid : f[0] && f[0].id;
+    render();
+    if (scrollToPinned && pinned) {
+      var safe = window.CSS && CSS.escape ? CSS.escape(eid) : eid;
+      var row = document.querySelector('#rt-list .rt-row[data-id="' + safe + '"]');
+      if (row) row.scrollIntoView({ block: "nearest" });
+    }
+  }
+
+  document.getElementById("rt-chips").addEventListener("click", function (ev) {
+    var chip = ev.target.closest(".rt-chip");
+    if (!chip) return;
+    state.filter = chip.getAttribute("data-p");
+    var f = filtered();
+    if (!f.some(function (e) { return e.id === state.selectedId; })) state.selectedId = f[0].id;
+    render();
+    writeHash();
+  });
+  function pick(ev) {
+    var node = ev.target.closest("[data-id]");
+    if (!node) return;
+    state.selectedId = node.getAttribute("data-id");
+    render();
+    writeHash();
+  }
+  document.getElementById("rt-rail").addEventListener("click", pick);
+  window.addEventListener("hashchange", function () { applyHash(false); });
+  // Mobile rail scrolls; start at the newest ("Now") end. The rtl/ltr CSS
+  // trick covers no-JS; this covers browsers that ignore it.
+  var railScroll = document.getElementById("rt-rail").parentElement;
+  if (railScroll.scrollWidth > railScroll.clientWidth) railScroll.scrollLeft = railScroll.scrollWidth;
+  if (location.hash) applyHash(true);
+  setInterval(render, 60000);
+})();
+</script>
+</body>
+</html>
