@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Usage Updates — kullanım limiti değişiklikleri</title>
+  <link>https://usageupdates.com/tr/</link>
+  <description>Claude ve ChatGPT kullanım limiti resetleri, geçici artışları, ücretsiz erişimleri ve kredileri.</description>
+  <language>tr-TR</language>
+  <lastBuildDate>Wed, 07 Oct 2026 19:19:17 GMT</lastBuildDate>
+  <generator>Usage Updates</generator>
+  <ttl>30</ttl>
+  <atom:link href="https://usageupdates.com/tr/feed.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>OpenAI — Limit resetleme: OpenAI, 40 milyon kullanıcı kutlamasıyla Codex ve ChatGPT Work&apos;e biriktirilebilir reset yükledi</title>
+    <link>https://usageupdates.com/e/2026-10-07-openai-loads-a-banked-reset-for-codex-and-chatgpt-work-at/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-10-07-openai-loads-a-banked-reset-for-codex-and-chatgpt-work-at/</guid>
+    <pubDate>Wed, 07 Oct 2026 19:19:17 GMT</pubDate>
+    <category>Limit resetleme</category>
+    <description>On day 3 of the 28-day pledge, marking a new high of 40M active users across Codex and ChatGPT Work, OpenAI loaded a banked reset into every paid account.</description>
+    <source url="https://x.com/thsottiaux/status/2107913674593644711">x.com</source>
+  </item>
+  <item>
+    <title>Anthropic — Kredi: Anthropic, Max ve Team planlarına aylık Claude API kredisi veriyor</title>
+    <link>https://usageupdates.com/e/2026-10-07-anthropic-grants-monthly-claude-api-credits-to-max-and-team/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-10-07-anthropic-grants-monthly-claude-api-credits-to-max-and-team/</guid>
+    <pubDate>Wed, 07 Oct 2026 18:08:53 GMT</pubDate>
+    <category>Kredi</category>
+    <description>Max 5x gets $100, Max 20x gets $200, and Team gets up to $500 pooled in monthly Claude API credits, usable for the API, Managed Agents, Agent SDK, and Playground but not Claude Code.</description>
+    <source url="https://x.com/ClaudeDevs/status/2107895957933408429">x.com</source>
+  </item>
+  <item>
+    <title>OpenAI — Limit resetleme: OpenAI, topluluğun oyuyla Codex ve ChatGPT Work için reset verdi</title>
+    <link>https://usageupdates.com/e/2026-10-07-openai-gives-codex-and-chatgpt-work-a-reset-after-community/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-10-07-openai-gives-codex-and-chatgpt-work-a-reset-after-community/</guid>
+    <pubDate>Wed, 07 Oct 2026 03:35:09 GMT</pubDate>
+    <category>Limit resetleme</category>
+    <description>Under his 28-day pledge to ship a daily improvement or a reset, Tibo put the choice to a vote; the community chose a reset, and OpenAI applied it to Codex and ChatGPT Work usage limits for all paid plans.</description>
+    <source url="https://x.com/thsottiaux/status/2107676072871600470">x.com</source>
+  </item>
+  <item>
+    <title>OpenAI — Limit artışı: OpenAI, Atlas varsayılan tarayıcı yapılırsa ChatGPT limitlerini 7 gün artırıyor</title>
+    <link>https://usageupdates.com/e/2026-10-05-openai-raises-chatgpt-limits-for-7-days-if-atlas-is-your/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-10-05-openai-raises-chatgpt-limits-for-7-days-if-atlas-is-your/</guid>
+    <pubDate>Mon, 05 Oct 2026 10:21:15 GMT</pubDate>
+    <category>Limit artışı</category>
+    <description>A temporary increase to your ChatGPT rate limits for up to 7 consecutive calendar days, starting the date you make ChatGPT Atlas your default browser.</description>
+    <source url="https://help.openai.com/en/articles/12608430-chatgpt-atlas-default-browser-promotion">help.openai.com</source>
+  </item>
+  <item>
+    <title>OpenAI — Limit resetleme: OpenAI, 28 gün boyunca Codex ve ChatGPT Work için her gün iyileştirme veya reset sözü verdi</title>
+    <link>https://usageupdates.com/e/2026-10-04-openai-pledges-daily-codex-and-chatgpt-work-improvements-or/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-10-04-openai-pledges-daily-codex-and-chatgpt-work-improvements-or/</guid>
+    <pubDate>Sun, 04 Oct 2026 20:33:43 GMT</pubDate>
+    <category>Limit resetleme</category>
+    <description>Over the next 28 days, each day we&apos;ll either ship one thing that is a clear improvement and relevant for most codex/work users or ship a full reset. Let the improvements begin.</description>
+    <source url="https://x.com/thsottiaux/status/2106845241357824205">x.com</source>
+  </item>
+  <item>
+    <title>OpenAI — Limit resetleme: OpenAI, ChatGPT Pro 500 kullanıcıları için kaçırılan Codex resetini düzeltti</title>
+    <link>https://usageupdates.com/e/2026-10-03-openai-fixes-missed-codex-reset-for-chatgpt-pro-500-users/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-10-03-openai-fixes-missed-codex-reset-for-chatgpt-pro-500-users/</guid>
+    <pubDate>Sat, 03 Oct 2026 04:26:28 GMT</pubDate>
+    <category>Limit resetleme</category>
+    <description>Tibo Sottiaux (OpenAI), after reports that Pro 500 users missed the October 2 Codex/ChatGPT Work reset: &quot;All fixed. Surprising number of Pro 500 users on here.&quot;</description>
+    <source url="https://x.com/thsottiaux/status/2106239435461579088">x.com</source>
+  </item>
+  <item>
+    <title>OpenAI — Limit resetleme: ChatGPT kullanım limitleri, GPT-6.1 Sol yavaşlaması sonrası küresel olarak resetleniyor</title>
+    <link>https://usageupdates.com/e/2026-10-02-chatgpt-usage-limits-getting-a-global-reset-after-gpt-6-1/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-10-02-chatgpt-usage-limits-getting-a-global-reset-after-gpt-6-1/</guid>
+    <pubDate>Fri, 02 Oct 2026 02:14:51 GMT</pubDate>
+    <category>Limit resetleme</category>
+    <description>Global reset landing tomorrow 10am PST for all paid ChatGPT accounts. Apologies for the slow start with GPT-6.1 Sol, it&apos;s now back to running at expected speeds after the massive load spike in the first two days.</description>
+    <source url="https://x.com/thsottiaux/status/2105843926221660585">x.com</source>
+  </item>
+  <item>
+    <title>Anthropic — Limit artışı: Claude, Docs, Slides ve Design kullanımında limit maliyetini 15 Ekim&apos;e kadar yarıya indiriyor</title>
+    <link>https://usageupdates.com/e/2026-10-01-claude-halves-usage-limit-cost-for-docs-slides-and-design/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-10-01-claude-halves-usage-limit-cost-for-docs-slides-and-design/</guid>
+    <pubDate>Thu, 01 Oct 2026 18:08:53 GMT</pubDate>
+    <category>Limit artışı</category>
+    <description>For two weeks, start a design, deck, or doc in the Claude app, and the work that follows in that conversation uses 50% less of your usage limits.</description>
+    <source url="https://support.claude.com/en/articles/17274727-artifact-usage-promotion">support.claude.com</source>
+  </item>
+  <item>
+    <title>Anthropic — Limit artışı: Claude, 5 saatlik limite karşı artifact kullanımını 15 Ekim&apos;e kadar yarıya indiriyor</title>
+    <link>https://usageupdates.com/e/2026-10-01-claude-halves-artifact-usage-against-the-5-hour-limit/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-10-01-claude-halves-artifact-usage-against-the-5-hour-limit/</guid>
+    <pubDate>Thu, 01 Oct 2026 18:00:00 GMT</pubDate>
+    <category>Limit artışı</category>
+    <description>Creating or editing an artifact in Claude or Claude Cowork now counts for 50% less against the five-hour session limit, for Pro, Max, Team plans from Oct 1 and Free plans from Oct 7, through Oct 15.</description>
+    <source url="https://support.claude.com/en/articles/17274727">support.claude.com</source>
+  </item>
+  <item>
+    <title>Anthropic — Kredi: Delayed credits on the Claude Platform</title>
+    <link>https://usageupdates.com/e/2026-10-01-delayed-credits-on-the-claude-platform/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-10-01-delayed-credits-on-the-claude-platform/</guid>
+    <pubDate>Thu, 01 Oct 2026 16:20:40 GMT</pubDate>
+    <category>Kredi</category>
+    <description> credits being applied</description>
+    <source url="https://stspg.io/jg26d0skzh27">stspg.io</source>
+  </item>
+  <item>
+    <title>OpenAI — Limit resetleme: OpenAI, DevDay&apos;in kapanışında Codex ve ChatGPT Work kullanıcıları için tüm dünyada bir kullanım resetini tetikledi.</title>
+    <link>https://usageupdates.com/e/2026-09-29-openai-triggered-a-worldwide-codex-and-chatgpt-work-usage/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-09-29-openai-triggered-a-worldwide-codex-and-chatgpt-work-usage/</guid>
+    <pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate>
+    <category>Limit resetleme</category>
+    <description>OpenAI closed DevDay by pressing a physical button on stage, triggering a banked usage-limit reset for Codex and ChatGPT Work users everywhere, not just attendees in the room.</description>
+    <source url="https://openai.com/index/devday-2026-recap/">openai.com</source>
+  </item>
+  <item>
+    <title>OpenAI — Kredi: OpenAI, 30 Ekim limit kesintisinden önce Pro 200 kullanıcılarına 2.500 dolar kredi veriyor</title>
+    <link>https://usageupdates.com/e/2026-09-29-openai-grants-2-500-credit-to-pro-200-users-ahead-of-oct-30/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-09-29-openai-grants-2-500-credit-to-pro-200-users-ahead-of-oct-30/</guid>
+    <pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate>
+    <category>Kredi</category>
+    <description>Existing ChatGPT Pro $200 subscribers get a one-time grant of 62,500 usage credits (about $2,500), expiring December 31, 2026, as Pro 200&apos;s included usage drops from 20x to 10x Plus on October 30.</description>
+    <source url="https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers">help.openai.com</source>
+  </item>
+  <item>
+    <title>OpenAI — Kredi: OpenAI, Pro 200 abonelerine tek seferlik 2.500 dolarlık kullanım kredisi verdi</title>
+    <link>https://usageupdates.com/e/2026-09-29-openai-grants-pro-200-subscribers-a-one-time-2-500-usage/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-09-29-openai-grants-pro-200-subscribers-a-one-time-2-500-usage/</guid>
+    <pubDate>Tue, 29 Sep 2026 06:41:17 GMT</pubDate>
+    <category>Kredi</category>
+    <description>Existing Pro 200 subscribers keep their current usage allowance through October 29, then get a one-time grant of 62,500 usage credits (worth $2,500) that expire December 31, as included usage falls from 20x to 10x the Plus plan on October 30.</description>
+    <source url="https://x.com/thsottiaux/status/2104823812042940713">x.com</source>
+  </item>
+  <item>
+    <title>OpenAI — Limit resetleme: OpenAI, kısa süreli kesinti sonrası Codex ve ChatGPT Work kullanım limitlerini resetledi</title>
+    <link>https://usageupdates.com/e/2026-09-26-openai-reset-codex-and-chatgpt-work-usage-limits-after-a/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-09-26-openai-reset-codex-and-chatgpt-work-usage-limits-after-a/</guid>
+    <pubDate>Sat, 26 Sep 2026 00:07:13 GMT</pubDate>
+    <category>Limit resetleme</category>
+    <description>We&apos;re back in action and we&apos;ll reset usage limits for all paid users across Codex and ChatGPT Work, sorry about the brief disruption!</description>
+    <source url="https://x.com/thsottiaux/status/2103637477760311522">x.com</source>
+  </item>
+  <item>
+    <title>Anthropic — Kredi: Claude Code bulut oturumları için Pro&apos;da 100 dolar, Max&apos;te 250 dolar tek seferlik kredi</title>
+    <link>https://usageupdates.com/e/2026-09-23-one-time-100-pro-or-250-max-credit-for-claude-code-cloud/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-09-23-one-time-100-pro-or-250-max-credit-for-claude-code-cloud/</guid>
+    <pubDate>Wed, 23 Sep 2026 21:23:41 GMT</pubDate>
+    <category>Kredi</category>
+    <description>Cloud sessions are officially available and out of research preview! They let you keep Claude Code working, even when your laptop is closed. Existing subscribers get a one-time credit to try them: $100 on Pro, $250 on Max.</description>
+    <source url="https://x.com/ClaudeDevs/status/2102871550974427462">x.com</source>
+  </item>
+  <item>
+    <title>Anthropic — Kredi: Anthropic, Claude Code bulut oturumları çıkışı için 100-250 dolar kredi verdi</title>
+    <link>https://usageupdates.com/e/2026-09-23-anthropic-grants-100-250-credit-for-claude-code-cloud/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-09-23-anthropic-grants-100-250-credit-for-claude-code-cloud/</guid>
+    <pubDate>Wed, 23 Sep 2026 21:00:00 GMT</pubDate>
+    <category>Kredi</category>
+    <description>Pro subscribers get a $100 bonus credit and Max subscribers get $250 for Claude Code cloud sessions as they exit research preview; claimable through October 7, expires November 4, 2026.</description>
+    <source url="https://support.claude.com/en/articles/17152539-cloud-sessions-bonus-credit-promotion">support.claude.com</source>
+  </item>
+  <item>
+    <title>OpenAI — Limit resetleme: OpenAI, Plus, Pro ve Business kullanıcılarına biriktirilebilir bir reset verdi</title>
+    <link>https://usageupdates.com/e/2026-09-22-openai-gives-plus-pro-and-business-users-a-banked-usage/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-09-22-openai-gives-plus-pro-and-business-users-a-banked-usage/</guid>
+    <pubDate>Tue, 22 Sep 2026 18:23:37 GMT</pubDate>
+    <category>Limit resetleme</category>
+    <description>We are loading a banked reset into all accounts of our Plus, Pro and Business users.</description>
+    <source url="https://x.com/thsottiaux/status/2102463847714247142">x.com</source>
+  </item>
+  <item>
+    <title>Anthropic — Limit artışı: Claude Code&apos;da 5 saatlik limitler Opus 5.5 çıkışıyla %20 artırıldı, ayrıca biriktirilebilir reset verildi</title>
+    <link>https://usageupdates.com/e/2026-09-22-claude-code-5-hour-limits-raised-20-plus-a-bankable-reset-at/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-09-22-claude-code-5-hour-limits-raised-20-plus-a-bankable-reset-at/</guid>
+    <pubDate>Tue, 22 Sep 2026 16:44:06 GMT</pubDate>
+    <category>Limit artışı</category>
+    <description>In addition to the price drop, we&apos;re increasing five-hour usage limits on Pro, Max, Team, and seat-based Enterprise plans. We&apos;re also providing subscription users a rate limit reset, which you can now save and use whenever you choose.</description>
+    <source url="https://www.anthropic.com/claude-opus-5-5">anthropic.com</source>
+  </item>
+  <item>
+    <title>OpenAI — Ücretsiz erişim: ChatGPT for Word&apos;deki GPT-5.6 Sol kullanımı 30 Eylül&apos;e kadar limit dışı tutuluyor</title>
+    <link>https://usageupdates.com/e/2026-09-17-gpt-5-6-sol-in-chatgpt-for-word-excluded-from-usage-limits/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-09-17-gpt-5-6-sol-in-chatgpt-for-word-excluded-from-usage-limits/</guid>
+    <pubDate>Thu, 17 Sep 2026 12:00:00 GMT</pubDate>
+    <category>Ücretsiz erişim</category>
+    <description>Business and Enterprise customers can use GPT-5.6 Sol in ChatGPT for Word during a free preview from September 17 through September 30, 2026; usage during the preview does not count toward normal plan limits.</description>
+    <source url="https://help.openai.com/en/articles/20001526-chatgpt-for-word">help.openai.com</source>
+  </item>
+  <item>
+    <title>OpenAI — Limit resetleme: OpenAI, kalite hatalarını düzelttikten sonra Astra kullanımını resetledi</title>
+    <link>https://usageupdates.com/e/2026-09-12-openai-resets-astra-usage-after-fixing-quality-bugs/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-09-12-openai-resets-astra-usage-after-fixing-quality-bugs/</guid>
+    <pubDate>Sat, 12 Sep 2026 03:20:36 GMT</pubDate>
+    <category>Limit resetleme</category>
+    <description>Tibo Sottiaux (OpenAI): after finding and fixing several Astra quality bugs (old-model skills over-triggering, a context-management experiment disabled, and misconfigured serving engines removed), a usage reset for Astra users lands before midnight.</description>
+    <source url="https://x.com/thsottiaux/status/2098612714704891959">x.com</source>
+  </item>
+  <item>
+    <title>OpenAI — Limit resetleme: Biriktirilebilir resetler tam uygulanmayınca OpenAI kullanıcılara yeni reset verdi</title>
+    <link>https://usageupdates.com/e/2026-09-09-openai-grants-replacement-reset-after-banked-resets-failed/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-09-09-openai-grants-replacement-reset-after-banked-resets-failed/</guid>
+    <pubDate>Wed, 09 Sep 2026 18:23:34 GMT</pubDate>
+    <category>Limit resetleme</category>
+    <description>There was a bit of a kerfuffle this morning with some banked resets not fully applying when used in ChatGPT Work and Codex. Everyone who used one in the affected time window is getting another one and an email to apologize.</description>
+    <source url="https://x.com/thsottiaux/status/2097752790177370535">x.com</source>
+  </item>
+  <item>
+    <title>OpenAI — Limit resetleme: Investigating unexpected usage limit resets</title>
+    <link>https://usageupdates.com/e/2026-09-09-investigating-unexpected-usage-limit-resets/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-09-09-investigating-unexpected-usage-limit-resets/</guid>
+    <pubDate>Wed, 09 Sep 2026 17:29:55 GMT</pubDate>
+    <category>Limit resetleme</category>
+    <description>usage limit reset</description>
+    <source url="https://status.openai.com/">status.openai.com</source>
+  </item>
+  <item>
+    <title>OpenAI — Limit resetleme: OpenAI, ChatGPT Work ve Codex kullanım limitlerini yine resetledi</title>
+    <link>https://usageupdates.com/e/2026-09-08-openai-reset-chatgpt-work-and-codex-usage-limits-again/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-09-08-openai-reset-chatgpt-work-and-codex-usage-limits-again/</guid>
+    <pubDate>Tue, 08 Sep 2026 04:05:53 GMT</pubDate>
+    <category>Limit resetleme</category>
+    <description>All reset for everyone. Enjoy the week with Astra.</description>
+    <source url="https://x.com/thsottiaux/status/2097174560412246215">x.com</source>
+  </item>
+  <item>
+    <title>OpenAI — Limit resetleme: ChatGPT ve Codex kullanım limitleri tüm ücretli paketler için resetlendi</title>
+    <link>https://usageupdates.com/e/2026-09-07-chatgpt-and-codex-usage-limits-reset-for-all-paid-plans/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-09-07-chatgpt-and-codex-usage-limits-reset-for-all-paid-plans/</guid>
+    <pubDate>Mon, 07 Sep 2026 19:24:57 GMT</pubDate>
+    <category>Limit resetleme</category>
+    <description>Tibo Sottiaux (OpenAI), quoting Rick Astley&apos;s &quot;Never Gonna Give You Up&quot;: &quot;We will do a global reset of the usage for all paid subscriptions so that you can keep enjoying Astra.&quot; Reset expected to land around 6pm PST.</description>
+    <source url="https://x.com/thsottiaux/status/2097043464538264003">x.com</source>
+  </item>
+  <item>
+    <title>OpenAI — Limit artışı: OpenAI, yoğun ChatGPT kullanıcıları için Astra&apos;nın kullanım tüketimini 4 kata kadar azalttı</title>
+    <link>https://usageupdates.com/e/2026-09-06-openai-trims-astra-s-usage-draw-up-to-4x-for-chatgpt-power/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-09-06-openai-trims-astra-s-usage-draw-up-to-4x-for-chatgpt-power/</guid>
+    <pubDate>Sun, 06 Sep 2026 21:51:18 GMT</pubDate>
+    <category>Limit artışı</category>
+    <description>Tibo Sottiaux (OpenAI): “We&apos;ve made some improvements that improve usage on the long tail for power users of Astra when logged in with your ChatGPT account. No change in quality and a pure win that on the long tail can result in up to 3-4X less usage being drawn from the subscription.”</description>
+    <source url="https://x.com/thsottiaux/status/2096717905614524491">x.com</source>
+  </item>
+  <item>
+    <title>OpenAI — Limit resetleme: Astra kullanıma sunulunca Plus, Pro ve Business kullanıcılarına tam biriktirilebilir reset verildi</title>
+    <link>https://usageupdates.com/e/2026-09-05-full-banked-reset-for-plus-pro-and-business-users-as-astra/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-09-05-full-banked-reset-for-plus-pro-and-business-users-as-astra/</guid>
+    <pubDate>Sat, 05 Sep 2026 00:39:25 GMT</pubDate>
+    <category>Limit resetleme</category>
+    <description>Tibo Sottiaux (OpenAI): with GPT-6 Astra rolled out ahead of schedule, OpenAI is giving a full banked reset to all Plus, Pro, and Business users, landing by end of day; accounts created or upgraded before 8pm PT also qualify.</description>
+    <source url="https://x.com/thsottiaux/status/2096035437299237298">x.com</source>
+  </item>
+  <item>
+    <title>OpenAI — Kredi: OpenAI, hâlâ Astra&apos;ya erişemeyen kullanıcılara ikinci bir biriktirilmiş reset veriyor</title>
+    <link>https://usageupdates.com/e/2026-09-04-openai-grants-a-second-banked-reset-for-users-still-lacking/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-09-04-openai-grants-a-second-banked-reset-for-users-still-lacking/</guid>
+    <pubDate>Fri, 04 Sep 2026 20:57:17 GMT</pubDate>
+    <category>Kredi</category>
+    <description>Some Plus and Business users won&apos;t yet get access to Astra today, we&apos;ve got you covered with a banked reset. Lands by end of day and if you create your account by 8pm PT then you&apos;ll get it too.</description>
+    <source url="https://x.com/thsottiaux/status/2095979536043401428">x.com</source>
+  </item>
+  <item>
+    <title>Anthropic — Limit resetleme: Fable 5.1 çıkışı için Claude Max haftalık limitleri resetlendi</title>
+    <link>https://usageupdates.com/e/2026-09-04-claude-max-weekly-limits-reset-for-fable-5-1-launch-weekend/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-09-04-claude-max-weekly-limits-reset-for-fable-5-1-launch-weekend/</guid>
+    <pubDate>Fri, 04 Sep 2026 20:08:45 GMT</pubDate>
+    <category>Limit resetleme</category>
+    <description>We&apos;ve just reset weekly limits for everyone on a Claude Max plan. With Fable 5.1 out and a long weekend ahead for many of you, we wanted to keep you building. I&apos;d love to see what you build!</description>
+    <source url="https://x.com/lydiahallie/status/2095967323412930677">x.com</source>
+  </item>
+  <item>
+    <title>OpenAI — Kredi: OpenAI, GPT-6 Astra erişimindeki her gecikme günü için biriktirilmiş reset veriyor</title>
+    <link>https://usageupdates.com/e/2026-09-03-openai-grants-a-banked-reset-for-each-day-of-delayed-gpt-6/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-09-03-openai-grants-a-banked-reset-for-each-day-of-delayed-gpt-6/</guid>
+    <pubDate>Thu, 03 Sep 2026 23:12:09 GMT</pubDate>
+    <category>Kredi</category>
+    <description>OpenAI will grant a banked usage reset for every day paid ChatGPT users lack access to GPT-6 Astra, starting September 3, with the first landing within hours.</description>
+    <source url="https://x.com/thsottiaux/status/2095651088502591861">x.com</source>
+  </item>
+  <item>
+    <title>Anthropic — Kredi: Claude Tag çıkışı Enterprise&apos;a 25.000 dolar, Team&apos;e 2.500 dolar kullanım kredisi verdi</title>
+    <link>https://usageupdates.com/e/2026-09-02-claude-tag-launch-grants-25-000-enterprise-and-2-500-team/</link>
+    <guid isPermaLink="true">https://usageupdates.com/e/2026-09-02-claude-tag-launch-grants-25-000-enterprise-and-2-500-team/</guid>
+    <pubDate>Wed, 02 Sep 2026 12:00:00 GMT</pubDate>
+    <category>Kredi</category>
+    <description>Anthropic gave Claude Tag launch credit to eligible organizations: $25,000 per Enterprise org and $2,500 per Team org with 10+ paid seats, for Claude Tag usage in Slack channels.</description>
+    <source url="https://support.claude.com/en/articles/15575654-claude-tag-launch-promo-for-claude-team-and-enterprise">support.claude.com</source>
+  </item>
+</channel>
+</rss>
